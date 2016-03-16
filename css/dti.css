@@ -517,7 +517,7 @@ li{
 }
 
 .carousel .item{
-	transition: 120s ease-in-out left;
+	//transition: 120s ease-in-out left;
 }
 
 #titleModal{
@@ -528,6 +528,12 @@ li{
 #textoModal{
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: justify;
+}
+
+#subtitleModal{
+	padding: 0cm 2cm 0cm 2cm;
+	text-align: center;
+	font-weight: bold;
 }
 
 .modal-body{

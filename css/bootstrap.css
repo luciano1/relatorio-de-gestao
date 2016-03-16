@@ -6043,10 +6043,10 @@ a.badge:hover {
 .carousel .item {
   position: relative;
   display: none;
-  -webkit-transition: 120s ease-in-out left;
-     -moz-transition: 120s ease-in-out left;
-       -o-transition: 120s ease-in-out left;
-          transition: 120s ease-in-out left;
+  //-webkit-transition: 500s ease-in-out left;
+     //-moz-transition: 500s ease-in-out left;
+    //   -o-transition: 500s ease-in-out left;
+       //   transition: 500s ease-in-out left;
 }
 
 .carousel .item > img {
