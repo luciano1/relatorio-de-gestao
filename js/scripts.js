@@ -243,6 +243,7 @@
 		$( ".metade-direita" ).animate({opacity: 0.1 }, 800, function(){
 				
 				$('.encapsulador-conteudo').css("color", cortexto);
+				$('.botao').css("visibility", "visible");
 				$('.icone1').css("color", coricone);
 				$(".metade-direita").css({"background": "url(img/relatorio/"+ imgbackground +".jpg)", "background-repeat": "no-repeat", backgroundSize: "cover"});						
 			});
@@ -451,7 +452,7 @@
 				    $('.go-top').css("visibility", "visible");
 				    $('.go-to i').css("font-size", "2em");
 				    $('.voltarTopo').css("visibility", "visible");
-				    $('.time-line').css("visibility", "visible");				    
+				    $('.time-line').css("visibility", "visible");	    
 				    
 			
 					//EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground)

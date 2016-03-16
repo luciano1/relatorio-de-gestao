@@ -222,6 +222,7 @@ li{
 	font-weight: bold;
 	text-decoration: none;
 	border: 3px solid #444;
+	visibility: hidden;
 }
 
 .botao:hover{
@@ -516,7 +517,7 @@ li{
 }
 
 .carousel .item{
-	transition: 60s ease-in-out left;
+	transition: 120s ease-in-out left;
 }
 
 #titleModal{
@@ -526,6 +527,7 @@ li{
 
 #textoModal{
 	padding: 0cm 2cm 0cm 2cm;
+	text-align: justify;
 }
 
 .modal-body{
