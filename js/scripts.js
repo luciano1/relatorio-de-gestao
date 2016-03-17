@@ -989,3 +989,11 @@ function preventDefaultForScrollKeys(e) {
 	}
 }
 
+				$(document).ready(function(){
+					$('.right').click(function(){
+						$('.carousel').carousel('next');
+					})
+					$('.left').click(function(){
+						$('.carousel').carousel('prev');
+					})
+				})
