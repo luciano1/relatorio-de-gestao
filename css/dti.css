@@ -524,10 +524,19 @@ li{
 #textoModal{
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: justify;
+	line-height: 1.5em;
 }
 
 #subtitleModal{
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: center;
 	font-weight: bold;
+}
+
+#listaModal{
+	line-height: 25px;
+}
+
+#iconeModal{
+	font-size: 13px;
 }
