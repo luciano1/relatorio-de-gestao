@@ -995,5 +995,7 @@ function preventDefaultForScrollKeys(e) {
 					})
 					$('.left').click(function(){
 						$('.carousel').carousel('prev');
+				
 					})
+				$('.carousel').carousel('pause');
 				})

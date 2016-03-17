@@ -516,10 +516,6 @@ li{
 	font-size: 40px;
 }
 
-.carousel .item{
-	//transition: 120s ease-in-out left;
-}
-
 #titleModal{
 	padding: 0cm 2cm 0cm 2cm;
 	z-index: 3000;
