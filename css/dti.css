@@ -518,7 +518,8 @@ li{
 
 #titleModal{
 	padding: 0cm 2cm 0cm 2cm;
-	z-index: 3000;
+	text-align: center;
+
 }
 
 #textoModal{
