@@ -820,7 +820,7 @@
 					$('.go-to').attr("onclick", "handle(handle, 120)");
 
 					//EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-					EfeitoMetade("size","publicidade","200","#fff","#1B5877","publicidade_d");
+					EfeitoMetade("size","publicidade","200","rgba(245, 152, 15, 0.26)", "#000","publicidade_d", "#F2D034");
 					//EfeitoLogo(efeito,img)
 					EfeitoLogo("size","ic-4");
 					MudaConteudo(titulo,paragrafo,link);
