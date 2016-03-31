@@ -536,9 +536,12 @@ li{
 
 #listaModal{
 	line-height: 25px;
-	list-style-type: circle;
 }
 
 #iconeModal{
 	font-size: 13px;
+}
+.left,.right{
+	position: fixed;
+	top:50%;
 }
