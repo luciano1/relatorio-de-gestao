@@ -542,3 +542,11 @@ li{
 #iconeModal{
 	font-size: 13px;
 }
+#imagemModalMedio{
+	width: 400px;
+	height: 200px;
+}
+#tituloTabela th{
+	text-align: center;
+	font-weight: bolder;
+}
