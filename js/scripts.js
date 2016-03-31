@@ -244,6 +244,8 @@
 				
 				$('.encapsulador-conteudo').css("color", cortexto);
 				$('.botao').css("visibility", "visible");
+				$('.botao').css("color", cortexto);
+				$('.botao').css("border-color", cortexto);
 				$('.icone1').css("color", coricone);
 				$(".metade-direita").css({"background": "url(img/relatorio/"+ imgbackground +".jpg)", "background-repeat": "no-repeat", backgroundSize: "cover"});						
 			});
