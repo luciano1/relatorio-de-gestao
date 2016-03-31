@@ -244,6 +244,8 @@
 				
 				$('.encapsulador-conteudo').css("color", cortexto);
 				$('.botao').css("visibility", "visible");
+				$('.botao').css("color", cortexto);
+				$('.botao').css("border-color", cortexto);
 				$('.icone1').css("color", coricone);
 				$(".metade-direita").css({"background": "url(img/relatorio/"+ imgbackground +".jpg)", "background-repeat": "no-repeat", backgroundSize: "cover"});						
 			});
@@ -338,7 +340,7 @@
 	var listapadrao = {marginLeft: "0px", fontSize: "1em", marginTop: ""};
 	var efeitolista = {marginLeft: "0px", fontSize: "2em", marginTop: "3px"};
 	var titulo = "Título default";
-	var paragrafo = "Texto default";
+	//var paragrafo = "Texto default";
 	var link = '';
 	
 
@@ -441,7 +443,7 @@
 						
 				case 12:
 										
-					paragrafo = "Testando novo parágrafo";
+					//paragrafo = "Testando novo parágrafo";
 					titulo = "Atividades Institucionais";
 					link = "#atividades";
 
@@ -469,7 +471,7 @@
 
 				case 18:					
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Ensino superior, profissional e tecnológico";
 					link = "#ensino";
 
@@ -492,7 +494,7 @@
 
 				case 24:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Educação à Distância";
 					link = "#cead";
 
@@ -513,7 +515,7 @@
 
 				case 30:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Programas de Pós-Graduação";
 					link = "#pos";
 
@@ -535,7 +537,7 @@
 
 				case 36:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Extensão";
 					link = "#extensao";
 
@@ -557,7 +559,7 @@
 
 				case 42:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Pesquisa";
 					link = "#pesquisa";
 
@@ -579,7 +581,7 @@
 
 				case 48:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Sistema de Bibliotecas";
 					link = "#biblioteca";
 
@@ -600,7 +602,7 @@
 
 				case 54: 
 	
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Processos Seletivos";
 					link = "#processosseletivos";
 
@@ -621,7 +623,7 @@
 
 				case 60:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Hospital Universitário Clemente de Faria";
 					link = "#hospital";
 
@@ -643,7 +645,7 @@
 
 				case 66:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Cepedor";
 					link = "#cepedor";
 					$('.go-top').attr("onclick", "handle(handle, 60);");
@@ -663,7 +665,7 @@
 
 				case 72:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Editora Unimontes";
 					link = "#editora";
 
@@ -684,7 +686,7 @@
 
 				case 78:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Índice de Preços ao Consumidor";
 					link = "#ipc";
 
@@ -705,7 +707,7 @@
 
 				case 84:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "SAJ Itinerante";
 					link = "#saj";
 
@@ -726,7 +728,7 @@
 
 				case 90:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Intercâmbio e Cooperação Interinstitucional";
 					link = "#intercambio";
 
@@ -747,7 +749,7 @@
 
 				case 96:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Museu Histórico Regional";
 					link = "#museu";
 
@@ -768,7 +770,7 @@
 
 				case 102:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Comunicação organizacional (Ascom)";
 					link = "#ascom";
 
@@ -789,7 +791,7 @@
 
 				case 108:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Mídias Sociais";
 					link = "#midiassociais";
 
@@ -810,7 +812,7 @@
 
 				case 114:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Publicidade";
 					link = "#publicidade";
 
@@ -829,7 +831,7 @@
 
 				case 120:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Rádio Unimontes";
 					link = "#radio";
 
@@ -851,7 +853,7 @@
 
 				case 126:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Imprensa Universitária";
 					link = "#imprensa";
 
@@ -872,7 +874,7 @@
 
 				case 132:
 	
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Infraestrutura (obras, TI)";
 					link = "#infraestrutura";
 
@@ -893,7 +895,7 @@
 
 				case 138:
 
-					paragrafo = "Novo parágrafo";
+					//paragrafo = "Novo parágrafo";
 					titulo = "Orçamento e Finanças";
 					link = "#orcamentoefinancas";
 
