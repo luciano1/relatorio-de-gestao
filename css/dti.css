@@ -561,6 +561,7 @@ li{
 
 #listaModal{
 	line-height: 25px;
+	list-style-type: disc;
 }
 
 #iconeModal{
