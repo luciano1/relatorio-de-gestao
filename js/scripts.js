@@ -262,7 +262,7 @@
 		//ESSE SCRIPT MUDA O CONTEUDO DO TITULO E PARÁGRAFO
 		$('.h1-desk, .p').fadeOut("slow", function(){
 			$('.h1-desk').html(titulo);
-			$('.p').html(paragrafo);
+			//$('.p').html(paragrafo);
 			$('.h1-desk, .p').fadeIn("slow");
 		})
 		// MUDA O LINK DOS BOTOES
