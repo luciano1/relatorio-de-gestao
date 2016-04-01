@@ -1,6 +1,9 @@
 
 	
 	$(document).ready(function(){
+		if(($(window).width()) < 980){
+			location.href="m.index.html";
+		}
 		$('.metade-esquerda, .metade-direita').height($( window ).height());
 
 

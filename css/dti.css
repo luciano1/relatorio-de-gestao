@@ -224,7 +224,26 @@ li{
 	border: 3px solid #444;
 	visibility: hidden;
 }
+.botao-responsivo{
+	padding: 5px 5px;
+	color:#fff;
+	font-size:15px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 3px solid #fff;
+	background: none;
 
+
+}.botao-responsivo:hover{
+	color: #ddd;
+	border: 3px solid #ddd;
+	font-weight: bold;
+	text-decoration: none;
+	z-index:4000;
+}
+.corpo-mobile h1, .corpo-mobile p, .corpo-mobile a{
+	text-align: center;
+}
 .botao:hover{
 	padding: 5px 30px;
 	color:#333;
@@ -333,63 +352,69 @@ li{
 
 /* ========== CONTEÚDOS RESPONSIVOS=========*/
 .content-responsivo-1{
-	background: url(../img/relatorio/apresentacao.jpg);
+	background: url(../img/relatorio/capa.jpg);
 	background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 }
 .content-responsivo-2{
-		background: url(../img/relatorio/reitor.jpg);
+		background: url(../img/relatorio/expediente_d.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 
 }
 .content-responsivo-3{
-		background: url(../img/relatorio/numeros.jpg);
+		background: url(../img/relatorio/a_unimontes_d.jpg);
+		background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	height: 500px;
+	
+}.content-responsivo-3-1{
+		background: url(../img/relatorio/resultados.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
 .content-responsivo-4{
-		background: url(../img/relatorio/Objetivo.jpg);
+		background: url(../img/relatorio/Atividades.jpg);
 			background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 
 }
-.content-responsivo-5{background: url(../img/relatorio/tecnologia.jpg);
+.content-responsivo-5{background: url(../img/relatorio/Ensino.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-6{background: url(../img/relatorio/atuacao.jpg);
+.content-responsivo-6{background: url(../img/relatorio/cead.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-7{background: url(../img/relatorio/Meta.jpg);
+.content-responsivo-7{background: url(../img/relatorio/pos.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-8{background: url(../img/relatorio/Atividades.jpg);
+.content-responsivo-8{background: url(../img/relatorio/extensao.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-9{background: url(../img/relatorio/Ensino.jpg);
+.content-responsivo-9{background: url(../img/relatorio/pesquisa.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-10{background: url(../img/relatorio/cead.jpg);
+.content-responsivo-10{background: url(../img/relatorio/Biblioteca.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
@@ -401,104 +426,104 @@ li{
 	height: 500px;
 	
 }
-.content-responsivo-12{background: url(../img/relatorio/pos.jpg);
+.content-responsivo-12{background: url(../img/relatorio/processos_seletivos.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-13{background: url(../img/relatorio/pgf.jpg);
+.content-responsivo-13{background: url(../img/relatorio/hospital.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-14{background: url(../img/relatorio/hospital.jpg);
+.content-responsivo-14{background: url(../img/relatorio/cepedor.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-15{background: url(../img/relatorio/extensao.jpg);
+.content-responsivo-15{background: url(../img/relatorio/Editora.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-16{background: url(../img/relatorio/Biblioteca.jpg);
+.content-responsivo-16{background: url(../img/relatorio/ipc.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-17{	background: url(../img/relatorio/Editora.jpg);
+.content-responsivo-17{	background: url(../img/relatorio/saj.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 
 }
-.content-responsivo-18{background: url(../img/relatorio/Documentacao.jpg);
+.content-responsivo-18{background: url(../img/relatorio/intercambio.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-19{background: url(../img/relatorio/Imprensa.jpg);
+.content-responsivo-19{background: url(../img/relatorio/museu.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-20{background: url(../img/relatorio/Radio.jpg);
+.content-responsivo-20{background: url(../img/relatorio/ascom.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-21{background: url(../img/relatorio/Cotec.jpg);
+.content-responsivo-21{background: url(../img/relatorio/midias_sociais.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
 
-.content-responsivo-23{background: url(../img/relatorio/intercambio.jpg);
+.content-responsivo-23{background: url(../img/relatorio/publicidade.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-24{background: url(../img/relatorio/ipc.jpg);
+.content-responsivo-24{background: url(../img/relatorio/Radio.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-25{background: url(../img/relatorio/juridico.jpg);
+.content-responsivo-25{background: url(../img/relatorio/Imprensa.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-26{background: url(../img/relatorio/avaliacao.jpg);
+.content-responsivo-26{background: url(../img/relatorio/infraestrutura.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-27{background: url(../img/relatorio/tecnologia.jpg);
+.content-responsivo-27{background: url(../img/relatorio/orcamento_financas.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-28{background: url(../img/relatorio/sustentabilidade.jpg);
+.content-responsivo-28{background: url(../img/relatorio/hino_d.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
 	
 }
-.content-responsivo-22{background: url(../img/relatorio/Hino.jpg);
+.content-responsivo-22{background: url(../img/relatorio/unimontes_numeros_d.jpg);
 		background-repeat: no-repeat;
 	 background-size: 100% 100%;
 	height: 500px;
