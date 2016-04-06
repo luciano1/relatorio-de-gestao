@@ -774,7 +774,7 @@
 				case 102:
 
 					paragrafo = "Novo parágrafo";
-					titulo = "Comunicação organizacional (Ascom)";
+					titulo = "Comunicação Institucional";
 					link = "#ascom";
 
 					handledot(17,titulo);
