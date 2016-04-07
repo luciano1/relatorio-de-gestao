@@ -168,7 +168,7 @@
 	    
 	    <div id="atividades" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();"aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll(); ItemModal(0);"aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Atividades Institucionais</h3>
 		  </div>
 		  <div class="modal-body" style="background: url('img/relatorio/atividades_d.jpg'); background-size:cover;">
@@ -408,8 +408,19 @@
 
 
 		   </div>
-		  <div class="modal-footer">		  	  
-		    <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		  <div class="modal-footer">
+		  	<a onclick="ItemModal(0)" href="#carouselAtividades">Janeiro</a>	  	  
+		  	<a onclick="ItemModal(1)" href="#carouselAtividades">Fevereiro</a>	  	  
+		  	<a onclick="ItemModal(2)" href="#carouselAtividades">Março</a>	  	  
+		  	<a onclick="ItemModal(3)" href="#carouselAtividades">Abril</a>	  	  
+		  	<a onclick="ItemModal(4)" href="#carouselAtividades">Maio</a>	  	  
+		  	<a onclick="ItemModal(5)" href="#carouselAtividades">Junho</a>	  	  
+		  	<a onclick="ItemModal(6)" href="#carouselAtividades">Julho</a>	  	  
+		  	<a onclick="ItemModal(7)" href="#carouselAtividades">Agosto</a>	  	  
+		  	<a onclick="ItemModal(8)" href="#carouselAtividades">Setembro</a>	  	  
+		  	<a onclick="ItemModal(9)" href="#carouselAtividades">Outubro</a>	  	  
+		  	<a onclick="ItemModal(10)" href="#carouselAtividades">Novembro</a>	  	  
+		    <button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)" onclick="ItemModal(0)">Fechar</button>
 		    </div>
 		</div>
 
@@ -418,7 +429,7 @@
 	 
 		<div id="ensino" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();"aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll(); ItemModal(0);"aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Ensino Superior, Profissional e Tecnológico</h3>
 		  </div>
 		  <div class="modal-body" style="background: url('img/relatorio/ensino_d.jpg'); background-size:cover;">
@@ -1488,8 +1499,14 @@
 
 
 		   </div>
-		  <div class="modal-footer">		  	  
-		    <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		  <div class="modal-footer">
+		  	<a onclick="ItemModal(0)" href="#carouselEnsino">Apresentação</a>	  	  
+		  	<a onclick="ItemModal(1)" href="#carouselEnsino">Atividades Desenvolvidas</a>	  	  
+		  	<a onclick="ItemModal(3)" href="#carouselEnsino">Eventos Realizados</a>	  	  
+		  	<a onclick="ItemModal(4)" href="#carouselEnsino">Cursos</a>	  	  
+		  	<a onclick="ItemModal(7)" href="#carouselEnsino">Projetos e Programas de Ensino</a>	  	  
+		  	<a onclick="ItemModal(8)" href="#carouselEnsino">Total de Cursos</a>	  	  
+		    <button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		    </div>
 		</div>
 
@@ -1500,7 +1517,7 @@
 		<div id="cead" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();"aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll(); ItemModal(0);"aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Centro de Educação à Distância - CEAD</h3>
 		  </div>
 
@@ -1895,7 +1912,7 @@
 		</div>
 		  
 		<div class="modal-footer">		  	  
-		    <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    <button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		 </div>
 	</div>
 	
@@ -1904,7 +1921,7 @@
 
 	    <div id="pos" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Programas de Pós-Graduação</h3>
 		  </div>
 
@@ -2869,13 +2886,13 @@
 			    </div>
 	
 		  </div>
-		  <a class="carousel-control left" href="#carouselpos">&lsaquo;</a> 
+						 <a class="carousel-control left" href="#carouselpos">&lsaquo;</a> 
   				<a class="carousel-control right" href="#carouselpos" >&rsaquo;</a>
 		  	</div>
 		  	
 	</div>
 		  <div class="modal-footer">
-		    <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    <button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  </div>
 		</div>
 
@@ -2885,7 +2902,7 @@
 
 <div id="extensao" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();"aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll(); ItemModal(0);"aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Pró-Reitoria de Extensão</h3>
 		</div>
 		<div class="modal-body" style="background: url('img/relatorio/extensao_d.jpg'); background-size:cover;">
@@ -3831,7 +3848,7 @@
 
 		   </div>
 			  	<div class="modal-footer">		  	  
-			    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+			    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 			    </div>
 		</div>
 
@@ -3841,7 +3858,7 @@
 				<!--===========================MODAL PESQUISA=================================-->
 		<div id="pesquisa" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Pró-Reitoria de Pesquisa</h3>
 		  </div>
 
@@ -4102,7 +4119,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -4111,7 +4128,7 @@
 
 			<div id="biblioteca" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  	<div class="modal-header">
-		    	<button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    	<button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    	<h3 id="myModalLabel">Sistema de Bibliotecas</h3>
 		  	</div>
 		  	<div class="modal-body" style="background: url('img/relatorio/imprensa_d.jpg'); background-size:cover;">
@@ -4828,7 +4845,7 @@
 		  		</div>
 		  	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -4836,7 +4853,7 @@
 
 		<div id="processosseletivos" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Processos seletivos</h3>
 		  </div>
 
@@ -5134,7 +5151,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -5142,7 +5159,7 @@
 
 		<div id="hospital" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Hospital Universitário Clemente de Faria</h3>
 		  </div>
 		  <div class="modal-body" style="background: url('img/relatorio/hospital_d.jpg'); background-size:cover;">
@@ -6772,7 +6789,7 @@
 
 		<div id="cepedor" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Cepedor</h3>
 		  </div>
 
@@ -6820,7 +6837,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -6828,7 +6845,7 @@
 
 		<div id="editora" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Editora</h3>
 		  </div>
 
@@ -6923,7 +6940,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -6932,7 +6949,7 @@
 
 		<div id="ipc" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Modal header</h3>
 		  </div>
 		  <div class="modal-body">
@@ -6950,7 +6967,7 @@
 		<div id="saj" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">SAJ Itinerante</h3>
 		  </div>
 
@@ -7235,7 +7252,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -7245,7 +7262,7 @@
 
 		<div id="intercambio" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Intercâmbio e Cooperação Interinstitucional</h3>
 		  </div>
 
@@ -7372,13 +7389,13 @@
 		  		</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 		<!-- =============================================== MODAL MUSEU ============================================================= -->
 		<div id="museu" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
-			    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+			    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 			    <h3 id="myModalLabel">Museu Histórico Regional</h3>
 			</div>
 
@@ -7407,13 +7424,13 @@
 			  		</div>
 			 	</div>
 			  	<div class="modal-footer">
-			    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+			    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 				</div>
 		</div>
 				<!-- ============================================ ASCOM ========================================== -->
 		<div id="ascom" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Modal header</h3>
 		  </div>
 		  <div class="modal-body">
@@ -7426,7 +7443,7 @@
 		<!-- ============================================ MÍDIAS SOCIAIS ============================================================= -->
 		<div id="midiassociais" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Modal header</h3>
 		  </div>
 		  <div class="modal-body">
@@ -7441,7 +7458,7 @@
 
 		<div id="publicidade" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Publicidade</h3>
 		  </div>
 
@@ -7474,7 +7491,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -7482,7 +7499,7 @@
 
 		<div id="radio" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Rádio Unimontes</h3>
 		  </div>
 
@@ -7509,7 +7526,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -7517,7 +7534,7 @@
 		<!-- =================================================== IMPRENSA ============================================================= -->
 		<div id="imprensa" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  	<div class="modal-header">
-		    	<button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    	<button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    	<h3 id="myModalLabel">Imprensa Universitária</h3>
 		  	</div>
 
@@ -7565,7 +7582,7 @@
 		  		</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -7573,7 +7590,7 @@
 	
 		<div id="infraestrutura" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Pró-Reitoria de Pesquisa</h3>
 		  </div>
 
@@ -7597,7 +7614,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
@@ -7606,7 +7623,7 @@
 
 		<div id="orcamentoefinancas" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			  <div class="modal-header">
-			    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+			    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 			    <h3 id="myModalLabel">Orçamento e Finanças</h3>
 			  </div>
 
@@ -7662,14 +7679,14 @@
 			  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 
 		<!-- ======================================MODELO DE MODAL=====================================
 		<div id="pesquisa" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
 		    <h3 id="myModalLabel">Pró-Reitoria de Pesquisa</h3>
 		  </div>
 
@@ -7692,7 +7709,7 @@
 		  	</div>
 		 	</div>
 		  	<div class="modal-footer">
-		    	<button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+		    	<button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
 		  	</div>
 		</div>
 		-->

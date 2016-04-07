@@ -1002,5 +1002,16 @@ function preventDefaultForScrollKeys(e) {
 						$('.carousel').carousel('prev');
 				
 					})
-				$('.carousel').carousel('pause');
-				})
+					$('.carousel').carousel('pause');
+					
+					
+				
+				
+					
+					})
+					function ItemModal(pagina){
+						$(document).ready(function(){
+								$('.carousel').carousel(pagina);
+						})
+					}
+		
