@@ -581,3 +581,15 @@ li{
 	font-weight: bolder;
 
 }
+
+#numeroPagina{
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#navegacaoModal{
+	text-align: center;
+	font-size: 13px;
+	background-color: #fff;
+}
