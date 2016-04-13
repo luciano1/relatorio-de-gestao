@@ -34,21 +34,80 @@
 	<script src="js/scripts.js" type="text/javascript"></script> 
 
 
-	
+	<script>	
+
+	$(document).ready(function(){
+		/* VALORES DO MONITOR PADRAO */
+		var largura_default = 1366;
+		var altura_default = 667;
+		/* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
+		var largura_dispositivo = $("#imgteste").width();
+		var altura_dispositivo = $("#imgteste").height();
+		/* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
+		var razao_largura = (largura_dispositivo/largura_default);
+		var razao_altura = (altura_dispositivo/altura_default);
+		
+		/*
+			A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
+			das coordenadas originais pelo numero float da razao das alturas dos dispositivos
+
+
+		*/					
+		$("#Extensao_map").attr('coords',Math.trunc(408*razao_largura) +','+ Math.trunc(216*razao_altura)+','+ Math.trunc(30*razao_altura));
+		});
+	</script>
 
 
 </head>
 <body>
 	<div class="paginaInicial">
-		<div class="container-fluid">
-				<div class="row-fluid">
-					<img src="img/relatorio/mosaico.jpg" width="1329" height="666" usemap="#map"/>
+	
+					<img src="img/relatorio/mosaico.jpg" id="imgteste" width="1366" height="667" usemap="#map"/>
 					<map name="map">
-						<a onclick="handle(event,0,2); " href="#apresentacao" role="button"  data-toggle="modal">
-							<area shape="circle" coords="960,327,29" href="#apresentacao" /></a>
+
+						<!-- OBS* O HREF E OS ATRIBUTOS DO BOOTSTRAP PODEM FICAR DENTRO DA TAG AREA -->
+						<area shape="circle" id="Apresenacao_map" coords="992,333,31" role="button"  data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao"/>
+
+						<area shape="circle" id="Extensao_map" coords="406,216,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+						<area shape="circle" id="Aunimontes_map" coords="1022,210,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+						<area shape="circle" id="Hino_map" coords="939,288,17" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+						<area shape="circle" id="Expediente_map" coords="922,371,19" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+						<area shape="circle" id="Pro_sel_map" coords="993,436,32" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Ati_inst_map" coords="974,509,32" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Uni_em_num_map" coords="833,452,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Ensino_map" coords="757,460,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Intercambio_map" coords="667,510,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Pos_map" coords="656,414,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Editora_map" coords="597,420,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Cead_map" coords="466,460,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Infraestrutura_map" coords="346,486,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+					
+
+						<area shape="circle" id="Pesquisa_map" coords="310,337,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Bibliotecas_map" coords="389,280,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Resultados_map" coords="433,160,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Museu_map" coords="513,202,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Financas_map" coords="514,118,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Midias_map" coords="593,156,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Ascom_map" coords="669,168,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Hucf_map" coords="737,146,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Ipc_map" coords="789,180,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Imprensa_map" coords="826,180,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+						<area shape="circle" id="Sag_map" coords="840,226,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+
+						<area shape="circle" id="cpdor_map" coords="881,235,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
+
+						<area shape="circle" id="Radio_map" coords="413,386,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+
+
+
 					</map>
-			</div>
-		</div>
+			
 	</div>
 </body>
 <!--body onload="disableScroll()"> 
