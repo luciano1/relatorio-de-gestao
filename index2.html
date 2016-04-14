@@ -53,7 +53,40 @@
 
 
             */
-            $("#Extensao_map").attr('coords', Math.trunc(408 * razao_largura) + ',' + Math.trunc(216 * razao_altura) + ',' + Math.trunc(30 * razao_altura));
+        // id = id da area / x = largura / y = altura / r = raio   
+		function mapeamento(id,x,y,r){				
+			$(id).attr('coords',Math.trunc(x*razao_largura) +','+ Math.trunc(y*razao_altura)+','+ Math.trunc(r*razao_altura));
+		}	
+		
+		//Redimensionamento das áreas mapeadas
+		mapeamento("#Apresentacao_map", 992,333,31);
+		mapeamento("#Aunimontes_map", 1022,210,31);
+		mapeamento("#Hino_map", 939,288,17);
+		//mapeamento("#Uni_em_num_map", 833,452,16);
+		//mapeamento("#Expediente_map", 922,371,19);
+		//mapeamento("#Extensao_map", 406,216,31);
+		//mapeamento("#Pro_sel_map", 993,436,32);
+		//mapeamento("#Ati_inst_map", 974,509,32);
+		//mapeamento("Ensino_map", 757,460,31);
+		//mapeamento("#Intercambio_map", 667,510,16);
+		//mapeamento("#Pos_map", 656,414,31);
+		//mapeamento("#Editora_map", 597,420,16);
+		//mapeamento("#Cead_map", 466,460,31);
+		//mapeamento("#Infraestrutura_map", 346,486,31);
+		//mapeamento("#Pesquisa_map", 310,337,31);
+		//mapeamento("#Bibliotecas_map", 389,280,16);
+		//mapeamento("#Resultados_map", 433,160,16);
+		//mapeamento("#Museu_map", 513,202,16);
+		//mapeamento("#Financas_map", 514,118,31);
+		//mapeamento("#Midias_map", 593,156,16;
+		//mapeamento("#Ascom_map", 669,168,31);
+		//mapeamento("#Hucf_map", 737,146,31);
+		//mapeamento("#Ipc_map", 789,180,16);
+		//mapeamento("#Imprensa_map", 826,180,16);
+		//mapeamento("#Saj_map", 840,226,16);
+		//mapeamento("#cpdor_map", 881,235,16);
+		//mapeamento("#Radio_map", 413,386,16);
+        
         });
     </script>
 
@@ -67,7 +100,7 @@
         <map name="map">
 
 						<!-- OBS* O HREF E OS ATRIBUTOS DO BOOTSTRAP PODEM FICAR DENTRO DA TAG AREA -->
-						<area shape="circle" id="Apresenacao_map" coords="992,333,31" role="button"  data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao"/>
+						<area shape="circle" id="Apresentacao_map" coords="992,333,31" role="button"  data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao"/>
 						<area shape="circle" id="Aunimontes_map" coords="1022,210,31" role="button"  data-toggle="modal"  href="#aunimontes"/>
 						<area shape="circle" id="Hino_map" coords="939,288,17" role="button"  data-toggle="modal"  href="#hino"/>
 						<area shape="circle" id="Uni_em_num_map" coords="833,452,16" role="button"  data-toggle="modal"  href="#numeros"/>
@@ -91,7 +124,7 @@
 						<area shape="circle" id="Hucf_map" coords="737,146,31" href="index.html?abre=hu"/>	
 						<area shape="circle" id="Ipc_map" coords="789,180,16" href="index.html?abre=ipc"/>	
 						<area shape="circle" id="Imprensa_map" coords="826,180,16" href="index.html?abre=imprensa"/>	
-						<area shape="circle" id="Sag_map" coords="840,226,16" href="index.html?abre=saj"/>	
+						<area shape="circle" id="Saj_map" coords="840,226,16" href="index.html?abre=saj"/>	
 						<area shape="circle" id="cpdor_map" coords="881,235,16" href="index.html?abre=cepedor"/>	
 						<area shape="circle" id="Radio_map" coords="413,386,16" href="index.html?abre=radio"/>
 
