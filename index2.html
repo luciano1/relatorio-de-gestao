@@ -1,114 +1,105 @@
-<!doctype html>	
+<!doctype html>
 
 <html>
+
 <head>
-	<title>Relatório de Atividades</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="img/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" href="css/dti.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<!--script src="js/jquery-ui.js" type="text/javascript"></script>
+    <title>Relatório de Atividades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/dti.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--script src="js/jquery-ui.js" type="text/javascript"></script>
 	<script src="js/roda.js" type="text/javascript"></script-->
-	<script src="js/jquery-roda.js" type="text/javascript"></script>
-	<script src="js/scripts.js" type="text/javascript"></script> 
+    <script src="js/jquery-roda.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 
 
-	<script>	
+    <script>
+        $(document).ready(function() {
+            /* VALORES DO MONITOR PADRAO */
+            var largura_default = 1366;
+            var altura_default = 667;
+            /* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
+            var largura_dispositivo = $("#imgteste").width();
+            var altura_dispositivo = $("#imgteste").height();
+            /* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
+            var razao_largura = (largura_dispositivo / largura_default);
+            var razao_altura = (altura_dispositivo / altura_default);
 
-	$(document).ready(function(){
-		/* VALORES DO MONITOR PADRAO */
-		var largura_default = 1366;
-		var altura_default = 667;
-		/* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
-		var largura_dispositivo = $("#imgteste").width();
-		var altura_dispositivo = $("#imgteste").height();
-		/* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
-		var razao_largura = (largura_dispositivo/largura_default);
-		var razao_altura = (altura_dispositivo/altura_default);
-		
-		/*
-			A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
-			das coordenadas originais pelo numero float da razao das alturas dos dispositivos
+            /*
+            	A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
+            	das coordenadas originais pelo numero float da razao das alturas dos dispositivos
 
 
-		*/					
-		$("#Extensao_map").attr('coords',Math.trunc(408*razao_largura) +','+ Math.trunc(216*razao_altura)+','+ Math.trunc(30*razao_altura));
-		});
-	</script>
+            */
+            $("#Extensao_map").attr('coords', Math.trunc(408 * razao_largura) + ',' + Math.trunc(216 * razao_altura) + ',' + Math.trunc(30 * razao_altura));
+        });
+    </script>
 
 
 </head>
+
 <body>
-	<div class="paginaInicial">
-	
-					<img src="img/relatorio/mosaico.jpg" id="imgteste" width="1366" height="667" usemap="#map"/>
-					<map name="map">
+    <div class="paginaInicial">
+
+        <img src="img/relatorio/mosaico.jpg" id="imgteste" width="1366" height="667" usemap="#map" />
+        <map name="map">
 
 						<!-- OBS* O HREF E OS ATRIBUTOS DO BOOTSTRAP PODEM FICAR DENTRO DA TAG AREA -->
 						<area shape="circle" id="Apresenacao_map" coords="992,333,31" role="button"  data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao"/>
-
-						<area shape="circle" id="Extensao_map" coords="406,216,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-
-						<area shape="circle" id="Aunimontes_map" coords="1022,210,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-
-						<area shape="circle" id="Hino_map" coords="939,288,17" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-
-						<area shape="circle" id="Expediente_map" coords="922,371,19" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-
-						<area shape="circle" id="Pro_sel_map" coords="993,436,32" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Ati_inst_map" coords="974,509,32" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Uni_em_num_map" coords="833,452,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Ensino_map" coords="757,460,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Intercambio_map" coords="667,510,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Pos_map" coords="656,414,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-						<area shape="circle" id="Editora_map" coords="597,420,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Cead_map" coords="466,460,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Infraestrutura_map" coords="346,486,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
-
-					
-
-						<area shape="circle" id="Pesquisa_map" coords="310,337,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Bibliotecas_map" coords="389,280,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Resultados_map" coords="433,160,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Museu_map" coords="513,202,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Financas_map" coords="514,118,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Midias_map" coords="593,156,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Ascom_map" coords="669,168,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Hucf_map" coords="737,146,31" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Ipc_map" coords="789,180,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Imprensa_map" coords="826,180,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-						<area shape="circle" id="Sag_map" coords="840,226,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-
-						<area shape="circle" id="cpdor_map" coords="881,235,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>	
-
-						<area shape="circle" id="Radio_map" coords="413,386,16" role="button"  data-toggle="modal" onclick="handle(event,0,2); " href="#"/>
+						<area shape="circle" id="Aunimontes_map" coords="1022,210,31" role="button"  data-toggle="modal"  href="#aunimontes"/>
+						<area shape="circle" id="Hino_map" coords="939,288,17" role="button"  data-toggle="modal"  href="#hino"/>
+						<area shape="circle" id="Uni_em_num_map" coords="833,452,16" role="button"  data-toggle="modal"  href="#numeros"/>
+						<area shape="circle" id="Expediente_map" coords="922,371,19" role="button"  data-toggle="modal"  href="#expediente"/>
+						<area shape="circle" id="Extensao_map" coords="406,216,31" href="index.html?abre=extensao"/>
+						<area shape="circle" id="Pro_sel_map" coords="993,436,32" href="index.html?abre=processos_seletivos"/>
+						<area shape="circle" id="Ati_inst_map" coords="974,509,32" href="index.html?abre=atividades"/>
+						<area shape="circle" id="Ensino_map" coords="757,460,31" href="index.html?abre=ensino"/>
+						<area shape="circle" id="Intercambio_map" coords="667,510,16" href="index.html?abre=intercambio"/>
+						<area shape="circle" id="Pos_map" coords="656,414,31" href="index.html?abre=pos"/>
+						<area shape="circle" id="Editora_map" coords="597,420,16" href="index.html?abre=editora"/>	
+						<area shape="circle" id="Cead_map" coords="466,460,31" href="index.html?abre=cead"/>	
+						<area shape="circle" id="Infraestrutura_map" coords="346,486,31" href="index.html?abre=infraestrutura"/>
+						<area shape="circle" id="Pesquisa_map" coords="310,337,31" href="index.html?abre=pesquisa"/>	
+						<area shape="circle" id="Bibliotecas_map" coords="389,280,16" href="index.html?abre=bibliotecas"/>	
+						<area shape="circle" id="Resultados_map" coords="433,160,16" href="index.html?abre=resultados"/>	
+						<area shape="circle" id="Museu_map" coords="513,202,16" href="index.html?abre=museu"/>	
+						<area shape="circle" id="Financas_map" coords="514,118,31" href="index.html?abre=financas"/>	
+						<area shape="circle" id="Midias_map" coords="593,156,16" href="index.html?abre=midias"/>	
+						<area shape="circle" id="Ascom_map" coords="669,168,31" href="index.html?abre=ascom"/>	
+						<area shape="circle" id="Hucf_map" coords="737,146,31" href="index.html?abre=hu"/>	
+						<area shape="circle" id="Ipc_map" coords="789,180,16" href="index.html?abre=ipc"/>	
+						<area shape="circle" id="Imprensa_map" coords="826,180,16" href="index.html?abre=imprensa"/>	
+						<area shape="circle" id="Sag_map" coords="840,226,16" href="index.html?abre=saj"/>	
+						<area shape="circle" id="cpdor_map" coords="881,235,16" href="index.html?abre=cepedor"/>	
+						<area shape="circle" id="Radio_map" coords="413,386,16" href="index.html?abre=radio"/>
 
 
 
 					</map>
-			
-	</div>
+
+    </div>
 </body>
 <!--body onload="disableScroll()"> 
 		<div class="corpo-desktop visible-desktop">	
@@ -228,119 +219,104 @@
 				</div>
 			</div-->
 
-		<!--========================================= MODAIS DA PÁGINA INICIAL===============================================-->
+<!--========================================= MODAIS DA PÁGINA INICIAL===============================================-->
 
-		<!--========================= MODAL EXPEDIENTE============================-->
-	    
-	    <div id="expediente" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();"aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">Expediente</h3>
-		  </div>
-		  <div class="modal-body"  style="background: url('img/relatorio/expediente_d.jpg'); background-size:cover;" >
-		  	<div id="carouselExpediente" class="carousel" data-ride="carousel">
-		  		<ol class="carousel-indicators">
-    				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  				</ol>
-  				<div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-			      teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
-		
-			    </div>
+<!--========================= MODAL EXPEDIENTE============================-->
 
-			    <div class="item">
-			      teste2
-			    </div>
+<div id="expediente" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" onclick="enableScroll();" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Expediente</h3>
+    </div>
+    <div class="modal-body" style="background: url('img/relatorio/expediente_d.jpg'); background-size:cover;">
+        <div id="carouselExpediente" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer teste 1dgfaeygaeyaweihraweiuarhwieuhawieurhaiweriweurhaweurhiawer
 
-			    <div class="item">
-			      teste3
-			    </div>
+                </div>
 
-			    <div class="item">
-			      teste4
-			    </div>
-			</div>
+                <div class="item">
+                    teste2
+                </div>
+
+                <div class="item">
+                    teste3
+                </div>
+
+                <div class="item">
+                    teste4
+                </div>
+            </div>
 
 
-			<a class="carousel-control left" href="#carouselExpediente">&lsaquo;</a> 
-  				<a class="carousel-control right" href="#carouselExpediente" >&rsaquo;</a>
-		  	</div>
-		  	
+            <a class="carousel-control left" href="#carouselExpediente">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselExpediente">&rsaquo;</a>
+        </div>
 
 
-		   </div>
-		  <div class="modal-footer">		  	  
-		    <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
-		    </div>
-		</div>
 
-		<!-- ================================MODAL APRESENTAÇÃO===================================-->
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+    </div>
+</div>
 
-		 <div id="apresentacao" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll();ItemModal(0); "aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">Apresentação</h3>
-		  </div>
-		  <div class="modal-body" style="background: url('img/relatorio/apresentacao_d.jpg'); background-size:cover;">
-		  	<div id="carouselApresentacao" class="carousel" data-ride="carousel">
-		  		<ol class="carousel-indicators">
-    				<li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-    				<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
-    				<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
-  				</ol>
-  				<div class="carousel-inner" role="listbox">
+<!-- ================================MODAL APRESENTAÇÃO===================================-->
 
-				    <div class="item active">
-					<div id="numeroPagina">1/10</div>
-				    <h2 id="titleModal">Unimontes: Um bem de todos</h2>
-				    <h4 id="textoModal">
+<div id="apresentacao" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll();ItemModal(0); " aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Apresentação</h3>
+    </div>
+    <div class="modal-body" style="background: url('img/relatorio/apresentacao_d.jpg'); background-size:cover;">
+        <div id="carouselApresentacao" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <div id="numeroPagina">1/10</div>
+                    <h2 id="titleModal">Unimontes: Um bem de todos</h2>
+                    <h4 id="textoModal">
 				      	<p>A Universidade Estadual de Montes Claros se consolida, cada vez mais, fortalecendo as atividades de ensino, pesquisa, extensão e de prestação de serviços. Em 2015, a Unimontes deu continuidade ao seu processo de crescimento,  reforçando o compromisso com o   desenvolvimento  das regiões onde está inserida. Um dos destaques foi a realização do Concurso Público para Professor, feito histórico na instituição.</p>
 						<p>A Unimontes  resulta da transformação da Fundação Norte Mineira de Ensino Superior – FUNM –, criada em 24 de maio de 1962. É uma autarquia de regime especial do estado de Minas Gerais, na forma do parágrafo 3º do art. 82 do Ato das Disposições Constitucionais Transitórias da Constituição do Estado de Minas Gerais, promulgada em 21 de setembro 1989.</p>
 						<p>A instituição atua, prioritariamente, numa vasta região  que abrange, atualmente, uma área superior a 196.000 km², correspondente a 40% da área total do Estado, incluindo as regiões Norte e Noroeste de Minas e os Vales do Jequitinhonha, do Mucuri e do Urucuia. Alcança 342 municípios e atende potencialmente uma população que ultrapassa a dois milhões de habitantes.</p>
 						<p>A Universidade é referência na produção do conhecimento nas áreas de saúde, educação, ciências sociais aplicadas, ciências humanas e ciências exatas e tecnológicas, no campus-sede de Montes Claros, assim como nos campi de Almenara, Bocaiúva, Brasília de Minas, Espinosa, Janaúba, Januária, Paracatu/Unaí, Pirapora, Salinas e São Francisco, além do núcleos de Joaíma e Pompéu.</p>
 				      </h4>
-				    </div>
-				     
-				    <div class="item">
-				    	<div id="numeroPagina">2/10</div>
-				      <h2 id="titleModal">Comunidade Discente</h2>
-				      <h4 id="textoModal">
+                </div>
+
+                <div class="item">
+                    <div id="numeroPagina">2/10</div>
+                    <h2 id="titleModal">Comunidade Discente</h2>
+                    <h4 id="textoModal">
 				      	<p>A comunidade discente é formada, atualmente, por 11.452  alunos nos cursos  de graduação, técnico-profissionalizantes (presenciais e a distância), pós-graduação Lato sensu (presenciais e a distância) e Stricto sensu (próprios e interinstitucionais). A Unimontes atingiu a marca de 51.271 profissionais graduados em seus diversos cursos, de dezembro de 1966 a dezembro de 2015.</p>
 				      	<p>A educação a distância consiste em um dos destaques da atuação da universidade. As ações são incrementadas por intermédio do  programa da Universidade Aberta do Brasil (UAB),  desenvolvido em parceria com o Ministério da Educação.  No sistema a distância, foram ministrados em 2013 os cursos de graduação em Administração Pública, Ciências da Religião, Ciências Sociais, Educação Física, Geografia, História, Letras/Espanhol, Letras/Inglês, Letras/Português e Pedagogia, além dos cursos de pró-licenciatura em Artes Plásticas e Artes Teatro, com o total de 1.442 alunos matriculados</p>
 				      	<p>Nos cursos de graduação da Unimontes, são oferecidas anualmente 2.698 vagas. Em 2015, foram inscritos 43.697 candidatos nos processos seletivos tradicionais e no Programa de Avaliação Seriada para o Acesso ao Ensino Superior (PAES).  Os exames são coordenados pela Comissão Técnica de Concursos (Cotec), que também promove concursos para outros órgãos e instituições. Numa iniciativa pioneira no país, em 2015, em parceria com o Ministério Publico de Minas Gerais (MPMG e a Associação dos Municípios da Área Mineira da Sudene (Amams), a Cotec organizou e a aplicou as provas do Concurso Público Unificado das Prefeituras do Norte de Minas. </p>
 				      	<p>Ainda em 2015, a Universidade aderiu ao Sistema de Seleção Unificada (Sisu), do Ministério da Educação, sendo mantido o PAES.</p>
 				      </h4>
-				    </div>
+                </div>
 
-				    <div class="item">
-				    	<div id="numeroPagina">3/10</div>
-				    	<h2 id="titleModal">Reserva de Vagas</h2>
-				    	<h4 id="textoModal">
+                <div class="item">
+                    <div id="numeroPagina">3/10</div>
+                    <h2 id="titleModal">Reserva de Vagas</h2>
+                    <h4 id="textoModal">
 				      <p>A Unimontes adota a reserva de vagas, instituída pela Lei Estadual nº 15.259/2004, contemplando afrodescendentes (20%) e egressos de escolas públicas comprovadamente carentes (20%), além de portadores de deficiências e indígenas (5%). Os cursos regulares de graduação da universidade estão distribuídos em quatro centros, das áreas de ciências humanas, ciências biológicas e da saúde, ciências exatas e tecnológicas e sociais aplicadas.</p></h4>
 
-				    </div>
+                </div>
 
-			    <div class="item">
-			    	<div id="numeroPagina">4/10</div>
-			 		<h2 id="titleModal">Centros de Ensino</h2>
-			 		<h4 id="textoModal">
+                <div class="item">
+                    <div id="numeroPagina">4/10</div>
+                    <h2 id="titleModal">Centros de Ensino</h2>
+                    <h4 id="textoModal">
 			 			<p>No Centro de Ciências Biológicas e da Saúde – CCBS – são oferecidos os cursos de Ciências Biológicas – licenciatura e bacharelado -, Educação Física – bacharelado e licenciatura -, Enfermagem, Medicina e Odontologia.</p>
 			 			<p>No Centro de Ciências Exatas e Tecnológicas – CCET – são ministrados os cursos de Agronomia, Engenharia Civil (este com atividades iniciadas em 2012), Engenharia de Sistemas, Matemática, Química, Sistemas de Informação e Zootecnia.</p>
 			 			<p>No Centro de Ciências Humanas – CCH – são oferecidos os cursos de Artes Música, Artes Visuais, Artes Teatro, Filosofia, Geografia, História, Letras/Português, Letras/Inglês, Letras/Espanhol e Pedagogia.</p>
@@ -348,127 +324,127 @@
 			 			<p>Os cursos de graduação são oferecidos no campus sede, com exceção dos cursos de Agronomia e Zootecnia, que funcionam somente no Campus de Janaúba. Em Bocaiúva são ministrados os cursos de Física e Química. Os cursos regulares de graduação oferecidos nos demais campi são: Almenara: Letras/Português e Pedagogia; Brasília de Minas: Administração e Pedagogia; Espinosa: Pedagogia e Letras/Português; Janaúba: Agronomia, Pedagogia e Zootecnia; Januária: Educação Física –  licenciatura -, Letras/Português, Letras/Inglês e Pedagogia; Campus Noroeste: Paracatu (Matemática e Pedagogia) e Unaí (Letras/Português e Ciências Biológicas/Licenciatura; Pirapora: Geografia e Pedagogia;  Salinas: Ciências Contábeis; São Francisco: História e Matemática;  Núcleo de Joaíma (Matemática) e Núcleo de Pompéu (Tecnologia em Gestão Publica).</p>
 			 			<p>Ao final de 2015, a universidade alcançou o percentual de 57,88% do seu corpo docente com títulos de mestre ou doutor. De um total de 1.546 professores, 895 contam com titulação stricto sensu.</p>
 			 		</h4>
-			    </div>
-			    <div class="item">
-			    	<div id="numeroPagina">5/10</div>
-			    	<h2 id="titleModal">Pós-Graduação Stricto-Sensu</h2>
-			    	<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">5/10</div>
+                    <h2 id="titleModal">Pós-Graduação Stricto-Sensu</h2>
+                    <h4 id="textoModal">
 			    		<p>A  ampliação dos cursos de pós-graduação <em>Stricto sensu</em> é priorizada pela instituição, que já conta com 15 cursos de mestrado e três doutorados próprios, somando 483 alunos matriculados. São oferecidos os mestrados: Biotecnologia,  Cuidado Primário da Saúde, Letras-Estudos Linguísticos (ProfLetras), Modelagem Computacional e Sistemas, Sociedade, Ambiente e Território (parceria com a UFMG);  Mestrado Profissional em Desenvolvimento Econômico e Estratégia empresarial e Mestrado Profissional em Saúde Coletiva e Saúde da Família/Medicina Comunitária; oito mestrados acadêmicos, em Ciências Biológicas, Ciências da Saúde, Desenvolvimento Social, História, Letras (Estudos Literários), Produção Vegetal no Semiárido,  Zootecnia,  Geografia, e três doutorados, em Ciências da Saúde (Nota 5 pela CAPES), Produção Vegetal no Semiárido e Ciências Sociais.</p>
 			    		<p>A Universidade  conta com o Doutorado Interinstitucional em Geografia, viabilizado em parceria com a Pontifícia Universidade Católica de Minas (PUC Minas), Doutorados interinstitucionais (Dinter) em Ciências Sociais, em parceria com a Universidade do Estado do Rio de Janeiro (UERJ); Ciências da Religião, com a PUC/SP; um mestrado interinstitucional (Teoria Psicanalítica), em parceria com a Universidade Federal do Rio de Janeiro (UFRJ) e um mestrado interinstitucional (Artes Visuais), em parceria com a Universidade Federal de Goiás (UFG). Foram aprovados mais dois Doutorados Interinstitucionais em 2015: Dinter em Teoria Psicanalítica com a UFRJ e em Administração com a UNB.</p></h4>
-			    </div>
-			    <div class="item">
-			    	<div id="numeroPagina">6/10</div>
-			    	<h2 id="titleModal">Centro de Educação Profissional e Tecnológica</h2>
-			    	<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">6/10</div>
+                    <h2 id="titleModal">Centro de Educação Profissional e Tecnológica</h2>
+                    <h4 id="textoModal">
 			    		<p>Através do  Centro de Educação Profissional e Tecnológica (CEPT),  são oferecidos cursos de nível técnico-profissionalizante. Esses cursos  possibilitam aos seus alunos a oportunidade de inserção no mercado de trabalho de maneira mais preparada, tornando-os mais competitivos diante dos desafios do mercado. O CEPT é referência no oferecimento de cursos de nível médio na área de saúde, sendo responsável pela Escola Técnica de Saúde (ETS), vinculada à Rede de Escolas Técnicas do SUS. A unidade também é responsável pelos cursos de Tecnologia em Gestão Pública (Montes Claros e Pompéu) e em Agronegócio (Paracatu).</p>
 			    	</h4>
-			    </div>
-			    <div class="item">
-			    	<div id="numeroPagina">7/10</div>
-			    	<h2 id="titleModal">A Pesquisa</h2>
-			    	<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">7/10</div>
+                    <h2 id="titleModal">A Pesquisa</h2>
+                    <h4 id="textoModal">
 			    		<p>As ações da pesquisa são incrementadas, com estímulo permanente à iniciação científica e à integração com a graduação. São implementados projetos de pesquisa de interesse regional, buscando as soluções para os problemas e a melhoria da qualidade de vida. A instituição conta com 51 grupos de pesquisa e 192 linhas de pesquisa, totalizando 640 projetos de pesquisa aprovados. Durante o ano de 2015, foram aplicados R$ 3,734 milhões em projetos de investigação científica e tecnológica e R$ 4.954,110,00 na pós-graduação, totalizando investimentos da ordem de R$ 8.688.624,44 nos dois setores. Os investimentos são reforçados graças ao apoio de órgãos de fomento à pesquisa, especialmente a Fundação de Amparo à Pesquisa do Estado de Minas Gerais (Fapemig) e o Conselho Nacional do Desenvolvimento Científico e Tecnológico (CNPq).</p>
 			    		<p>Além disso, é incentivada a investigação científica e tecnológica por parte dos acadêmicos dos diversos cursos de graduação, por intermédio das bolsas de iniciação científica. Em 2015, a universidade totalizou 470 bolsas de iniciação científica, concedidas com recursos próprios e com o apoio dos órgãos de fomento.</p>
 			    	</h4>
-			    </div>
-			    <div class="item">
-			    	<div id="numeroPagina">8/10</div>
-			    	<h2 id="titleModal">Extensão Universitária</h2>
-			    	<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">8/10</div>
+                    <h2 id="titleModal">Extensão Universitária</h2>
+                    <h4 id="textoModal">
 			    		<p>A extensão universitária também é priorizada, objetivando a inserção na comunidade e a melhoria da qualidade de vida da população. Através da extensão, foram atendidas 607.711 pessoas em 121 projetos e programas, sendo realizados 282 cursos e 1.170 eventos. Os atendimentos foram feitos nas áreas de extensão comunitária, extensão cultural e apoio ao estudante.</p>
 			    		<p>São desenvolvidos programas, projetos, cursos e eventos tais como os projetos “Unimontes Solidária” (12.923 atendimentos em 2015) e “Saude Bucal” (5.595 atendimentos no ano). Outra iniciativa importante é o Programa Poupança Jovem, implementado em parceria com o Governo do Estado, que beneficia 29.203 estudantes de escolas públicas estaduais.</p>
 			    	</h4>
-			    </div>
-			    <div class="item">
-			    	<div id="numeroPagina">9/10</div>
-			    	<h2 id="titleModal">Prestação de Serviços de Saúde</h2>
-			    		<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">9/10</div>
+                    <h2 id="titleModal">Prestação de Serviços de Saúde</h2>
+                    <h4 id="textoModal">
 			    			<p>A prestação de serviços na área de saúde é ampliada por intermédio do Hospital Universitário Clemente de Faria – HUCF -, o único genuinamente público em Montes Claros e em vasta região geográfica do Estado, atendendo exclusivamente através do Sistema Único de Saúde (SUS). Contando com títulos de reconhecimento nacional e internacional, como Hospital Amigo da Criança, Maternidade Segura e o Prêmio Galba de Araújo, oferece atendimento de qualidade comprovada e realiza, anualmente, em média, mais de 450 mil procedimentos médico-hospitalares.</p>
 			    			<p>O Hospital Universitário possui 171 leitos e dispõe de outros 10 leitos do Serviço de Internação Domiciliar –HU em Casa-, pioneiro na região. Nas áreas de urgência e emergência conta com UTI Neonatal e Pediátrica, uma Unidade de Cuidados Intensivos para Adulto e Pronto Socorro 24 horas. Nas áreas de ensino e pesquisa dispõe de um Centro de Ensino Multiprofissional com toda infraestrutura necessária para atendimento aos alunos de mestrados e doutorado, além de oferecer Residências Médicas em Anestesiologia, Cirurgia, Geriatria, Ginecologia/Obstetrícia, Otorrinolaringologia, Pediatria, Psiquiatria e Saúde Coletiva e Multiprofissional (enfermeiro, médico e cirurgião-dentista).</p>
 			    			<p>A unidade é referência  no atendimento ambulatorial em pré-natal de alto risco,  portadores do vírus HIV, tuberculose e de outras doenças infecto-contagiosas, especialmente as hepatites. Atende vítimas de acidentes por animais peçonhentos, além de ser referência na prevenção da raiva humana.</p>
 			    			<p>Conta com Centro de Referência em Assistência à Saúde do Idoso Eny Faria de Oliveira - onde são atendidos os idosos frágeis, integrante do “Mais Vida”, um dos projetos estruturadores do Governo do Estado. A unidade dispõe de equipamentos modernos, com a assistência prestada por equipe multidisciplinar, incluindo profissionais das áreas de geriatria, enfermagem, odontologia, assistência social, fonoaudiologia, psicologia, fisioterapia e educação física.</p>
 			    			<p>O Centro Ambulatorial de Especialidades Tancredo Neves – CAETAN -integra o Hospital Universitário Clemente de Faria, prestando atendimento nas diversas especialidades médicas, além de pequenas cirurgias, agendadas pela Central de Regulação da Assistência do Estado e gerenciada pela Secretaria Municipal de Saúde. O centro ambulatorial está adequado também para atendimento especializado nas áreas de oftalmologia, otorrinolaringologia e traumo-ortopedia, além de contar com serviço ambulatorial de correção de deformidades craniomaxilofaciais -congênitas ou adquiridas.</p>
 			    		</h4>
-			    	</div>
-			    	<div class="item">
-			    		<div id="numeroPagina">10/10</div>
-			    		<h2 id="titleModal">Bibliotecas</h2>
-			    		<h4 id="textoModal">
+                </div>
+                <div class="item">
+                    <div id="numeroPagina">10/10</div>
+                    <h2 id="titleModal">Bibliotecas</h2>
+                    <h4 id="textoModal">
 			    			<p>A universidade  provê suas bibliotecas de recursos necessários à manutenção de seu acervo com a compra de livros, periódicos e com a informatização. Juntas,  as bibliotecas contam com 58.138 títulos e 144.299 exemplares, somando 13.785 usuários cadastrados.</p>
 			    			<p>Através das ações e números apresentados, a Unimontes busca a interlocução com a comunidade ao seu entorno. Desta forma, a Universidade melhora a qualidade de vida nas regiões onde está inserida, contribuindo com o desenvolvimento de Minas Gerais e do país.</p>
 			    		</h4>
-			    	</div>
-			</div>
+                </div>
+            </div>
 
 
-				<a class="carousel-control left" href="#carouselApresentacao">&lsaquo;</a> 
-  				<a class="carousel-control right" href="#carouselApresentacao" >&rsaquo;</a>
-		  	</div>
-		  	
-		   </div>
-		  <div class="modal-footer" id="navegacaoModal">
-		  	
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(0);">Unimontes: Um bem de todos </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(1);">Comunidade Discente </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(2);">Reserva de Vagas </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(3);">Centros de Ensino </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(4);">Pós-Graduação Stricto-Sensu </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(5);">CEPT </a>|	
-			  	<br>  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(6);">A Pesquisa </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(7);">Extensão Universitária </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(8);">Prestação de Serviços de Saúde </a>|	  	  
-			  	<a href="#caroucelApresentacao" onclick="ItemModal(9);">Bibliotecas </a>|
-		  	  	  
-		    <!--button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button-->
-		    </div>
-		</div>
+            <a class="carousel-control left" href="#carouselApresentacao">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselApresentacao">&rsaquo;</a>
+        </div>
+
+    </div>
+    <div class="modal-footer" id="navegacaoModal">
+
+        <a href="#caroucelApresentacao" onclick="ItemModal(0);">Unimontes: Um bem de todos </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(1);">Comunidade Discente </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(2);">Reserva de Vagas </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(3);">Centros de Ensino </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(4);">Pós-Graduação Stricto-Sensu </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(5);">CEPT </a>|
+        <br>
+        <a href="#caroucelApresentacao" onclick="ItemModal(6);">A Pesquisa </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(7);">Extensão Universitária </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(8);">Prestação de Serviços de Saúde </a>|
+        <a href="#caroucelApresentacao" onclick="ItemModal(9);">Bibliotecas </a>|
+
+        <!--button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button-->
+    </div>
+</div>
 
 
 
-		<!--===============================MODAL A UNIMONTES ===================================== -->
+<!--===============================MODAL A UNIMONTES ===================================== -->
 
-		<div id="aunimontes" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">A Unimontes</h3>
-		  </div>
-		  <div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
-		    <p>Um corpo fino …</p>
-		  </div>
-		  <div class="modal-footer">
-		    
-		  </div>
-		</div>
+<div id="aunimontes" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">A Unimontes</h3>
+    </div>
+    <div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
+        <p>Um corpo fino …</p>
+    </div>
+    <div class="modal-footer">
 
-		<!--=============================MODAL HINO============================================== -->
+    </div>
+</div>
 
-	    <div id="hino" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">Hino da Unimontes</h3>
-		  </div>
-		  <div class="modal-body" style="background: url('img/relatorio/hino_d.jpg'); background-size:cover;">
-		    <p>Um corpo fino …</p>
-		  </div>
-		  <div class="modal-footer">
-		    
-		  </div>
-		</div>
+<!--=============================MODAL HINO============================================== -->
 
-		<!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
+<div id="hino" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Hino da Unimontes</h3>
+    </div>
+    <div class="modal-body" style="background: url('img/relatorio/hino_d.jpg'); background-size:cover;">
+        <p>Um corpo fino …</p>
+    </div>
+    <div class="modal-footer">
 
-		<div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">Unimontes em números</h3>
-		  </div>
-		  <div class="modal-body" style="background: url('img/relatorio/unimontes_numeros_d.jpg'); background-size:cover;">
-		    <p>Um corpo fino …</p>
-		  </div>
-		  <div class="modal-footer">
-		    
-		  </div>
-		</div>
+    </div>
+</div>
+
+<!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
+
+<div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Unimontes em números</h3>
+    </div>
+    <div class="modal-body" style="background: url('img/relatorio/unimontes_numeros_d.jpg'); background-size:cover;">
+        <p>Um corpo fino …</p>
+    </div>
+    <div class="modal-footer">
+
+    </div>
+</div>
 
 </body>
