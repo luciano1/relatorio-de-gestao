@@ -619,6 +619,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 12);");
             $('.go-to').attr("onclick", "handle(handle, 24);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "Ensino", "100", "rgba(238, 212, 57, 0.49)", "#000", "ensino_d", "rgb(238, 212, 57)");
@@ -642,6 +644,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 18);");
             $('.go-to').attr("onclick", "handle(handle, 30);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "cead", "120", "rgba(98, 144, 224, 0.29)", "#fff", "cead_d", "rgb(98, 144, 225)");
@@ -663,6 +667,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 24);");
             $('.go-to').attr("onclick", "handle(handle, 36);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "pos", "100", "rgba(64, 182, 149, 0.09)", "#000", "pos_d", "#40B695");
@@ -685,6 +691,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 30);");
             $('.go-to').attr("onclick", "handle(handle, 42);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "extensao", "200", "rgba(217, 153, 28, 0.19)", "#000", "extensao_d", "#F0D339");
@@ -707,6 +715,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 36);");
             $('.go-to').attr("onclick", "handle(handle, 48);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("puff", "pesquisa", "200", "rgba(0, 136, 204, 0.11)", "#fff", "pesquisa_d", "#9DB2C5");
@@ -729,6 +739,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 42);");
             $('.go-to').attr("onclick", "handle(handle, 54);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, cordoby)
             EfeitoMetade("blind", "biblioteca", "150", "rgba(236, 124, 38, 0.15)", "#000", "biblioteca_d", "#E5C51A");
@@ -750,6 +762,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 48);");
             $('.go-to').attr("onclick", "handle(handle, 60);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "processos_seletivos", "150", "rgba(33, 37, 163, 0.06)", "#fff", "processos_seletivos_d", "#5389DC");
@@ -771,6 +785,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 54);");
             $('.go-to').attr("onclick", "handle(handle, 66);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "hospital", "80", "rgba(51, 103, 46, 0.12)", "#000", "hospital_d", "#A1E4AF");
@@ -790,6 +806,8 @@ function handle(delta, ver) {
             link = "#cepedor";
             $('.go-top').attr("onclick", "handle(handle, 60);");
             $('.go-to').attr("onclick", "handle(handle, 72);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             handledot(11, titulo);
 
@@ -813,6 +831,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 66);");
             $('.go-to').attr("onclick", "handle(handle, 78);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("puff", "editora", "160", "rgba(122, 211, 255, 0.36)", "#000", "editora_d", "#5EC5FF");
@@ -834,6 +854,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 74)");
             $('.go-to').attr("onclick", "handle(handle, 84)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "ipc", "100", "rgba(65, 143, 181, 0.22)", "#000", "ipc_d", "#ABB0CD");
@@ -855,6 +877,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 78);");
             $('.go-to').attr("onclick", "handle(handle, 90);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("puff", "saj", "200", "rgba(75, 31, 67, 0.09)", "#000", "saj_d", "#C8A0A0");
@@ -876,6 +900,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 84);");
             $('.go-to').attr("onclick", "handle(handle, 96);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "intercambio", "100", "rgba(72, 94, 131, 0.13)", "#fff", "intercambio_d", "#AFBCC2");
@@ -897,6 +923,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 90);");
             $('.go-to').attr("onclick", "handle(handle, 102);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "museu", "120", "rgba(85, 159, 254, 0.17)", "#000", "museu_d", "#559FFE");
@@ -918,6 +946,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 96);");
             $('.go-to').attr("onclick", "handle(handle, 108);");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("puff", "ascom", "120", "rgba(83, 85, 161, 0.23)", "#000", "ascom_d", "#9870A2");
@@ -939,6 +969,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 102)");
             $('.go-to').attr("onclick", "handle(handle, 114)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "midias_sociais", "200", "rgba(30, 136, 224, 0.16)", "#000", "midias_sociais_d", "#7ED5FF");
@@ -960,6 +992,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 108)");
             $('.go-to').attr("onclick", "handle(handle, 120)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("size", "publicidade", "200", "rgba(245, 152, 15, 0.26)", "#000", "publicidade_d", "#F2D034");
@@ -977,6 +1011,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 114)");
             $('.go-to').attr("onclick", "handle(handle, 126)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             handledot(20, titulo);
 
@@ -1001,6 +1037,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 120)");
             $('.go-to').attr("onclick", "handle(handle, 132)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("puff", "imprensa", "200", "rgba(223, 127, 77, 0.18)", "#000", "imprensa_d", "#D8A644");
@@ -1022,6 +1060,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 126)");
             $('.go-to').attr("onclick", "handle(handle, 138)");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
             EfeitoMetade("blind", "infraestrutura", "200", "rgba(144, 186, 237, 0.14)", "#000", "infraestrutura_d", "#ADFEFF");
@@ -1043,6 +1083,8 @@ function handle(delta, ver) {
 
             $('.go-top').attr("onclick", "handle(handle, 132)");
             $('.go-to').attr("onclick", "location.reload()");
+            $('.voltarTopo').css("visibility", "visible");
+            $('.time-line').css("visibility", "visible");
 
 
             //EfeitoMetade(efeito,img,margin,cor,imgbackground, corbody)
