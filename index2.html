@@ -59,9 +59,9 @@
 		}	
 		
 		//Redimensionamento das áreas mapeadas
-		mapeamento("#Apresentacao_map", 992,333,31);
-		mapeamento("#Aunimontes_map", 1022,210,31);
-		mapeamento("#Hino_map", 939,288,17);
+		//mapeamento("#Apresentacao_map", 992,333,31);
+		//mapeamento("#Aunimontes_map", 1022,210,31);
+		//mapeamento("#Hino_map", 939,288,17);
 		//mapeamento("#Uni_em_num_map", 833,452,16);
 		//mapeamento("#Expediente_map", 922,371,19);
 		//mapeamento("#Extensao_map", 406,216,31);
@@ -129,8 +129,14 @@
 						<area shape="circle" id="Radio_map" coords="413,386,16" href="index.html?abre=radio"/-->
 
 						<!-- NOVO MAPEAMENTO DO NOVO MOSAICO-->
-						
-
+						<area shape="poly" id="Apresentacao_map" coords="266,298,286,272,343,273,321,297,339,319,284,321" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
+						<area shape="rect" id="Apresentacao_map" coords="54,292,228,307" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
+						<area shape="poly" id="Aunimontes_map" coords="267,364,284,340,341,341,322,364,340,387,281,387" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
+						<area shape="rect" id="Aunimontes_map" coords="64,363,228,374" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
+						<area shape="poly" id="Resultados_map" coords="265,434,285,408,340,410,321,432,343,457,283,457" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
+						<area shape="rect" id="Resultados_map" coords="32,437,230,446" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
+						<area shape="poly" id="Hino_map" coords="933,273,986,272,1004,296,987,320,932,319,949,296" data-toggle="modal" onclick="handle(event,0,2);" href="#hino" />
+ 
 
 
 
@@ -457,7 +463,7 @@
 
                 <div class="item active">
                     <div id="numeroPagina">1/10</div>
-                    <h2 id="titleModal"><img src="img/conteudo/apresentacao/cab1.jpg"></h2>
+                    <h2 id="titleModal">A Unimontes</h2>
                     <h4 id="textoModal">
                     	<p></p>
 				      </h4>
@@ -472,7 +478,7 @@
     </div>
     <div class="modal-footer" id="navegacaoModal">
 
-        <!--button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button-->
+        <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
     </div>
 </div>
 
@@ -481,13 +487,35 @@
 <div id="hino" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Hino da Unimontes</h3>
+        <h3 id="myModalLabel">Hino</h3>
     </div>
-    <div class="modal-body" style="background: url('img/relatorio/hino_d.jpg'); background-size:cover;">
-        <p>Um corpo fino …</p>
-    </div>
-    <div class="modal-footer">
+<div class="modal-body" style="background: url('img/relatorio/apresentacao_d.jpg'); background-size:cover;">
+        <div id="carouselApresentacao" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
 
+                <div class="item active">
+                    <div id="numeroPagina">1/10</div>
+                    <h2 id="titleModal">Hino</h2>
+                    <h4 id="textoModal">
+                    	<p></p>
+				      </h4>
+                </div>
+
+                
+
+            <a class="carousel-control left" href="#carouselApresentacao">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselApresentacao">&rsaquo;</a>
+        </div>
+
+    </div>
+    <div class="modal-footer" id="navegacaoModal">
+
+        <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
     </div>
 </div>
 
