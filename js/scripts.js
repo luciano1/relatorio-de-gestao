@@ -1053,7 +1053,7 @@ function handle(delta, ver) {
         case 132:
 
             paragrafo = "Novo parágrafo";
-            titulo = "Infraestrutura (obras, TI)";
+            titulo = "Infraestrutura";
             link = "#infraestrutura";
 
             handledot(22, titulo);
