@@ -64,7 +64,7 @@
 		mapeamento("#Apresentacao_map", 54,267,340,312);
 		mapeamento("#Aunimontes_map", 55,334,341,377);
 		mapeamento("#Hino_map", 932,267,1110,313);
-		mapeamento("#Uni_em_num_map", 933,334,1334,379);
+		//mapeamento("#Uni_em_num_map", 933,334,1334,379);
 		mapeamento("#Expediente_map", 936,399,1175,448);
 		mapeamento("#Resultados_map", 31,401,338,488);
 
@@ -609,19 +609,40 @@
         <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
     </div>
 </div>
+</div>
 <!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
 
 <div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Unimontes em números</h3>
+        <h3 id="myModalLabel">Unimontes em Números</h3>
     </div>
-    <div class="modal-body" style="background: url('img/relatorio/unimontes_numeros_d.jpg'); background-size:cover;">
-        <p>Um corpo fino …</p>
-    </div>
-    <div class="modal-footer">
+<div class="modal-body" style="background: url('img/relatorio/unimontes_numeros_d.jpg'); background-size:cover;">
+        <div id="carouselNumeros" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
 
+                <div class="item active">
+                    <div id="numeroPagina">1/10</div>
+                    <h2 id="titleModal">A Unimontes</h2>
+                    <h4 id="textoModal">
+                    	<p></p>
+				      </h4>
+                </div>
+
+                
+
+            <a class="carousel-control left" href="#carouselNumeros">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselNumeros">&rsaquo;</a>
+        </div>
+
+    </div>
+    <div class="modal-footer" id="navegacaoModal">
+
+        <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
     </div>
 </div>
-
-</body>
