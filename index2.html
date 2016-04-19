@@ -41,12 +41,14 @@
             var largura_default = 1366;
             var altura_default = 667;
             /* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
-            var largura_dispositivo = $("#imgteste").width();
-            var altura_dispositivo = $("#imgteste").height();
+            var largura_dispositivo = $(window).width();
+            var altura_dispositivo = $(window).height();
             /* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
             var razao_largura = (largura_dispositivo / largura_default);
             var razao_altura = (altura_dispositivo / altura_default);
 
+           $(".paginaInicial > img").css('height',$(window).height()); 
+            $(".paginaInicial > img").css('width',$(window).width());
             /*
             	A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
             	das coordenadas originais pelo numero float da razao das alturas dos dispositivos
@@ -54,38 +56,19 @@
 
             */
         // id = id da area / x = largura / y = altura / r = raio   
-		function mapeamento(id,x,y,r){				
-			$(id).attr('coords',Math.trunc(x*razao_largura) +','+ Math.trunc(y*razao_altura)+','+ Math.trunc(r*razao_altura));
+		function mapeamento(id,x1,y1,x2,y2){				
+			$(id).attr('coords',Math.trunc(x1*razao_largura) +','+ Math.trunc(y1*razao_altura) +','+ Math.trunc(x2*razao_largura) +','+ Math.trunc(y2*razao_altura));
 		}	
 		
 		//Redimensionamento das áreas mapeadas
-		//mapeamento("#Apresentacao_map", 992,333,31);
-		//mapeamento("#Aunimontes_map", 1022,210,31);
-		//mapeamento("#Hino_map", 939,288,17);
-		//mapeamento("#Uni_em_num_map", 833,452,16);
-		//mapeamento("#Expediente_map", 922,371,19);
-		//mapeamento("#Extensao_map", 406,216,31);
-		//mapeamento("#Pro_sel_map", 993,436,32);
-		//mapeamento("#Ati_inst_map", 974,509,32);
-		//mapeamento("Ensino_map", 757,460,31);
-		//mapeamento("#Intercambio_map", 667,510,16);
-		//mapeamento("#Pos_map", 656,414,31);
-		//mapeamento("#Editora_map", 597,420,16);
-		//mapeamento("#Cead_map", 466,460,31);
-		//mapeamento("#Infraestrutura_map", 346,486,31);
-		//mapeamento("#Pesquisa_map", 310,337,31);
-		//mapeamento("#Bibliotecas_map", 389,280,16);
-		//mapeamento("#Resultados_map", 433,160,16);
-		//mapeamento("#Museu_map", 513,202,16);
-		//mapeamento("#Financas_map", 514,118,31);
-		//mapeamento("#Midias_map", 593,156,16;
-		//mapeamento("#Ascom_map", 669,168,31);
-		//mapeamento("#Hucf_map", 737,146,31);
-		//mapeamento("#Ipc_map", 789,180,16);
-		//mapeamento("#Imprensa_map", 826,180,16);
-		//mapeamento("#Saj_map", 840,226,16);
-		//mapeamento("#cpdor_map", 881,235,16);
-		//mapeamento("#Radio_map", 413,386,16);
+		mapeamento("#Apresentacao_map", 54,267,340,312);
+		mapeamento("#Aunimontes_map", 55,334,341,377);
+		mapeamento("#Hino_map", 932,267,1110,313);
+		mapeamento("#Uni_em_num_map", 933,334,1334,379);
+		mapeamento("#Expediente_map", 936,399,1175,448);
+		mapeamento("#Resultados_map", 31,401,338,488);
+
+
         
         });
     </script>
@@ -129,18 +112,17 @@
 						<area shape="circle" id="Radio_map" coords="413,386,16" href="index.html?abre=radio"/-->
 
 						<!-- NOVO MAPEAMENTO DO NOVO MOSAICO-->
-						<area shape="poly" id="Apresentacao_map" coords="266,298,286,272,343,273,321,297,339,319,284,321" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
-						<area shape="rect" id="Apresentacao_map" coords="54,292,228,307" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
-						<area shape="poly" id="Aunimontes_map" coords="267,364,284,340,341,341,322,364,340,387,281,387" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
-						<area shape="rect" id="Aunimontes_map" coords="64,363,228,374" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
-						<area shape="poly" id="Resultados_map" coords="265,434,285,408,340,410,321,432,343,457,283,457" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
-						<area shape="rect" id="Resultados_map" coords="32,437,230,446" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
-						<area shape="poly" id="Hino_map" coords="933,273,986,272,1004,296,987,320,932,319,949,296" role="button"  data-toggle="modal"  href="#hino"/>
-						<area shape="rect" id="Hino_map" coords="1036,293,1097,308" data-toggle="modal" onclick="handle(event,0,2);" href="#hino" />
-						<area shape="poly" id="Uni_em_num_map" coords="934,343,987,342,1004,367,986,388,934,389,948,366" role="button"  data-toggle="modal"  href="#numeros"/>
-						<area shape="rect" id="Uni_em_num_map" coords="1035,357,1331,377" data-toggle="modal" onclick="handle(event,0,2);" href="#numeros" />
-						<area shape="poly" id="Expediente_map" coords="933,411,987,409,1005,432,985,456,933,456,947,432" role="button"  data-toggle="modal"  href="#expediente"/>
-						<area shape="rect" id="Expediente_map" coords="1034,431,1178,443" data-toggle="modal" onclick="handle(event,0,2);" href="#expediente" />
+						
+						<area shape="rect" id="Apresentacao_map" coords="54,267,340,312" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
+						
+						<area shape="rect" id="Aunimontes_map" coords="55,334,341,377" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
+						
+						<area shape="rect" id="Resultados_map" coords="31,401,338,448" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
+				
+						<area shape="rect"  href="#hino" id="Hino_map" coords="932,267,1110,313" data-toggle="modal" />
+		
+						<area shape="rect" id="Uni_em_num_map" coords="933,334,1334,379"  data-toggle="modal" onclick="handle(event,0,2);" href="#numeros" />
+						<area shape="rect" id="Expediente_map" coords="936,399,1175,448" data-toggle="modal" onclick="handle(event,0,2);" href="#expediente" />
  
 
 
@@ -492,10 +474,10 @@
 <div id="hino" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Hino</h3>
+        <h3 id="myModalLabel">A Unimontes</h3>
     </div>
 <div class="modal-body" style="background: url('img/relatorio/apresentacao_d.jpg'); background-size:cover;">
-        <div id="carouselApresentacao" class="carousel" data-ride="carousel">
+        <div id="carouselHino" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
@@ -505,7 +487,7 @@
 
                 <div class="item active">
                     <div id="numeroPagina">1/10</div>
-                    <h2 id="titleModal">Hino</h2>
+                    <h2 id="titleModal">A Unimontes</h2>
                     <h4 id="textoModal">
                     	<p></p>
 				      </h4>
@@ -513,8 +495,8 @@
 
                 
 
-            <a class="carousel-control left" href="#carouselApresentacao">&lsaquo;</a>
-            <a class="carousel-control right" href="#carouselApresentacao">&rsaquo;</a>
+            <a class="carousel-control left" href="#carouselHino">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselHino">&rsaquo;</a>
         </div>
 
     </div>
@@ -523,7 +505,6 @@
         <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
     </div>
 </div>
-
 <!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
 
 <div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
