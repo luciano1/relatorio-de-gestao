@@ -391,7 +391,7 @@ function MudaConteudo(titulo, paragrafo, link) {
     //ESSE SCRIPT MUDA O CONTEUDO DO TITULO E PARÁGRAFO
     $('.h1-desk, .p').fadeOut("slow", function() {
             $('.h1-desk').html(titulo);
-            //$('.p').html(paragrafo);
+            $('.p').html(paragrafo);
             $('.h1-desk, .p').fadeIn("slow");
         })
         // MUDA O LINK DOS BOTOES
@@ -583,7 +583,7 @@ function handle(delta, ver) {
 
         case 12:
 
-            paragrafo = "Testando novo parágrafo";
+            paragrafo = "Durante o ano de 2015, a Universidade Estadual de Montes Claros (Unimontes) realizou uma série de atividades voltadas para o crescimento da Instituição, reforçando as parcerias com outros entes públicos e entidades da sociedade civil. Essas ações possibilitaram a captação de recursos e o incremento das ações nas áreas do ensino, pesquisa, extensão e da prestação de serviços. ";
             titulo = "Atividades Institucionais";
             link = "#atividades";
 
@@ -611,7 +611,7 @@ function handle(delta, ver) {
 
         case 18:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "Além dos cursos de graduação e pós-graduação (Lato Sensu e Stricto Sensu), a Unimontes promove a qualificação de pessoal nas regiões onde está inserida, possibilitando a melhoria da qualidade de vida. Essa importante ação é viabilizada por intermédio do Centro de Educação Profissional e Tecnológica (CEPT), responsável pela manutenção da Escola Técnica de Saúde (ETS). Em 2015, foram ofertados diversos cursos técnicos a distância. A Universidade também oferece cursos de Tecnólogos.  ";
             titulo = "Ensino superior, profissional e tecnológico";
             link = "#ensino";
 
@@ -636,7 +636,7 @@ function handle(delta, ver) {
 
         case 24:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A educação a distância constitui um dos pilares da atuação da Unimontes, perfeitamente sintonizada com as mudanças e inovações tecnológicas. Os cursos desse modelo são ministrados por intermédio do Centro de Educação a Distância (CEAD), que conta com diversos pólos nas regiões onde a Universidade está inserida.  ";
             titulo = "Educação à Distância";
             link = "#cead";
 
@@ -659,7 +659,7 @@ function handle(delta, ver) {
 
         case 30:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O incremento da pós-graduação Stricto sensu é prioridade na Universidade Estadual de Montes Claros, que tem conseguido notável avanço no setor nos últimos anos. Para isso, a Unimontes reforça a parceria com outras universidades e com a Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (Capes/MEC). A perspectiva é aumentar cada vez mais a oferta de cursos de mestrado e doutorado, o que repercute diretamente na capacitação docente e na melhoria da qualidade do ensino, contribuindo também para o aumento da pesquisa e da inovação tecnológica.  ";
             titulo = "Programas de Pós-Graduação";
             link = "#pos";
 
@@ -683,7 +683,7 @@ function handle(delta, ver) {
 
         case 36:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A Unimontes busca de forma permanente a inserção na comunidade ao seu redor. Essa missão é cumprida por meio dos projetos e programas desenvolvidos junto à população. As ações implementadas buscam cada vez mais a participação dos professores e alunos, contribuindo diretamente com a melhoria da qualidade de vida da população. ";
             titulo = "Extensão";
             link = "#extensao";
 
@@ -707,7 +707,7 @@ function handle(delta, ver) {
 
         case 42:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A Unimontes busca de forma permanente a inserção na comunidade ao seu redor. Essa missão é cumprida por meio dos projetos e programas desenvolvidos junto à população. As ações implementadas buscam cada vez mais a participação dos professores e alunos, contribuindo diretamente com a melhoria da qualidade de vida da população. ";
             titulo = "Pesquisa";
             link = "#pesquisa";
 
@@ -731,7 +731,7 @@ function handle(delta, ver) {
 
         case 48:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "As bibliotecas representam um dos principais espaços da Universidade, por possibilitarem o acesso ao conhecimento. A Unimontes conta com um sistema de bibliotecas, que recebe atenção especial por parte da gestão superior da Universidade. A comunidade acadêmica dispõe da estrutura da Biblioteca Central Professor Antônio Jorge no campus sede universitário e das Bibliotecas Setoriais nos demais campi. O acervo bibliográfico é constantemente atualizado e ampliado. ";
             titulo = "Sistema de Bibliotecas";
             link = "#biblioteca";
 
@@ -754,7 +754,7 @@ function handle(delta, ver) {
 
         case 54:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A Universidade Estadual de Montes Claros realiza processos seletivos para o acesso aos seus cursos de graduação. Também promove concursos públicos para provimento dos cargos da própria universidade, de prefeituras, câmaras municipais e de outras instituições. O trabalho é de responsabilidade da Comissão Técnica de Concursos (Cotec).";
             titulo = "Processos Seletivos";
             link = "#processosseletivos";
 
@@ -777,7 +777,7 @@ function handle(delta, ver) {
 
         case 60:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O Hospital Universitário Clemente de Faria (HUCF), vinculado a Universidade Estadual de Montes Claros (Unimontes), se destaca pela promoção da saúde e pela permanente busca do aprimoramento de seus procedimentos, sem perder de vista o cuidado com as pessoas e o atendimento humanizado. Os constantes investimentos em tecnologia, infraestrutura e crescimento profissional e de todos os colaboradores que nele atuam reafirmam seu compromisso como instituição de saúde moderna e avançada, voltada para o diagnóstico, o tratamento e a prevenção. ";
             titulo = "Hospital Universitário Clemente de Faria";
             link = "#hospital";
 
@@ -801,7 +801,7 @@ function handle(delta, ver) {
 
         case 66:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A Conservação da memória e da história está entre uma das atribuições da Unimontes. Essa missão é exercida por meio do Centro de Pesquisa e Documentação Regional (Cepedor), que reúne e guarda nos seus arquivos documentos, fotos e outros materiais relativos à história da Universidade, da cidade e da região. O setor é aberto à visitação pública.";
             titulo = "Cepedor";
             link = "#cepedor";
             $('.go-top').attr("onclick", "handle(handle, 60);");
@@ -823,7 +823,7 @@ function handle(delta, ver) {
 
         case 72:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A editora da Universidade tem como missão a valorização da cultura e a partir da edição de obras de professores e pesquisadores ligados à instituição e escritores regionais. Os trabalhos são submetidos a um conselho editorial que valoriza a qualidade e a difusão do conhecimento.";
             titulo = "Editora Unimontes";
             link = "#editora";
 
@@ -846,7 +846,7 @@ function handle(delta, ver) {
 
         case 78:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "";
             titulo = "Índice de Preços ao Consumidor";
             link = "#ipc";
 
@@ -869,7 +869,7 @@ function handle(delta, ver) {
 
         case 84:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O Serviço de Assistência Judiciária Itinerante (SAJ Itinerante) facilita o acesso à justiça, orientando a população de baixa renda sobre os seus direitos. O trabalho é implementado a partir da interação entre os professores e acadêmicos do curso de Direito. Em 2015, o SAJ Itinerante realizou atendimento gratuito em escolas, praças, associações de bairros, distritos e povoados de Montes Claros.";
             titulo = "SAJ Itinerante";
             link = "#saj";
 
@@ -892,7 +892,7 @@ function handle(delta, ver) {
 
         case 90:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O Núcleo de Intercâmbio e Cooperação Institucional (NIC) promove a excelência na cooperação institucional, a internacionalização e a mobilidade acadêmica da Universidade. Além de abrir novas possibilidades de intercâmbio para professores, pesquisadores e acadêmicos em instituições estrangeiras, a universidade incrementa as atividades de ensino, pesquisa, extensão e pós-graduação, por meio da internacionalização.";
             titulo = "Intercâmbio e Cooperação Interinstitucional";
             link = "#intercambio";
 
@@ -915,7 +915,7 @@ function handle(delta, ver) {
 
         case 96:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O Museu Regional do Norte de Minas - MRNM prioriza atividades voltadas para a pesquisa, a identificação,  a conservação e a  divulgação de registros da cultura material e imaterial do Norte de Minas Gerais. A democratização e o acesso aos bens culturais são pilares do museu. Por meio das exposições e ações, prioriza o reconhecimento de sua identidade e a valorização do patrimônio cultural de sua localidade, tornando-se espaço para o diálogo, reflexão histórica e da inclusão social.";
             titulo = "Museu Histórico Regional";
             link = "#museu";
 
@@ -938,7 +938,7 @@ function handle(delta, ver) {
 
         case 102:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "Focada na transparência de suas ações, a Unimontes mantém um canal aberto com a comunidade acadêmica, com as demais instituições e com a população em geral. Na divulgação do seu trabalho, a Universidade utiliza-se das mídias sociais (Facebook, Twitter, Instagram), dispondo de portal com informações atualizadas sobre todas as ações nas áreas de ensino, pesquisa, extensão e prestação de serviços. O objetivo é o estreitamento e a melhoria do relacionamento com todos os seguimentos da sociedade.  ";
             titulo = "Comunicação Institucional";
             link = "#ascom";
 
@@ -961,7 +961,7 @@ function handle(delta, ver) {
 
         case 108:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A interação é a máxima na proposta de relacionamento com o cidadão no ambiente digital. Alinhada à missão e aos objetivos institucionais, a Unimontes mantém-se aberta ao diálogo permanente com a comunidade, focada em posicionamento estratégico e distribuição de conteúdo nas mídias sociais (Facebook, Twitter, Instagram, YouTube e Flickr). Tendo o portal institucional como agregador de conteúdo central, cada mídia tem papel definido na estratégia da Universidade. A apresentação de boas práticas e conteúdo relevante e útil, seguindo a máxima da prestação de serviços, potencializa a comunicação com o cidadão.";
             titulo = "Mídias Sociais";
             link = "#midiassociais";
 
@@ -1005,7 +1005,7 @@ function handle(delta, ver) {
 
         case 120:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "Vinculada à Unimontes, a Rádio FM 101,1 promove as atividades de ensino, extensão, pesquisa e ações educacionais e culturais da Instituição. A Rádio Unimontes mantém convênios com as principais agências de notícias do país e com a Associação Mineira de Rádio e Televisão – AMIRT. A emissora universitária fundamenta sua programação na boa música popular brasileira e mantém amplo noticiário jornalístico.";
             titulo = "Rádio Unimontes";
             link = "#radio";
 
@@ -1029,7 +1029,7 @@ function handle(delta, ver) {
 
         case 126:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "A Imprensa universitária imprime a qualidade e a presteza no atendimento, oferecendo serviços gráficos necessários ao desenvolvimento das atividades de ensino, pesquisa e extensão. Atende demandas de toda a Universidade e das unidades administrativas. ";
             titulo = "Imprensa Universitária";
             link = "#imprensa";
 
@@ -1075,7 +1075,7 @@ function handle(delta, ver) {
 
         case 138:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "O setor está vinculado à Pró-reitoria de Gestão e Finanças da Universidade, responsável pela gestão e aplicação dos recursos e execução de convênios. O setor também zela pelo patrimônio físico da instituição, garantindo suporte às atividades de ensino, pesquisa e extensão e prestação de serviços. ";
             titulo = "Orçamento e Finanças";
             link = "#orcamentoefinancas";
 
@@ -1180,6 +1180,7 @@ function enableScroll() {
 }
 
 $(document).ready(function() {
+    $('.carousel').carousel('pause');
     $('.right').click(function() {
         $('.carousel').carousel('next');
     })
@@ -1187,7 +1188,7 @@ $(document).ready(function() {
         $('.carousel').carousel('prev');
 
     })
-    $('.carousel').carousel('pause');
+  
 
 
 
