@@ -63,11 +63,11 @@
                     <li onClick="handle(event , 96)"><i class="fa fa-circle " id="list15"><div class="list_effect15">Museu</div></i></li>
                     <li onClick="handle(event , 102)"><i class="fa fa-circle " id="list16"><div class="list_effect16">Comunicação Institucional</div></i></li>
                     <li onClick="handle(event , 108)"><i class="fa fa-circle " id="list17"><div class="list_effect17">Mídias Sociais</div></i></li>
-                    <li onClick="handle(event , 114)"><i class="fa fa-circle " id="list18"><div class="list_effect18">Publicidade</div></i></li>
-                    <li onClick="handle(event , 120)"><i class="fa fa-circle " id="list19"><div class="list_effect19">Rádio </div></i></li>
-                    <li onClick="handle(event , 126)"><i class="fa fa-circle " id="list20"><div class="list_effect20">Imprensa </div></i></li>
-                    <li onClick="handle(event , 132)"><i class="fa fa-circle " id="list21"><div class="list_effect21">Infraestrutura</div></i></li>
-                    <li onClick="handle(event , 138)"><i class="fa fa-circle " id="list22"><div class="list_effect22">Orçamento e Finanças </div></i></li>
+                    <!--li onClick="handle(event , 114)"><i class="fa fa-circle " id="list18"><div class="list_effect18">Publicidade</div></i></li-->
+                    <li onClick="handle(event , 114)"><i class="fa fa-circle " id="list19"><div class="list_effect19">Rádio </div></i></li>
+                    <li onClick="handle(event , 120)"><i class="fa fa-circle " id="list20"><div class="list_effect20">Imprensa </div></i></li>
+                    <li onClick="handle(event , 126)"><i class="fa fa-circle " id="list21"><div class="list_effect21">Infraestrutura</div></i></li>
+                    <li onClick="handle(event , 132)"><i class="fa fa-circle " id="list22"><div class="list_effect22">Orçamento e Finanças </div></i></li>
                 </ul>
             </div>
 
@@ -7423,7 +7423,7 @@
                         <h2 id="titleModal" style="text-align: center;">Apresentação</h2>
                         <h4 id="textoModal">
 	  								<br/><br/>
-	  								<img src="img/conteudo/museu/museu1.png" style="width: 600px;">
+	  								<img src="img/conteudo/museu/museu1.png" style="width: 500px; hight:400px;" align="center">
 	  								<br/><br/>
 	  								<p>O Museu Regional do Norte de Minas -MRNM tem como prioridade atividades voltadas para a pesquisa, a identificação,  a conservação e a  divulgação de registros da cultura material e imaterial do Norte de Minas Gerais. A educação patrimonial é, deste modo, uma de suas principais funções que, por meio de ações voltadas ao público, divulga seus acervos com vistas à ampliação e à qualificação do acesso à cultura e ao patrimônio da região. A democratização e o acesso aos bens culturais são pilares do museu que, através de suas exposições e ações, objetiva uma sociedade mais integrada ao reconhecimento de sua identidade e consciente do patrimônio cultural de sua localidade, tornando-se espaço para o diálogo, reflexão histórica e da inclusão social.</p>
  									<p>A implantação do Museu Regional do Norte de Minas foi pautado no desejo de criar uma instituição que se destine a preservação  e difusão do patrimônio cultural de natureza material e imaterial.  O Museu Regional do Norte de Minas foi instalado no casarão da antiga Faculdade de Filosofia, Ciências e Letras (FAFIL), sendo inaugurado no dia 30 de setembro de 2014. O casarão foi totalmente restaurado no ano de 2009 pelo Governo do Estado, com o apoio da comunidade e recursos de empresas viabilizados por intermédio da Lei Federal de Incentivo à Cultura – Lei Rouanet.  A edificação teve sua construção iniciada em 1886, sendo finalizado apenas em 1889, pelo coronel José Antônio Versiane. Tombado pela Lei Municipal 1761, de 28 de setembro de 1999, o prédio tem uma grande importância para o setor educacional da cidade, pois foi sede do primeiro grupo escolar, do primeiro estabelecimento de ensino médio (antigo segundo grau) e dos primeiros cursos superiores da cidade, criados pela Faculdade de Filosofia, Ciências e Letras do Norte de Minas (FAFIL), incorporada à então Fundação Norte Mineira de Ensino Superior (FUNM) – atual Unimontes.</p>
@@ -7440,18 +7440,45 @@
         </div>
     </div>
     <!-- ============================================ ASCOM ========================================== -->
-    <div id="ascom" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div id="ascom" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">Modal header</h3>
+            <h3 id="myModalLabel">Publicidade</h3>
         </div>
-        <div class="modal-body">
-            <p>Um corpo fino …</p>
+
+
+        <div class="modal-body" style="background: url('img/relatorio/ascom_d.jpg'); background-size:cover;">
+            <div id="carouselAscom" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h2 id="titleModal" style="text-align: center;">Apresentação</h2>
+                        <h4 id="textoModal">
+                                <p>A Diretoria de Documentação e Informações – DDI é uma unidade administrativa de apoio que auxilia as demais áreas da Unimontes nas áreas do ensino,  pesquisa,  extensão e gestão. Visa reunir, classificar, preservar e colocar à disposição de especialistas e do público em geral o acesso a  fontes documentais que fazem referência à cultura e registros importantes da história da Universidade e da região. Estão integrados à Diretoria o Centro de Pesquisa e Documentação Regional (Cepedor), a Editora Unimontes, a  Rádio Unimontes FM 101,1 e os serviços de comunicação, videodocumentação e de perdidos e achados.</p>
+                                <p><strong>Comunicação: </strong><br>O setor de Comunicação da DDI atua nas ações de divulgação e marketing  da Unimontes. bem como nos processos seletivos, datas comemorativas dos profissionais e dos cursos oferecidos pela instituição, por meio de outdoors, banners, faixas, cartazes. Também é responsável pela divulgação de ações no sistema de TV point do campus e pela criação de marcas para eventos.</p>
+                                <p><strong>Videodocumentação: </strong><br>O setor é responsável pela documentação, por meio de vídeo dos eventos institucionais da Universidade. Tem como objetivo produzir informação audiovisual, por meio de captação, edição e tratamento de imagens e sons de eventos artísticos, culturais, educativos, técnicos e publicitários realizados no âmbito da Universidade.</p>
+                                <p><strong>Perdidos e Achados: </strong><br>O serviço tem como objetivo regulamentar os procedimentos relacionados aos documentos e objetos perdidos ou encontrados nas instalações da Universidade. Os documentos e objetos encontrados são entregues na DDI e colocados à disposição dos interessados, facilitando o dia a dia dos acadêmicos, professores, servidores e visitantes. As informações e procedimentos são disponibilizados online através da página <www.ddi.unimontes.br/perdidosachados>.</p></h4>
+
+                    </div>
+                    <div class="item">
+                        <h2 id="titleModal">Atividades Desenvolvidas</h2>
+                        <h4 id="textoModal">
+                                <p><strong>Comunicação</strong><br>No ano de 2015 a Diretoria de Documentação e Informações (DDI), desenvolveu inúmeras campanhas de cunho institucional na promoção das atividades institucionais bem como, a criação de logomarcas, cartazes, folders, panfletos, outdoors, sinalizações de sala de departamentos e setores da instituição, além da parceria conjunta com Diretoria de Tecnologia da Informação (DTI) no projeto gráfico dos novos e também na reformulação dos sites de domínio Unimontes, e com auxilio da Assessoria de Comunicação Social (ASCOM) e Assessoria de Gestão Estratégica e Inovação, na criação de campanhas de interesse da comunidade em geral (Café com Imprensa, Campanha Paz em Casa entre outras).</p>
+                                <p>Ressaltando a reformulação os sítios da DDI (www.ddi.unimontes.br) e Editora (www.editora.unimontes.br), além da normalização do serviço de perdidos e achados (www.ddi.unimontes.br/perdidoseachados).</p></h4></div>
+                </div>
+                <a class="carousel-control left" href="#carouselAscom">&lsaquo;</a>
+                <a class="carousel-control right" href="#carouselAscom">&rsaquo;</a>
+            </div>
         </div>
         <div class="modal-footer">
-
+            <button class="btn" data-dismiss="modal" aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
         </div>
     </div>
+
     <!-- ============================================ MÍDIAS SOCIAIS ============================================================= -->
     <div id="midiassociais" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
@@ -7468,7 +7495,7 @@
 
     <!-- ===================================== MODAL PUBLICIDADE=========================================== -->
 
-    <div id="publicidade" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--div id="publicidade" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true">×</button>
             <h3 id="myModalLabel">Publicidade</h3>
@@ -7505,7 +7532,7 @@
         <div class="modal-footer">
             <button class="btn" data-dismiss="modal" aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
         </div>
-    </div>
+    </div-->
 
     <!--==================================================MODAL RÁDIO==================================================== -->
 
@@ -7530,7 +7557,7 @@
   								<p>A programação da Rádio Unimontes (FM 101,1) tem como fundamento principal a boa música popular brasileira, mas mantém amplo noticiário jornalístico, o que a tornou referência para quem tem bom gosto. Vinculada à Universidade Estadual de Montes Claros, a emissora propaga atividades de ensino, extensão,  pesquisa e ações educacionais e culturais ds instituição. A Rádio Unimontes mantém convênios com as principais agências de notícias do país e com a Associação Mineira de Rádio e Televisão – AMIRT, podendo ser ouvida através da internet (www.unimontes.br/radio e www.radios.com.br).</p>
   								<p>Centrada na Música Popular Brasileira, a Rádio Unimontes, ampliou seus programas jornalísticos, com participação direta de acadêmicos, professores e gestores da Universidade Estadual de Montes Claros, seja na promoção de eventos da instituição ou em ações voltadas para a pesquisa e extensão. Com noticiários de duas em duas horas e jornais completos às sete horas da manhã, meio -dia e 18 horas, a Rádio Unimontes tornou - se também parceira de agências especializadas em notícias agropecuárias. Foi firmado convênio com a Secretaria Estadual da Fazenda (núcleo do Norte de Minas) para difusão de dicas sobre impostos e sua aplicação em benefício do cidadão e com o SEBRAE para favorecer o empreendedorismo. A Rádio Unimontes é parceira do Selo UNICEF, divulgando programas de inclusão de crianças e adolescentes. No ano de 2015, de maneira inédita foi incluído na grade um programa feito pelos acadêmicos em parceria com o Diretório Central dos Estudantes – DCE.</p>
   								<br/><br/>
-  								<img src="img/conteudo/radio/radio1.jpg" style="width: 600px;"></h4>
+  								<img src="img/conteudo/radio/radio1.jpg" style="width: 600px;" align="center"></h4>
                     </div>
                 </div>
                 <a class="carousel-control left" href="#carouselRadio">&lsaquo;</a>

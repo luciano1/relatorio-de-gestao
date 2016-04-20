@@ -598,7 +598,7 @@ function handle(delta, ver) {
 
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground)
-            EfeitoMetade("puff", "Atividades", "180", "rgba(0, 197, 244, 0.2);", "#000", "atividades_d", "ret-2");
+            EfeitoMetade("puff", "Atividades", "90", "rgba(0, 197, 244, 0.2);", "#000", "atividades_d", "ret-2");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-5");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -623,7 +623,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "Ensino", "100", "rgba(238, 212, 57, 0.49)", "#000", "ensino_d", "rgb(238, 212, 57)");
+            EfeitoMetade("blind", "Ensino", "25", "rgba(238, 212, 57, 0.49)", "#000", "ensino_d", "rgb(238, 212, 57)");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-6");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -648,7 +648,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("size", "cead", "120", "rgba(98, 144, 224, 0.29)", "#fff", "cead_d", "rgb(98, 144, 225)");
+            EfeitoMetade("size", "cead", "140", "rgba(98, 144, 224, 0.29)", "#fff", "cead_d", "rgb(98, 144, 225)");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("size", "ic-7");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -671,7 +671,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "pos", "100", "rgba(64, 182, 149, 0.09)", "#000", "pos_d", "#40B695");
+            EfeitoMetade("blind", "pos", "25", "rgba(64, 182, 149, 0.09)", "#000", "pos_d", "#40B695");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-3");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -695,7 +695,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("size", "extensao", "200", "rgba(217, 153, 28, 0.19)", "#000", "extensao_d", "#F0D339");
+            EfeitoMetade("size", "extensao", "150", "rgba(217, 153, 28, 0.19)", "#000", "extensao_d", "#F0D339");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("size", "ic-6");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -719,7 +719,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("puff", "pesquisa", "200", "rgba(0, 136, 204, 0.11)", "#fff", "pesquisa_d", "#9DB2C5");
+            EfeitoMetade("puff", "pesquisa", "140", "rgba(0, 136, 204, 0.11)", "#fff", "pesquisa_d", "#9DB2C5");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-1");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -743,7 +743,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, cordoby)
-            EfeitoMetade("blind", "biblioteca", "150", "rgba(236, 124, 38, 0.15)", "#000", "biblioteca_d", "#E5C51A");
+            EfeitoMetade("blind", "biblioteca", "85", "rgba(236, 124, 38, 0.15)", "#000", "biblioteca_d", "#E5C51A");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-6");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -766,7 +766,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "processos_seletivos", "150", "rgba(33, 37, 163, 0.06)", "#fff", "processos_seletivos_d", "#5389DC");
+            EfeitoMetade("blind", "processos_seletivos", "85", "rgba(33, 37, 163, 0.06)", "#fff", "processos_seletivos_d", "#5389DC");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-1");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -789,7 +789,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("size", "hospital", "80", "rgba(51, 103, 46, 0.12)", "#000", "hospital_d", "#A1E4AF");
+            EfeitoMetade("size", "hospital", "25", "rgba(51, 103, 46, 0.12)", "#000", "hospital_d", "#A1E4AF");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("size", "ic-3");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -812,7 +812,7 @@ function handle(delta, ver) {
             handledot(11, titulo);
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "cepedor", "200", "rgba(197, 184, 72, 0.22)", "#270202", "cepedor_d", "#E2C636");
+            EfeitoMetade("blind", "cepedor", "150", "rgba(197, 184, 72, 0.22)", "#270202", "cepedor_d", "#E2C636");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-6");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -835,7 +835,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("puff", "editora", "160", "rgba(122, 211, 255, 0.36)", "#000", "editora_d", "#5EC5FF");
+            EfeitoMetade("puff", "editora", "120", "rgba(122, 211, 255, 0.36)", "#000", "editora_d", "#5EC5FF");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-5");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -881,7 +881,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("puff", "saj", "200", "rgba(75, 31, 67, 0.09)", "#000", "saj_d", "#C8A0A0");
+            EfeitoMetade("puff", "saj", "140", "rgba(75, 31, 67, 0.09)", "#000", "saj_d", "#C8A0A0");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-9");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -904,7 +904,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "intercambio", "100", "rgba(72, 94, 131, 0.13)", "#fff", "intercambio_d", "#AFBCC2");
+            EfeitoMetade("blind", "intercambio", "30", "rgba(72, 94, 131, 0.13)", "#fff", "intercambio_d", "#AFBCC2");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-1");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -927,7 +927,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("size", "museu", "120", "rgba(85, 159, 254, 0.17)", "#000", "museu_d", "#559FFE");
+            EfeitoMetade("size", "museu", "30", "rgba(85, 159, 254, 0.17)", "#000", "museu_d", "#559FFE");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("size", "ic-5");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -950,7 +950,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("puff", "ascom", "120", "rgba(83, 85, 161, 0.23)", "#000", "ascom_d", "#9870A2");
+            EfeitoMetade("puff", "ascom", "80", "rgba(83, 85, 161, 0.23)", "#000", "ascom_d", "#9870A2");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-8");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -973,7 +973,7 @@ function handle(delta, ver) {
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "midias_sociais", "200", "rgba(30, 136, 224, 0.16)", "#000", "midias_sociais_d", "#7ED5FF");
+            EfeitoMetade("blind", "midias_sociais", "140", "rgba(30, 136, 224, 0.16)", "#000", "midias_sociais_d", "#7ED5FF");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-5");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -984,7 +984,7 @@ function handle(delta, ver) {
 
         case 114:
 
-            paragrafo = "Novo parágrafo";
+        /*paragrafo = "Novo parágrafo";
             titulo = "Publicidade";
             link = "#publicidade";
 
@@ -1003,21 +1003,21 @@ function handle(delta, ver) {
 
             break;
 
-        case 120:
+        case 120:*/
 
             paragrafo = "Vinculada à Unimontes, a Rádio FM 101,1 promove as atividades de ensino, extensão, pesquisa e ações educacionais e culturais da Instituição. A Rádio Unimontes mantém convênios com as principais agências de notícias do país e com a Associação Mineira de Rádio e Televisão – AMIRT. A emissora universitária fundamenta sua programação na boa música popular brasileira e mantém amplo noticiário jornalístico.";
             titulo = "Rádio Unimontes";
             link = "#radio";
 
-            $('.go-top').attr("onclick", "handle(handle, 114)");
-            $('.go-to').attr("onclick", "handle(handle, 126)");
+            $('.go-top').attr("onclick", "handle(handle, 108)");
+            $('.go-to').attr("onclick", "handle(handle, 120)");
             $('.voltarTopo').css("visibility", "visible");
             $('.time-line').css("visibility", "visible");
 
             handledot(20, titulo);
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("blind", "radio", "200", "rgba(52, 41, 57, 0.17)", "#fff", "radio_d", "#8D6297");
+            EfeitoMetade("blind", "radio", "100", "rgba(52, 41, 57, 0.17)", "#fff", "radio_d", "#8D6297");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("blind", "ic-8");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -1027,7 +1027,7 @@ function handle(delta, ver) {
             break;
 
 
-        case 126:
+        case 120:
 
             paragrafo = "A Imprensa universitária imprime a qualidade e a presteza no atendimento, oferecendo serviços gráficos necessários ao desenvolvimento das atividades de ensino, pesquisa e extensão. Atende demandas de toda a Universidade e das unidades administrativas. ";
             titulo = "Imprensa Universitária";
@@ -1035,13 +1035,13 @@ function handle(delta, ver) {
 
             handledot(21, titulo);
 
-            $('.go-top').attr("onclick", "handle(handle, 120)");
-            $('.go-to').attr("onclick", "handle(handle, 132)");
+            $('.go-top').attr("onclick", "handle(handle, 114)");
+            $('.go-to').attr("onclick", "handle(handle, 126)");
             $('.voltarTopo').css("visibility", "visible");
             $('.time-line').css("visibility", "visible");
 
             //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("puff", "imprensa", "200", "rgba(223, 127, 77, 0.18)", "#000", "imprensa_d", "#D8A644");
+            EfeitoMetade("puff", "imprensa", "100", "rgba(223, 127, 77, 0.18)", "#000", "imprensa_d", "#D8A644");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-6");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -1050,7 +1050,7 @@ function handle(delta, ver) {
 
             break;
 
-        case 132:
+        case 126:
 
             paragrafo = "Novo parágrafo";
             titulo = "Infraestrutura";
@@ -1058,8 +1058,8 @@ function handle(delta, ver) {
 
             handledot(22, titulo);
 
-            $('.go-top').attr("onclick", "handle(handle, 126)");
-            $('.go-to').attr("onclick", "handle(handle, 138)");
+            $('.go-top').attr("onclick", "handle(handle, 120)");
+            $('.go-to').attr("onclick", "handle(handle, 132)");
             $('.voltarTopo').css("visibility", "visible");
             $('.time-line').css("visibility", "visible");
 
@@ -1073,7 +1073,7 @@ function handle(delta, ver) {
 
             break;
 
-        case 138:
+        case 132:
 
             paragrafo = "O setor está vinculado à Pró-reitoria de Gestão e Finanças da Universidade, responsável pela gestão e aplicação dos recursos e execução de convênios. O setor também zela pelo patrimônio físico da instituição, garantindo suporte às atividades de ensino, pesquisa e extensão e prestação de serviços. ";
             titulo = "Orçamento e Finanças";
@@ -1081,14 +1081,14 @@ function handle(delta, ver) {
 
             handledot(23, titulo);
 
-            $('.go-top').attr("onclick", "handle(handle, 132)");
+            $('.go-top').attr("onclick", "handle(handle, 126)");
             $('.go-to').attr("onclick", "location.reload()");
             $('.voltarTopo').css("visibility", "visible");
             $('.time-line').css("visibility", "visible");
 
 
             //EfeitoMetade(efeito,img,margin,cor,imgbackground, corbody)
-            EfeitoMetade("puff", "orcamento_financas", "180", "rgba(95, 118, 198, 0.18)", "#fff", "orcamento_financas_d", "#849FD4");
+            EfeitoMetade("puff", "orcamento_financas", "100", "rgba(95, 118, 198, 0.18)", "#fff", "orcamento_financas_d", "#849FD4");
             //EfeitoLogo(efeito,img)
             EfeitoLogo("puff", "ic-8");
             //MudaBotoes(textoinicio, textohover, backgroundinicio, backgroundhover)
@@ -1097,7 +1097,7 @@ function handle(delta, ver) {
 
             break;
 
-        case 180:
+        case 136:
 
             posicao = 5;
             break;
