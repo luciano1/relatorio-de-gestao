@@ -38,7 +38,10 @@
     <!--===================ABRIR MODAL AUTOMATICAMENTE =========-->
     <script>
         $(document).ready(function(){
-            $('#numeros').modal('show'); 
+            $('#numeros').modal('show');
+            $('#numeros').on('hide.modal', function () { 
+                window.location.replace("app_home_relatório.html");
+            });  
         });
     </script>
 

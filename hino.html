@@ -38,7 +38,10 @@
     <!--===================ABRIR MODAL AUTOMATICAMENTE ======================================-->
     <script>
         $(document).ready(function(){
-            $('#hino').modal('show'); 
+            $('#hino').modal('show');
+            $('#hino').on('hide.modal', function () { 
+                window.location.replace("app_home_relatório.html");
+            });  
         });
     </script>
 

@@ -39,11 +39,13 @@
 <body>
 </body>
 
-
 <!--===================ABRIR MODAL AUTOMATICAMENTE =========-->
     <script>
         $(document).ready(function(){
-            $('#aunimontes').modal('show'); 
+            $('#aunimontes').modal('show');
+            $('#aunimontes').on('hide.modal', function () { 
+                window.location.replace("app_home_relatório.html");
+            });  
         });
     </script>
 

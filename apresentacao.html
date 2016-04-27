@@ -38,7 +38,14 @@
     <!--===================ABRIR MODAL AUTOMATICAMENTE =========-->
     <script>
         $(document).ready(function(){
-            $('#apresentacao').modal('show'); 
+            $('#apresentacao').modal('show');
+            $('#apresentacao').on('hide.modal', function () { 
+                window.location.replace("app_home_relatório.html");
+            }); 
+        });
+
+        $(document).ready(function(){
+
         });
     </script>
 
