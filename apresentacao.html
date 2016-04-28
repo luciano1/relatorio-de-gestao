@@ -39,6 +39,7 @@
     <script>
         $(document).ready(function(){
             $('#apresentacao').modal('show');
+            //A função abaixo redireciona para a animação em flash quando o modal é fechado
             $('#apresentacao').on('hide.modal', function () { 
                 window.location.replace("app_home_relatório.html");
             }); 

@@ -39,6 +39,7 @@
     <script>
         $(document).ready(function(){
             $('#hino').modal('show');
+            //A função abaixo redireciona para a animação em flash quando o modal é fechado
             $('#hino').on('hide.modal', function () { 
                 window.location.replace("app_home_relatório.html");
             });  
