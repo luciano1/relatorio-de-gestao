@@ -1,4 +1,19 @@
 $(document).ready(function() {
+    $('.carousel, #carouselInfraestrutura').carousel('pause');
+    $('.right').click(function() {
+        $('.carousel').carousel('next');
+    })
+    $('.left').click(function() {
+        $('.carousel').carousel('prev');
+
+    })
+  
+
+
+
+
+})
+$(document).ready(function() {
     if (($(window).width()) < 980) {
         location.href = "m.index.html";
     }
@@ -1179,21 +1194,7 @@ function enableScroll() {
     }
 }
 
-$(document).ready(function() {
-    $('.carousel').carousel('pause');
-    $('.right').click(function() {
-        $('.carousel').carousel('next');
-    })
-    $('.left').click(function() {
-        $('.carousel').carousel('prev');
 
-    })
-  
-
-
-
-
-})
 
 function ItemModal(pagina) {
     $(document).ready(function() {
