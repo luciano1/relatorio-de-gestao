@@ -1,236 +1,89 @@
 <!doctype html>
-
 <html>
-
-<head>
-    <title>Relatório de Atividades</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/dti.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.browser.js"></script>
-    <script src="js/jquery-roda.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-
-    </head>
-
-    <!--===================ABRIR MODAL AUTOMATICAMENTE =========-->
-    <script>
-        $(document).ready(function(){
-            $('#numeros').modal('show');
-            //A função abaixo redireciona para a animação em flash quando o modal é fechado
-            $('#numeros').on('hide.modal', function () { 
-                window.location.replace("app_home_relatório.html");
-            });  
-        });
-    </script>
-
-    <body>
-
-    </body>
-
-
-    
-    <!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
-
-<div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Unimontes em Números</h3>
-    </div>
-<div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
-        <div id="carouselNumeros" class="carousel" data-ride="carousel">
+   <!--*******************************************************************************************
+                        RELATÓRIO DE ATIVIDADES 2015 - UNIMONTES 
+      
+                Desenvolvido pela Diretoria de Tecnologia da Informação - DTI
+                            Dezembro de 2015 a maio de 2016
+        Repositório do Projeto: https://github.com/JessicaFFerreira/relatorio-de-gestao
+      
+      Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodrigo Oliveira 
+      
+      *********************************************************************************************-->
+   <head>
+      <title>Relatório de Atividades</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap-responsive.css">
+      <link rel="stylesheet" href="css/dti.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery.browser.js"></script>
+      <script src="js/jquery-roda.js" type="text/javascript"></script>
+      <script src="js/scripts.js" type="text/javascript"></script>
+   </head>
+   <!--===================ABRIR MODAL AUTOMATICAMENTE ================================================-->
+   <script>
+      $(document).ready(function(){
+          $('#numeros').modal('show');
+          //A função abaixo redireciona para a animação em flash quando o modal é fechado
+          $('#numeros').on('hide.modal', function () { 
+              window.location.replace("app_home_relatório.html");
+          });  
+      });
+   </script>
+   <!--======================================MODAL UNIMONTES EM NÚMEROS================================= -->
+   <div id="numeros" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" onclick="enableScroll();" aria-hidden="true">×</button>
+         <h3 id="myModalLabel">Unimontes em Números</h3>
+      </div>
+      <div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
+         <div id="carouselNumeros" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-
-                <!--div class="item active">
-                    <h2 id="titleModal">Unimontes em números</h2>
-                    <h3 id="subtitleModal"><br><br>Planejamento, Gestão e Finanças</h3>
-                    <h4 id="textoModal">
-                        <p>Principais obras em execução e concluídas em 2015: </p>
-                        <ul>
-                            <li id="listaModal">Construção do Centro de Pesquisa em Ciências Humanas</li>
-                            <li id="listaModal">Etapa básica do auditório da Unimontes (1144 m²)</li>
-                            <li id="listaModal">Implantação do Serviço de Nutrição e Dietética - SND/HUCF (680 m²)</li>
-                            <li id="listaModal">Construção da primeira etapa do Centro Tecnológico (644284 m²)</li>
-                        </ul>
-                        <br><br>
-                        <ul>
-                            <li id="listaModal">INVESTIMENTOS R$ 5.696.841,56<br>(construção e reformas)</li><br>
-                            <li id="listaModal">Concurso Público para Professor<br>637 vagas</li>
-                        </ul>
-                      </h4>
-
-
-                    <h3 id="subtitleModal"><br><br>Hospital Universitário Clemente de Faria</h3>
-                    <h4 id="textoModal">
-                        <p>Procedimentos realizados: 453.777 </p>
-                        <p>Centro Mais Vida de Referência em Assitência à Saúde do Idoso Eny Faria de Oliveira: 94.195</p>
-                        <p>Centro Ambulatorial de Especialidades Tancredo Neves (Caetan)</p>
-                        <p>Policlínica Doutor Hermes de Paula: 46.997 </p>
-                        <p>Procedimentos - consultas/exames/internações HUCF: 312.585</p>
-                      </h4>
-
-
-
-                    <h3 id="subtitleModal"><br><br>Dados Gerais</h3>
-                    <h4 id="textoModal">
-                        <p>Diplomados pela Unimontes - cursos de graduação - de 1966 à dezembro de 2015: 51.271</p></h4>
-
-                        <table id="tituloTabela" class="table table-bordered">
-                            <tr>
-                                <th>Corpo Docente</th>
-                                <th>2010</th>
-                                <th>2011</th>
-                                <th>2012</th>
-                                <th>2013</th>
-                                <th>2014</th>
-                                <th>2015</th>
-                            </tr>
-                            <tr>
-                                <td>Mestres</td>
-                                <td>419</td>
-                                <td>460</td>
-                                <td>494</td>
-                                <td>462</td>
-                                <td>517</td>
-                                <td>545</td>
-                            </tr>
-                            <tr>
-                                <td>Doutores</td>
-                                <td>140</td>
-                                <td>167</td>
-                                <td>195</td>
-                                <td>226</td>
-                                <td>286</td>
-                                <td>350</td>
-                            </tr>
-                            <tr>
-                                <td>Especialistas</td>
-                                <td>732</td>
-                                <td>688</td>
-                                <td>656</td>
-                                <td>607</td>
-                                <td>642</td>
-                                <td>615</td>
-                            </tr>
-                            <tr>
-                                <td>Graduados</td>
-                                <td>144</td>
-                                <td>69</td>
-                                <td>46</td>
-                                <td>42</td>
-                                <td>27</td>
-                                <td>36</td>
-                            </tr>
-                            <tr>
-                                <th>Total</th>
-                                <th>1.435</th>
-                                <th>1.384</th>
-                                <th>1.391</th>
-                                <th>1.391</th>
-                                <th>1.442</th>
-                                <th>1.546</th>
-                            </tr>
-                        </table>
-
-
-                        <table id="tituloTabela" class="table table-bordered">
-                            <tr>
-                                <th>Corpo Técnico-Administrativo</th>
-                                <th>2010</th>
-                                <th>2011</th>
-                                <th>2012</th>
-                                <th>2013</th>
-                                <th>2014</th>
-                                <th>2015</th>
-                            </tr>
-                            <tr>
-                                <td>Servirdores Técnico-Administrativos</td>
-                                <td>1.411</td>
-                                <td>1.482</td>
-                                <td>1.397</td>
-                                <td>1.309</td>
-                                <td>1.246</td>
-                                <td>1.285</td>
-                            </tr>
-                            <tr>
-                                <th>Total Geral</th>
-                                <th>2.486</th>
-                                <th>2.866</th>
-                                <th>2.788</th>
-                                <th>2.646</th>
-                                <th>2.718</th>
-                                <th>2.831</th>
-                            </tr>
-                        </table>
-
-                    <h3 id="subtitleModal"><br><br>Adesão ao SISU (Sistema de Seleção Unificada)</h3>
-                    <h4 id="textoModal">
-                        <p><strong>33.565</strong> inscritos, dos quais <strong>25.165</strong> oriundos do Norte de Minas, <strong>1.148</strong> do Noroeste de Minas e <strong>960</strong> dos Vales do Jequitinhonha e do Mucuri. <strong>81,25%</strong> dos concorrentes são das regiões de atuação da Unimontes.</p>
-                    </h4>
-
-
-                    <h3 id="subtitleModal"><br><br>COTEC - Comissão Técnina de Concursos</h3>
-                    <h4 id="textoModal">
-                        <p><center><strong>CONCURSO PÚBLICO UNIFICADO - PREFEITURAS*</strong></center> </p>
-                        <p><center>Adesão: 72 Municípios <br> Vagas oferecidas: 8.333</center></p>
-                        <p><center>Candidatos inscritos: 68.366<br> (Até janeiro de 2016)</center></p>
-                      </h4>
-                    <h5>*Parceria: Ministério Público Estadual (MPMG) e Associação dos Municípios da Área Mineira da Sudene (AMANS).</h5>
-                    </div-->
-
-            <div class="item active"><img src="img/conteudo/numeros/numeros0.jpg" width="1200" style=" width: 1200px; height: 400px; "></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros1.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros2.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros3.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros4.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros5.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros6.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros7.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros8.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros9.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros10.jpg"></div>
-            <div class="item"><img src="img/conteudo/numeros/numeros11.jpg"></div>
-
-                
-
-                
+               <!-- Conteúdo a partir daqui. Nesse modal são apenas imagens.-->
+               <div class="item active"><img src="img/conteudo/numeros/numeros0.jpg" width="1200" style=" width: 1200px; height: 400px;"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros1.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros2.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros3.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros4.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros5.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros6.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros7.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros8.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros9.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros10.jpg"></div>
+               <div class="item"><img src="img/conteudo/numeros/numeros11.jpg"></div>
             </div>
-                
-
             <a class="carousel-control left" href="#carouselNumeros">&lsaquo;</a>
             <a class="carousel-control right" href="#carouselNumeros">&rsaquo;</a>
-        </div>
-
-    </div>
-    <div class="modal-footer">
-
-        <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
-    </div>
-</div>
+         </div>
+      </div>
+      <div class="modal-footer">
+         <button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button>
+      </div>
+   </div>

@@ -1,298 +1,290 @@
 <!doctype html>
-
 <html>
-
-<head>
-    <title>Relatório de Atividades</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/dti.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-ui.js" type="text/javascript"></script>
-    <script src="js/roda.js" type="text/javascript"></script>
-    <script src="js/jquery-roda.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-</body>
-
-<!--===================ABRIR MODAL AUTOMATICAMENTE ====================================-->
-    <script>
-        $(document).ready(function(){
-            $('#aunimontes').modal('show');
-            //A função abaixo redireciona para a animação em flash quando o modal é fechado
-            $('#aunimontes').on('hide.modal', function () { 
-                window.location.replace("app_home_relatório.html");
-            });  
-        });
-    </script>
-
-    <body>
-
-    </body>
-
-<!--===============================MODAL A UNIMONTES ===================================== -->
-<div id="aunimontes" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll();ItemModal(0); " aria-hidden="true">×</button>
-        <h3 id="myModalLabel">A Unimontes</h3>
-    </div>
-    <div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
-        <div id="carouselAUnimontes" class="carousel" data-ride="carousel">
+   <!-- *************************************************************************************
+                            RELATÓRIO DE ATIVIDADES 2015 - UNIMONTES 
+      
+                    Desenvolvido pela Diretoria de Tecnologia da Informação - DTI
+                             Dezembro de 2015 a maio de 2016
+        Repositório do Projeto: https://github.com/JessicaFFerreira/relatorio-de-gestao
+      
+    Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodrigo Oliveira  
+      
+      
+      ****************************************************************************************-->
+   <head>
+      <title>Relatório de Atividades</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap-responsive.css">
+      <link rel="stylesheet" href="css/dti.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery-ui.js" type="text/javascript"></script>
+      <script src="js/roda.js" type="text/javascript"></script>
+      <script src="js/jquery-roda.js" type="text/javascript"></script>
+      <script src="js/scripts.js" type="text/javascript"></script>
+   </head>
+   <body></body>
+   <!--===================ABRIR MODAL AUTOMATICAMENTE ====================================-->
+   <script>
+      $(document).ready(function(){
+          $('#aunimontes').modal('show');
+          //A função abaixo redireciona para a animação em flash quando o modal é fechado
+          $('#aunimontes').on('hide.modal', function () { 
+              window.location.replace("app_home_relatório.html");
+          });  
+      });
+   </script>
+   <body>
+   </body>
+   <!--===============================MODAL A UNIMONTES ===================================== -->
+   <div id="aunimontes" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" onclick="enableScroll();ItemModal(0); " aria-hidden="true">×</button>
+         <h3 id="myModalLabel">A Unimontes</h3>
+      </div>
+      <div class="modal-body" style="background: url('img/relatorio/a_unimontes_d.jpg'); background-size:cover;">
+         <div id="carouselAUnimontes" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-
-                <div class="item active">
-                <div id="numeroPagina">1/7</div>
-                    <h2 id="titleModal">A Unimontes</h2>
-                        <center><br><br><img src="img/conteudo/aunimontes/Fachada-aérea-campus-sede01.jpg" style="height: 350px; width: 500px;"></center>
-                        <h5 id="subtitleModal"><br>Vista aérea Campus sede<br></h5>
-                        <h4 id="textoModal">
-                        <p>A Universidade Estadual de Montes Claros – UNIMONTES – resultou da transformação da Fundação Norte Mineira de Ensino Superior – FUNM, de acordo com o artigo 82, parágrafo 3º, do “Ato das Disposições Constitucionais Transitórias”, da Constituição Mineira de 21/09/89. A FUNM, atual UNIMONTES, foi criada pela Lei Estadual nº 2.615, de 24 de maio de 1962, de autoria do ex-deputado Cícero Dumont. </p>
-                        <p>Em 1963, surgiu a primeira unidade de ensino superior do Norte de Minas, a então Faculdade de Filosofia, Ciências e Letras – FAFIL, tendo como mantenedora a Fundação Educacional Luiz de Paula  - FELP -. No dia 13/04/63, foram iniciadas atividades dos cursos de Geografia, História, Letras e Pedagogia nas instalações do Colégio Imaculada Conceição.  </p></h4>
-                        <center><img src="img/conteudo/aunimontes/Fachada-do-Casarão-da-Fafil-antes-da-reforma01.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Fachada do Casarão da Fafil antes da reforma<br></h5>
-                        <h4 id="textoModal">                        
-                        <p>Em 1965, os cursos foram transferidos para o casarão centenário da FUNM, localizado na rua Coronel Celestino, 75, em Montes Claros.  A primeira unidade de ensino superior da FUNM, a Faculdade de Direito – FADIR -, foi implantada em 1965. Em 1966, a FAFIL desliga-se da FELP e passa a integrar a FUNM.  </p>
-                        </h4>
-                        <center><img src="img/conteudo/aunimontes/Fachada-Centro-de-Ensino-Medio-e-Fundamental.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Fachada do Centro de Ensino Médio e Fundamental, na rua Coronel Celestino, 75<br></h5>
-                        <h4 id="textoModal">
-                        <p>Em 1968, começaram a funcionar na FAFIL os cursos de Matemática, Ciências Sociais e Filosofia. Depois, foram criadas unidades da FUNM: a Faculdade de Medicina (FAMED), em 1969; a Faculdade de Administração e Finanças – FADEC, com os cursos de Administração, Ciências Contábeis e Ciências Econômicas, em 1972; e a Faculdade de Educação Artística – FACEART – em 1987.  </p>
-                        <p>Através da Constituição Estadual de 1989, a FUNM foi transformada na Universidade Estadual de Montes Claros, instituída através do Decreto Estadual nº 30.971, de 09/03/1990. A efetiva integração da UNIMONTES como ente público (autarquia) ocorreu, no entanto, a partir de 01/08/1990, quando os servidores da extinta FUNM passaram a ser incorporados ao quadro pessoal do Estado. O primeiro estatuto da Universidade foi aprovado através do Decreto Estadual nº 31.840, de 24/09/1990. </p>
-                        </h4>
-                        <center><img src="img/conteudo/aunimontes/Antiga-fachada-do-campus-sede-em-Montes-Claros01.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Antiga fachada do Campus-sede em Montes Claros<br></h5>
-                        <h4 id="textoModal">
-                        <p>A Lei Estadual nº 11.517, de 13 de julho de 1994,  reorganizou a Instituição do ponto de vista administrativo-funcional, sendo extintas as faculdades e criados os Centros de Ensino: Centro de Ciências Humanas (CCH), Centro de Ciências Biológicas e da Saúde (CCBS), Centro de Ciências Sociais Aplicadas (CCSA) e  Centro do Ensino Médio e Fundamental (CEMF), depois, substituído pelo  Centro de Educação Profissional e Tecnológica (CEPT). Através do mesmo instrumento legal, o antigo Hospital Regional Clemente de Faria, da Fundação Hospitalar do Estado de Minas Gerais (Fhemig) foi incorporado definitivamente à Unimontes com a denominação de Hospital Universitário Clemente de Faria. </p>
-                        </h4>
-                        <center><img src="img/conteudo/aunimontes/Construcao_do_cch01.jpg" style="height: 300px; width: 450px;">         <img src="img/conteudo/aunimontes/Inauguracao_do_predio_CCH01.jpg" style="height: 300px; width: 450px;">
-                        </center>
-                        <div class="span6"><h5 id="subtitleModal">Construção do Centro de Ciências Humanas - CCH</h5></div>
-                        <div class="span5"><h5 id="subtitleModal">Inauguração do Centro de Ciências Humanas<br></h5></div>                                              
-                        <center><img src="img/conteudo/aunimontes/Antiga-fachada-CCBS01.jpg" style="height: 300px; width: 450px;">       <img src="img/conteudo/aunimontes/Antiga-fachada-CCH01.jpg" style="height: 300px; width: 450px;"></center>
-                        <div class="span6"><h5 id="subtitleModal"><br>Antiga fachada do CCBS - Centro de Ciências Biológicas e da Saúde<br></h5></div>
-                        <div class="span5"><h5 id="subtitleModal"><br>Antiga fachada do CCH - Centro de Ciências Humanas<br></h5>
-                        <h4 id="textoModal"></div>
-
-                        <h4 id="textoModal">    
-                        <p>Em 21/07/1994, através da Portaria nº 1.116,  foi homologada pelo Ministério da Educação o reconhecimento da UNIMONTES como universidade, em face do Parecer nº 232/94, do Conselho Estadual de Educação de Minas Gerais.  </p></h4>
-
-                        <center><img src="img/conteudo/aunimontes/Imagens-aereas-campus-sede01.jpg" style="height: 300px; width: 450px;">       <img src="img/conteudo/aunimontes/Campus-sede.jpg" style="height: 300px; width: 450px;"></center>
-                        <div class="span6"><h5 id="subtitleModal"><br>Imagens aéreas do Campus-sede</h5></div>
-                        <div class="span5"><h5 id="subtitleModal"><br>Campus-sede em Montes Claros<br></h5></div>
-
-                        <h4 id="textoModal">
-                        <p>O Centro de Ciências Exatas e Tecnológicas - CCET - foi criado através da Lei nº 11.660, de 02/12/1994. A partir de 1995, a UNIMONTES  começou a implantar cursos regulares de graduação fora da sede, primeiramente na cidade de Januária, com os cursos de Letras e Pedagogia. Em 6 de setembro de 1995, através da Lei Estadual nº 11.903, a UNIMONTES passou a integrar a Secretaria de Estado de Ciência e Tecnologia, atual Secretaria de Estado de Ciência, Tecnologia e Ensino Superior (Sectes).  </p></h4>
-                        <center><img src="img/conteudo/aunimontes/Antiga-fachada-Prédio-CCET01.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Antiga Fachada do Prédio CCET<br></h5>
-                        <h4 id="textoModal">
-                        <p>Em 21/05/1996, foi promulgada a Lei Estadual nº 12.154, que “dá nova redação ao artigo 11 da Lei  nº 11.517, de 13/07/1994”, disciplinando as eleições para Reitor e Vice-Reitor. A partir do segundo semestre letivo de  1996, começaram  a funcionar, na cidade de Janaúba,  o curso de Agronomia e, em Pirapora, os cursos de Geografia e Pedagogia. Passaram a ser oferecidos, em Montes Claros, os cursos  de Sistemas de Informação (inicialmente denominado Ciência da Computação), Educação Física e Enfermagem. </p></h4>
-                        <center><img src="img/conteudo/aunimontes/Antiga-fachada-Campus-de-Janauba01.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Antiga fachada do Campi de Janaúba<br><br></h5>
-
-                        <center><img src="img/conteudo/aunimontes/Construcao-do-Centro-Esportivo-Univesitario01.jpg" style="height: 300px; width: 450px;"> </center>
-                        <h5 id="subtitleModal"><br>Construção do CEU - Centro Esportivo Universitário<br></h5>
-
-                        <h4 id="textoModal">
-                        <p><br>Em 1997, o curso de Ciências do Primeiro Grau foi extinto, sendo criados os cursos de Biologia – Licenciatura Plena e Bacharelado, Matemática. No mesmo ano, o curso de Letras foi reestruturado, passando a ser oferecidas as licenciaturas únicas em Espanhol, Inglês e Português. Foi implantado ainda o curso de Odontologia.  Através do Decreto Estadual nº 39.820, de 19/08/1998, foi aprovado o novo Estatuto da Universidade. </p>
-                        <p>Em setembro de 1998, foram realizadas as primeiras eleições para Reitor e Vice-Reitor da UNIMONTES, tendo sido eleitos e, de acordo com a legislação, nomeados pelo Governador do Estado, os professores José Geraldo de Freitas Drumond (Reitor) e Paulo César Gonçalves de Almeida (Vice-Reitor), empossados em dezembro daquele ano. </p>
-                        <p>O Conselho Universitário aprovou, em 20/12/1999, o Regimento Geral da UNIMONTES. Através do Decreto Estadual nº 41.434, de 15 de dezembro de 2000, foi criado o Campus de Almenara, sendo autorizado também o Curso Normal Superior, cujas atividades foram iniciadas em março de 2001. </p>
-                        <p>Em julho de 2002, começou a funcionar o curso de Zootecnia em Salinas. Em dezembro do mesmo ano, foram criados os campi de Espinosa (Normal Superior), Brasília de Minas (Normal Superior) e São Francisco (História e Matemática).  </p>
-                        <p>Em outubro de 2002, foram realizadas novas eleições para Reitor e Vice-Reitor da UNIMONTES,  tendo sido eleitos e nomeados, em 13/11/2002,  pelo Governador do Estado, os professores Paulo César Gonçalves de Almeida (Reitor) e Tânia Marta Fialho (Vice-Reitora), que foram empossados em 4/12/2002. </p>
-                        <p>Em 29/01/2003, foi editada a Lei Delegada nº 90, dispondo sobre a estrutura básica da UNIMONTES. Em 15/09/2003, foi editado o Decreto nº 43.586, dispondo sobre as competências das unidades administrativas e a identificação dos cargos de provimento em comissão.</p>
-                        </h4>
-                        <center><img src="img/conteudo/aunimontes/Servidores_da_Unimontes01.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Servidores da Unimontes.<br></h5>
-                        <h4 id="textoModal">                        
-                        <p>Em fevereiro de 2003, começou a funcionar no campus-sede, em Montes Claros, o curso de Serviço Social. No mesmo período, foram criados os campi de Unaí e Paracatu no Noroeste de Minas.  </p>
-                        <p>Em 21/08/2006, através da Resolução 18/2006, do Conselho Universitário, foi criado o curso regular de graduação em Ciências da Religião, que começou a funcionar em fevereiro de 2007 no Campus Universitário Professor Darcy Ribeiro. No segundo semestre de 2008, a Unimontes iniciou as atividades dos cursos de educação a distância, dentro do sistema Universidade Abertas do  Brasil (UAB), em convênio com o Ministério da Educação.  </p>
-                        <p>Em 31/7/2006, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 17/11/2006, pelo Governador do Estado, os professores Paulo César Gonçalves de Almeida (Reitor) e João dos Reis Canela (Vice-Reitor), empossados em 04/12/2006, para a gestão dez -2006/dez -2010</p>
-                        <p>Em 26/01/2007, foi editada a Lei Delegada nº 142, alterando a Lei Delegada nº 90, que dispõe sobre a estrutura orgânica básica da UNIMONTES. </p>
-                        </h4>
-                        <center><img src="img/conteudo/aunimontes/Fachada_Campus.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Fachada da Unimontes atualmente.<br></h5>
-                        <h4 id="textoModal">
-                        <p>Em 13/12/2008, ocorreu a inauguração do Campus de Bocaiúva, onde foram implantados os cursos de  Química (2009) e Física (2010). Em 04/11/2010, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 24/11/2010, pelo governador do Estado, os professores  João dos Reis Canela (Reitor) e Maria Ivete Soares de Almeida (Vice-Reitora), empossados em 06/12/2010 para a gestão dez-2010/dez -2014. Em fevereiro de 2011,  foram iniciadas as atividades do curso de Engenharia de Sistemas, vinculado ao Centro de Ciências Exatas e Tecnológicas (CCET).  Em 2012, o mesmo centro passou a oferecer o curso de Engenharia Civil. </p>
-                        <p>Em julho de 2014, foram iniciadas as atividades dos cursos de Matemática, em Joaíma; e de Tecnólogo em Gestão Pública, em Pompéu. Em outubro de 2014, foi inaugurado o Museu Regional do Norte de Minas, instalado no antigo Casarão da Fafil, na rua Coronel Celestino. Em 06/11/2014, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 02/12/2014, pelo governador do Estado os professores  João dos Reis Canela (Reitor) e Antonio Alvimar Souza (Vice-Reitor), empossados em 06/12/2014 para a gestão dez-2014/dez-2018.</p></h4>
-                        <center><img src="img/conteudo/aunimontes/Formatura_2015.jpg" style="height: 300px; width: 450px;"></center>
-                        <h5 id="subtitleModal"><br>Reitor Prof. João dos Reis Canela na Colação de Grau Dezembro - 2015<br></h5>
-                        
-                    
-
-                      
-                </div>
-
-                <div class="item">
-                    <div id="numeroPagina">2/7</div>
-                        <h2 id="titleModal">Unidades Colegiadas de Deliberação Superior</h2>
-                        
-                        <h3 id="subtitleModal">Conselho Curador</h3>
-                        <h4 id="textoModal">
-                            <p>O Conselho de Curadores integrante da administração superior é o órgão de fiscalização orçamentária e econômico-financeira da UNIMONTES.</p>
-                            <p>Compete ao Conselho de Curadores, no prazo legal, pronunciar-se sobre proposta orçamentária, balanços e prestação de contas da Universidade; pronunciar-se sobre gravame, permuta e alienação de bens imóveis ou de valor relevante; examinar os livros e documentação de escrituração contábeis da UNIMONTES; examinar o estado do caixa e os valores em depósito, devendo, o Reitor, fornecer-lhe as informações que lhe forem solicitadas; lavrar em livro de atas e pareceres do Conselho de Curadores, os resultados dos exames a que proceder; emitir parecer conclusivo sobre as atividades econômicas e financeiras da UNIMONTES a cada exercício, tomando por base o inventário, o balanço e as contas apresentadas pelo Reitor; apontar erros e omissões e denunciar fraudes que constituem crimes contra o patrimônio público, previsto em lei.</p>
-                        </h4>
-
-                        <h3 id="subtitleModal">Conselho Universitário</h3>
-                        <h4 id="textoModal">
-                            <p>O Conselho Universitário é o órgão máximo de deliberação da Universidade, incumbindo-se da definição da política geral da Autarquia nos planos acadêmico, administrativo, financeiro, patrimonial e disciplinar e funciona como instância de recurso.</p>
-                            <p>Compete ao Conselho Universitário, por exemplo, estabelecer a política geral da Universidade; aprovar ou alterar o Estatuto e o Regimento Geral, bem como baixar Resoluções Complementares; decidir sobre recursos nos termos do Regimento Geral e avocar qualquer matéria de interesse da Universidade; aprovar a criação, reorganização ou extinção de Departamentos, Unidades Universitárias, Unidades Administrativas de Apoio ou outros órgãos; decidir sobre a suspensão temporária, total ou parcial de atividades universitárias, entre outros. </p>                            
-                        </h4>
-                        <h3 id="subtitleModal">Conselho de Ensino, Pesquisa e Extensão</h3>
-                        <h4 id="textoModal">
-                            <p>O Conselho de Ensino, Pesquisa e Extensão é o órgão técnico superior de deliberação e supervisão em matéria de ensino, pesquisa e extensão, cabendo, de suas decisões, recurso para o Conselho Universitário da UNIMONTES.</p>
-                            <p>Compete ao Conselho de Ensino, Pesquisa e Extensão, por exemplo, fixar normas complementares ao Regimento Geral, além de outras que se incluam no âmbito de sua competência; aprovar os planos de novos cursos de graduação e pós-graduação, após audiência do(s) Departamento(s) envolvido(s); aprovar o início, recesso e término do calendário universitário, no mês de setembro do ano antecedente à vigência, em cujos limites os Conselhos Departamentais deverão elaborar e aprovar os calendários dos Centros; decidir sobre propostas, indicações ou representações de interesse da Universidade em assunto de sua própria competência; propor normas e critérios para concessão de bolsas especiais de iniciação científica; aprovar projetos de pesquisa e extensão, ouvidos os respectivos Departamentos e as Câmaras competentes; entre outros. </p>
-                        </h4>
- 
-                </div>
-
-                <div class="item">
-                    <div id="numeroPagina">3/7</div>
-                        <h2 id="titleModal">Unidade de Direção Superior - Reitoria</h2>
-                        <h4 id="textoModal">
-                            <p>A Reitoria é a Unidade de Direção Superior, que coordena e supervisiona todas as atividades universitárias.</p>
-                            <p>A Reitoria é composta pelo Reitor e pelo Vice-Reitor.</p>
-                            <p>O Reitor é substituído em suas faltas ou impedimentos pelo Vice-Reitor que o sucede em caso de vacância.</p>
-                            <p>Compete ao Reitor: representar a Universidade ou promover-lhe a representação, ativa e passivamente, em juízo ou fora dele; convocar e presidir as reuniões dos Conselhos de que fizer parte; coordenar e controlar a execução do plano anual da Universidade e avaliar os resultados; promover o intercâmbio da Universidade com a comunidade e com instituições congêneres; coordenar, fiscalizar e superintender todas as atividades da Universidade; promulgar resoluções dos Conselhos e baixar portarias, editais, ordens de serviços e atos inerentes à administração da Universidade; cumprir e fazer cumprir as decisões dos órgãos colegiados superiores, bem como executar os planos e orçamento aprovados; presidir todos os atos da Universidade a que estiver presente; assinar acordos, convênios e contratos, observado o disposto na legislação em vigor, no Estatuto e neste Regimento; designar, nomear e empossar os dirigentes Universitários; conferir graus e títulos acadêmicos; tomar decisões, <em>“ad referendum”</em> do Colegiado Superior competente, submetendo-as à apreciação do mesmo, no prazo de 15 (quinze) dias; pronunciar-se, privativamente, em nome da Universidade; desempenhar quaisquer outras atribuições inerentes à função de Reitor, previstas em Lei, no Estatuto e neste Regimento Geral.</p>
-                        </h4>
-                </div>
-
-                <div class="item">
-                    <div id="numeroPagina">4/7</div>
-                        <h2 id="titleModal">Unidades Administrativas de Assessoramento Superior</h2>
-                        <h4 id="textoModal">
-                            <p>São unidades administrativas de assessoramento superior da UNIMONTES: Auditoria, Gabinete, Assessoria Jurídica, Assessoria de Comunicação, Escritório de Representação da Unimontes em Belo Horizonte e Secretaria Geral.</p>
-                            <p>Os titulares das unidades de assessoramento superior da UNIMONTES são escolhidos, nomeados e demissíveis <em> “ad nutum” pelo Reitor.</em></p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Auditoria</h3>
-                        <h4 id="textoModal">
-                            <p>Supervisionar trabalhos de gabinete em primeiro nível da organização, tendo em vista a realização de atividades executivas, assistindo diretamente ao Reitor; programar e desempenhar atividades de coordenação político-administrativa e de representação social, relacionadas com a Reitoria e com o seu titular; planejar, organizar, coordenar e controlar as atividades e os trabalhos pertinentes ao setor.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete ao Gabinete</h3>
-                        <h4 id="textoModal">
-                            <p>Exercer atividade técnica, no campo da auditoria; realizar e orientar auditorias financeiras, patrimoniais, orçamentárias e administrativas nas áreas da UNIMONTES quanto à aplicação de recursos, à eficácia dos sistemas adotados, ao correto cumprimento das disposições legais pertinentes à normalidade e essencialidade de custos e despesas e à regularidade administrativa; efetuar inspeções setoriais e globais; emitir pareceres, laudos e elaborar relatórios na forma da lei, bem como torná-los públicos e acessíveis à comunidade.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Assessoria Jurídica</h3>
-                        <h4 id="textoModal">
-                            <p>Exercer atividade profissional no campo do Direito; representar a UNIMONTES, em juízo ou fora dele, mediante mandato, prestando quaisquer serviços de natureza jurídica; examinar e estudar questões jurídicas ou documentos relativos a direitos e obrigações de que a UNIMONTES seja titular ou interessada; emitir pareceres circunstanciados sobre assuntos jurídicos, submetidos pela Reitoria.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Assessoria de Comunicação</h3>
-                        <h4 id="textoModal">
-                            <p>Exercer atividade profissional no campo da comunicação social, interna e externamente; preparar e redigir artigos, editoriais, comentários e noticiário variado de interesse da UNIMONTES, a serem divulgados por veículos de comunicação de massa; realizar entrevistas e reportagens; redigir boletins, mensagens, relatórios e documentos oficiais; planejar e executar pesquisas e campanhas de relações públicas.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete ao Escritório de Representação da UNIMONTES em Belo Horizonte</h3>
-                        <h4 id="textoModal">
-                            <p>Executar trabalhos de assessoramento e de Representação; manter contatos com órgãos da Administração Direta e Indireta dos Governos Federal, Estadual e Municipal, com órgãos de ensino e pesquisa, órgãos universitários e congêneres; elaborar pareceres e relatórios de suas atividades.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Secretaria Geral</h3>
-                        <h4 id="textoModal">
-                            <p>Realizar trabalhos de atendimento, comunicação e redação, no campo de secretariado; secretariar reuniões dos Colegiados Superiores elaborando súmulas, atas e resumos; programar, orientar e controlar atividades de auxiliares; expedir certidões e históricos escolares, relacionados com a vida acadêmica; superintender todas as atividades relacionadas com o controle acadêmico.</p>
-                        </h4>
-                </div>
-
-                <div class="item">
-                    <div id="numeroPagina">5/7</div>
-                    <h2 id="titleModal">Unidades Administrativas de Planejamento, Coordenação e Execução</h2>
-                    <h4 id="textoModal">
-                            <p>São unidades administrativas de planejamento, coordenação e execução da UNIMONTES: Pró-Reitoria de Planejamento, Administração e Finanças, Pró-Reitoria de Ensino, Pró-Reitoria de Pesquisa e Pró-Reitoria de Extensão. </p>
-                            <p>Cumprem às Pró-Reitorias, de modo geral, as seguintes atribuições: Participar da definição da política administrativa de sua área de atuação, inclusive com proposição de normas e diretrizes; planejar, organizar, coordenar e controlar o desempenho das Coordenadorias e das Divisões que lhes são subordinadas; estudar e aprovar a adoção de novos métodos e processos operativos; decidir, determinar providências e estabelecer contatos sobre assuntos da respectiva área de atuação; baixar instruções gerais e zelar pelo cumprimento de diretrizes, normas e programas estabelecidos. </p>
-                    </h4>
-                    <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Planejamento, Administração e Finanças</h3>
-                        <h4 id="textoModal">
-                            <p>Coordenar, executar, avaliar e assessorar as atividades de formulação de política de gestão patrimonial, gestão financeira, gestão de suprimentos, administração de serviços e de pessoal; assegurar a plena execução das atividades necessárias a formulação de políticas, avaliação e gestão orçamentária, manutenção e desenvolvimento da infra-estrutura computacional, física e institucional, objetivando o aprimoramento das atividades de ensino, pesquisa e extensão da UNIMONTES. </p>
-                        </h4>
-                    <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Ensino</h3>
-                        <h4 id="textoModal">
-                            <p>Assegurar a plena execução das atividades necessárias ao desenvolvimento do ensino de graduação, pós-graduação, fundamental e médio; estabelecer diretrizes básicas e globais observada uma política de desenvolvimento do ensino, em todos os seus níveis, com o propósito de atender as demandas e potencialidades regionais e de promover o desenvolvimento científico, tecnológico, cultural e artístico na região de influência daUNIMONTES.</p>
-                        </h4>
-                    <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Pesquisa</h3>
-                        <h4 id="textoModal">
-                            <p>Coordenar o planejamento para avaliação, acompanhamento e execução de projetos de pesquisa técnico-científica; desenvolver ações tendo em vista a captação de recursos necessários à realização de pesquisa e intercâmbio técnico-científico; coordenar programas de divulgação da produção científica.</p>
-                        </h4>
-                    <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Extensão</h3>
-                        <h4 id="textoModal">
-                            <p>Planejar e coordenar o desenvolvimento e a realização de atividades de extensão junto à comunidade regional, entidades públicas e privadas; coordenar o planejamento da difusão cultural, esportiva e de lazer, valorizando os aspectos regionais.</p>
-                        </h4>
-                      
-                </div>
-
-                <div class="item">
-                    <div id="numeroPagina">6/7</div>
-                        <h2 id="titleModal">Unidades Acadêmicas de Deliberação e Execução - Os Centros</h2>
-                        <h4 id="textoModal">
-                            <p>Os Centros são unidades acadêmicas de deliberação e execução, aos quais incumbe coordenar, entre outras, as atividades ligadas à oferta de cursos pela Universidade.</p>
-                            <p>Compete aos Centros a atuação nos campos do conhecimento fundamental e aplicado, incumbindo-lhes, especificamente, a execução das atividades de ensino, pesquisa e extensão nas respectivas áreas de conhecimento.</p>
-                            <p>A Administração dos Centros é exercida pelo Conselho Departamental como órgão deliberativo e pela Diretoria, como órgão executivo.</p>
-                            <p>Cada Centro tem um Conselho Departamental, órgão máximo de deliberação do Centro, encarregado de estabelecer sua política geral em consonância com as disposições do Conselho de Ensino, Pesquisa e Extensão e do Conselho Universitário e funciona como instância recursal.</p>
-                            <p>A Diretoria, órgão executivo do Centro, é exercida pelo Diretor, escolhido por colégio eleitoral, em eleição direta, por escrutínio secreto, entre professores efetivos que integrem o Centro por mais de 05 (cinco) anos e é nomeado pelo Reitor, a partir de lista tríplice composta pelos nomes dos candidatos mais votados para o cargo;</p>
-                            <p>A Unimontes é composta pelos centros: Centro de Ciências Humanas - CCH, Centro de Ciências Sociais Aplicadas - CCSA, Centro de Ciências Biológicas e da Saúde - CCBS, Centro de Ciências Exatas e Tecnológicas - CCET, Centro de Educação Profissional e Tecnológica - CEPT e Centro de Educação à Distância - CEAD.</p>
-                        </h4>
-                </div>
-
-
-                <div class="item">
-                    <div id="numeroPagina">7/7</div>
-                        <h2 id="titleModal">Unidades Administrativas de Apoio</h2>
-                        <h4 id="textoModal">
-                            <p>As Unidades Administrativas de Apoio auxiliam as demais unidades da estrutura orgânica da Universidade na realização das atividades de ensino, pesquisa e extensão.</p>
-                            <p>São as seguintes as Unidades Administrativas de Apoio, cujos titulares são escolhidos, nomeados e demissíveis <em>“ad nutum”</em> pelo Reitor: Imprensa Universitária, Biblioteca Universitária, Diretoria de Documentação e Informações e Diretoria de Tecnologia da Informação</p>                            
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Diretoria de Documentação e Informações</h3>
-                        <h4 id="textoModal">
-                            <p>Participar da definição da política administrativa nas áreas de Documentação e Informações, inclusive com proposição de normas e diretrizes; planejar, organizar, coordenar e controlar o desempenho da Biblioteca, do Museu Histórico Regional da Universidade e das Divisões e Serviços subordinados; estudar e aprovar a adoção de novos métodos e processos na área de documentação e informações; decidir, determinar providências e estabelecer contatos sobre assuntos da respectiva área de atuação; baixar instruções gerais e zelar pelo cumprimento de diretrizes, normas e programas estabelecidos.</p>
-                        </h4>
-                        <h3 id="subtitleModal">Compete à Imprensa Universitária</h3>
-                        <h4 id="textoModal">
-                            <p>Realizar trabalhos de impressão gráfica de textos, gravuras, audiovisuais e outras matérias de interesse da UNIMONTES; controlar a uniformidade das impressões gráficas dos trabalhos técnicos, científicos e didáticopedagógicos produzidos na UNIMONTES; incumbir-se da publicação da produção científica, bem como de trabalhos de pesquisas, monografias e teses, desde que aprovados pelos órgãos competentes; imprimir formulários utilizados nos trabalhos da UNIMONTES</p>
-                        </h4>
-                </div>
-               
-
-            <a class="carousel-control left" href="#carouselAAUnimontes">&lsaquo;</a>
-            <a class="carousel-control right" href="#carouselAUnimontes">&rsaquo;</a>
-
+               <div class="item active">
+                  <div id="numeroPagina">1/7</div>
+                  <h2 id="titleModal">A Unimontes</h2>
+                  <center><br><br><img src="img/conteudo/aunimontes/Fachada-aérea-campus-sede01.jpg" style="height: 350px; width: 500px;"></center>
+                  <h5 id="subtitleModal"><br>Vista aérea Campus sede<br></h5>
+                  <h4 id="textoModal">
+                     <p>A Universidade Estadual de Montes Claros – UNIMONTES – resultou da transformação da Fundação Norte Mineira de Ensino Superior – FUNM, de acordo com o artigo 82, parágrafo 3º, do “Ato das Disposições Constitucionais Transitórias”, da Constituição Mineira de 21/09/89. A FUNM, atual UNIMONTES, foi criada pela Lei Estadual nº 2.615, de 24 de maio de 1962, de autoria do ex-deputado Cícero Dumont. </p>
+                     <p>Em 1963, surgiu a primeira unidade de ensino superior do Norte de Minas, a então Faculdade de Filosofia, Ciências e Letras – FAFIL, tendo como mantenedora a Fundação Educacional Luiz de Paula  - FELP -. No dia 13/04/63, foram iniciadas atividades dos cursos de Geografia, História, Letras e Pedagogia nas instalações do Colégio Imaculada Conceição.  </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Fachada-do-Casarão-da-Fafil-antes-da-reforma01.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Fachada do Casarão da Fafil antes da reforma<br></h5>
+                  <h4 id="textoModal">
+                     <p>Em 1965, os cursos foram transferidos para o casarão centenário da FUNM, localizado na rua Coronel Celestino, 75, em Montes Claros.  A primeira unidade de ensino superior da FUNM, a Faculdade de Direito – FADIR -, foi implantada em 1965. Em 1966, a FAFIL desliga-se da FELP e passa a integrar a FUNM.  </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Fachada-Centro-de-Ensino-Medio-e-Fundamental.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Fachada do Centro de Ensino Médio e Fundamental, na rua Coronel Celestino, 75<br></h5>
+                  <h4 id="textoModal">
+                     <p>Em 1968, começaram a funcionar na FAFIL os cursos de Matemática, Ciências Sociais e Filosofia. Depois, foram criadas unidades da FUNM: a Faculdade de Medicina (FAMED), em 1969; a Faculdade de Administração e Finanças – FADEC, com os cursos de Administração, Ciências Contábeis e Ciências Econômicas, em 1972; e a Faculdade de Educação Artística – FACEART – em 1987.  </p>
+                     <p>Através da Constituição Estadual de 1989, a FUNM foi transformada na Universidade Estadual de Montes Claros, instituída através do Decreto Estadual nº 30.971, de 09/03/1990. A efetiva integração da UNIMONTES como ente público (autarquia) ocorreu, no entanto, a partir de 01/08/1990, quando os servidores da extinta FUNM passaram a ser incorporados ao quadro pessoal do Estado. O primeiro estatuto da Universidade foi aprovado através do Decreto Estadual nº 31.840, de 24/09/1990. </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Antiga-fachada-do-campus-sede-em-Montes-Claros01.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Antiga fachada do Campus-sede em Montes Claros<br></h5>
+                  <h4 id="textoModal">
+                     <p>A Lei Estadual nº 11.517, de 13 de julho de 1994,  reorganizou a Instituição do ponto de vista administrativo-funcional, sendo extintas as faculdades e criados os Centros de Ensino: Centro de Ciências Humanas (CCH), Centro de Ciências Biológicas e da Saúde (CCBS), Centro de Ciências Sociais Aplicadas (CCSA) e  Centro do Ensino Médio e Fundamental (CEMF), depois, substituído pelo  Centro de Educação Profissional e Tecnológica (CEPT). Através do mesmo instrumento legal, o antigo Hospital Regional Clemente de Faria, da Fundação Hospitalar do Estado de Minas Gerais (Fhemig) foi incorporado definitivamente à Unimontes com a denominação de Hospital Universitário Clemente de Faria. </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Construcao_do_cch01.jpg" style="height: 300px; width: 450px;">         <img src="img/conteudo/aunimontes/Inauguracao_do_predio_CCH01.jpg" style="height: 300px; width: 450px;">
+                  </center>
+                  <div class="span6">
+                     <h5 id="subtitleModal">Construção do Centro de Ciências Humanas - CCH</h5>
+                  </div>
+                  <div class="span5">
+                     <h5 id="subtitleModal">Inauguração do Centro de Ciências Humanas<br></h5>
+                  </div>
+                  <center><img src="img/conteudo/aunimontes/Antiga-fachada-CCBS01.jpg" style="height: 300px; width: 450px;">       <img src="img/conteudo/aunimontes/Antiga-fachada-CCH01.jpg" style="height: 300px; width: 450px;"></center>
+                  <div class="span6">
+                     <h5 id="subtitleModal"><br>Antiga fachada do CCBS - Centro de Ciências Biológicas e da Saúde<br></h5>
+                  </div>
+                  <div class="span5">
+                     <h5 id="subtitleModal"><br>Antiga fachada do CCH - Centro de Ciências Humanas<br></h5>
+                     <h4 id="textoModal">
+                  </div>
+                  <h4 id="textoModal">
+                     <p>Em 21/07/1994, através da Portaria nº 1.116,  foi homologada pelo Ministério da Educação o reconhecimento da UNIMONTES como universidade, em face do Parecer nº 232/94, do Conselho Estadual de Educação de Minas Gerais.  </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Imagens-aereas-campus-sede01.jpg" style="height: 300px; width: 450px;">       <img src="img/conteudo/aunimontes/Campus-sede.jpg" style="height: 300px; width: 450px;"></center>
+                  <div class="span6">
+                     <h5 id="subtitleModal"><br>Imagens aéreas do Campus-sede</h5>
+                  </div>
+                  <div class="span5">
+                     <h5 id="subtitleModal"><br>Campus-sede em Montes Claros<br></h5>
+                  </div>
+                  <h4 id="textoModal">
+                     <p>O Centro de Ciências Exatas e Tecnológicas - CCET - foi criado através da Lei nº 11.660, de 02/12/1994. A partir de 1995, a UNIMONTES  começou a implantar cursos regulares de graduação fora da sede, primeiramente na cidade de Januária, com os cursos de Letras e Pedagogia. Em 6 de setembro de 1995, através da Lei Estadual nº 11.903, a UNIMONTES passou a integrar a Secretaria de Estado de Ciência e Tecnologia, atual Secretaria de Estado de Ciência, Tecnologia e Ensino Superior (Sectes).  </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Antiga-fachada-Prédio-CCET01.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Antiga Fachada do Prédio CCET<br></h5>
+                  <h4 id="textoModal">
+                     <p>Em 21/05/1996, foi promulgada a Lei Estadual nº 12.154, que “dá nova redação ao artigo 11 da Lei  nº 11.517, de 13/07/1994”, disciplinando as eleições para Reitor e Vice-Reitor. A partir do segundo semestre letivo de  1996, começaram  a funcionar, na cidade de Janaúba,  o curso de Agronomia e, em Pirapora, os cursos de Geografia e Pedagogia. Passaram a ser oferecidos, em Montes Claros, os cursos  de Sistemas de Informação (inicialmente denominado Ciência da Computação), Educação Física e Enfermagem. </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Antiga-fachada-Campus-de-Janauba01.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Antiga fachada do Campi de Janaúba<br><br></h5>
+                  <center><img src="img/conteudo/aunimontes/Construcao-do-Centro-Esportivo-Univesitario01.jpg" style="height: 300px; width: 450px;"> </center>
+                  <h5 id="subtitleModal"><br>Construção do CEU - Centro Esportivo Universitário<br></h5>
+                  <h4 id="textoModal">
+                     <p><br>Em 1997, o curso de Ciências do Primeiro Grau foi extinto, sendo criados os cursos de Biologia – Licenciatura Plena e Bacharelado, Matemática. No mesmo ano, o curso de Letras foi reestruturado, passando a ser oferecidas as licenciaturas únicas em Espanhol, Inglês e Português. Foi implantado ainda o curso de Odontologia.  Através do Decreto Estadual nº 39.820, de 19/08/1998, foi aprovado o novo Estatuto da Universidade. </p>
+                     <p>Em setembro de 1998, foram realizadas as primeiras eleições para Reitor e Vice-Reitor da UNIMONTES, tendo sido eleitos e, de acordo com a legislação, nomeados pelo Governador do Estado, os professores José Geraldo de Freitas Drumond (Reitor) e Paulo César Gonçalves de Almeida (Vice-Reitor), empossados em dezembro daquele ano. </p>
+                     <p>O Conselho Universitário aprovou, em 20/12/1999, o Regimento Geral da UNIMONTES. Através do Decreto Estadual nº 41.434, de 15 de dezembro de 2000, foi criado o Campus de Almenara, sendo autorizado também o Curso Normal Superior, cujas atividades foram iniciadas em março de 2001. </p>
+                     <p>Em julho de 2002, começou a funcionar o curso de Zootecnia em Salinas. Em dezembro do mesmo ano, foram criados os campi de Espinosa (Normal Superior), Brasília de Minas (Normal Superior) e São Francisco (História e Matemática).  </p>
+                     <p>Em outubro de 2002, foram realizadas novas eleições para Reitor e Vice-Reitor da UNIMONTES,  tendo sido eleitos e nomeados, em 13/11/2002,  pelo Governador do Estado, os professores Paulo César Gonçalves de Almeida (Reitor) e Tânia Marta Fialho (Vice-Reitora), que foram empossados em 4/12/2002. </p>
+                     <p>Em 29/01/2003, foi editada a Lei Delegada nº 90, dispondo sobre a estrutura básica da UNIMONTES. Em 15/09/2003, foi editado o Decreto nº 43.586, dispondo sobre as competências das unidades administrativas e a identificação dos cargos de provimento em comissão.</p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Servidores_da_Unimontes01.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Servidores da Unimontes.<br></h5>
+                  <h4 id="textoModal">
+                     <p>Em fevereiro de 2003, começou a funcionar no campus-sede, em Montes Claros, o curso de Serviço Social. No mesmo período, foram criados os campi de Unaí e Paracatu no Noroeste de Minas.  </p>
+                     <p>Em 21/08/2006, através da Resolução 18/2006, do Conselho Universitário, foi criado o curso regular de graduação em Ciências da Religião, que começou a funcionar em fevereiro de 2007 no Campus Universitário Professor Darcy Ribeiro. No segundo semestre de 2008, a Unimontes iniciou as atividades dos cursos de educação a distância, dentro do sistema Universidade Abertas do  Brasil (UAB), em convênio com o Ministério da Educação.  </p>
+                     <p>Em 31/7/2006, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 17/11/2006, pelo Governador do Estado, os professores Paulo César Gonçalves de Almeida (Reitor) e João dos Reis Canela (Vice-Reitor), empossados em 04/12/2006, para a gestão dez -2006/dez -2010</p>
+                     <p>Em 26/01/2007, foi editada a Lei Delegada nº 142, alterando a Lei Delegada nº 90, que dispõe sobre a estrutura orgânica básica da UNIMONTES. </p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Fachada_Campus.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Fachada da Unimontes atualmente.<br></h5>
+                  <h4 id="textoModal">
+                     <p>Em 13/12/2008, ocorreu a inauguração do Campus de Bocaiúva, onde foram implantados os cursos de  Química (2009) e Física (2010). Em 04/11/2010, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 24/11/2010, pelo governador do Estado, os professores  João dos Reis Canela (Reitor) e Maria Ivete Soares de Almeida (Vice-Reitora), empossados em 06/12/2010 para a gestão dez-2010/dez -2014. Em fevereiro de 2011,  foram iniciadas as atividades do curso de Engenharia de Sistemas, vinculado ao Centro de Ciências Exatas e Tecnológicas (CCET).  Em 2012, o mesmo centro passou a oferecer o curso de Engenharia Civil. </p>
+                     <p>Em julho de 2014, foram iniciadas as atividades dos cursos de Matemática, em Joaíma; e de Tecnólogo em Gestão Pública, em Pompéu. Em outubro de 2014, foi inaugurado o Museu Regional do Norte de Minas, instalado no antigo Casarão da Fafil, na rua Coronel Celestino. Em 06/11/2014, foram realizadas novas eleições para Reitor e Vice-Reitor da Unimontes, tendo sido eleitos e nomeados, em 02/12/2014, pelo governador do Estado os professores  João dos Reis Canela (Reitor) e Antonio Alvimar Souza (Vice-Reitor), empossados em 06/12/2014 para a gestão dez-2014/dez-2018.</p>
+                  </h4>
+                  <center><img src="img/conteudo/aunimontes/Formatura_2015.jpg" style="height: 300px; width: 450px;"></center>
+                  <h5 id="subtitleModal"><br>Reitor Prof. João dos Reis Canela na Colação de Grau Dezembro - 2015<br></h5>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">2/7</div>
+                  <h2 id="titleModal">Unidades Colegiadas de Deliberação Superior</h2>
+                  <h3 id="subtitleModal">Conselho Curador</h3>
+                  <h4 id="textoModal">
+                     <p>O Conselho de Curadores integrante da administração superior é o órgão de fiscalização orçamentária e econômico-financeira da UNIMONTES.</p>
+                     <p>Compete ao Conselho de Curadores, no prazo legal, pronunciar-se sobre proposta orçamentária, balanços e prestação de contas da Universidade; pronunciar-se sobre gravame, permuta e alienação de bens imóveis ou de valor relevante; examinar os livros e documentação de escrituração contábeis da UNIMONTES; examinar o estado do caixa e os valores em depósito, devendo, o Reitor, fornecer-lhe as informações que lhe forem solicitadas; lavrar em livro de atas e pareceres do Conselho de Curadores, os resultados dos exames a que proceder; emitir parecer conclusivo sobre as atividades econômicas e financeiras da UNIMONTES a cada exercício, tomando por base o inventário, o balanço e as contas apresentadas pelo Reitor; apontar erros e omissões e denunciar fraudes que constituem crimes contra o patrimônio público, previsto em lei.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Conselho Universitário</h3>
+                  <h4 id="textoModal">
+                     <p>O Conselho Universitário é o órgão máximo de deliberação da Universidade, incumbindo-se da definição da política geral da Autarquia nos planos acadêmico, administrativo, financeiro, patrimonial e disciplinar e funciona como instância de recurso.</p>
+                     <p>Compete ao Conselho Universitário, por exemplo, estabelecer a política geral da Universidade; aprovar ou alterar o Estatuto e o Regimento Geral, bem como baixar Resoluções Complementares; decidir sobre recursos nos termos do Regimento Geral e avocar qualquer matéria de interesse da Universidade; aprovar a criação, reorganização ou extinção de Departamentos, Unidades Universitárias, Unidades Administrativas de Apoio ou outros órgãos; decidir sobre a suspensão temporária, total ou parcial de atividades universitárias, entre outros. </p>
+                  </h4>
+                  <h3 id="subtitleModal">Conselho de Ensino, Pesquisa e Extensão</h3>
+                  <h4 id="textoModal">
+                     <p>O Conselho de Ensino, Pesquisa e Extensão é o órgão técnico superior de deliberação e supervisão em matéria de ensino, pesquisa e extensão, cabendo, de suas decisões, recurso para o Conselho Universitário da UNIMONTES.</p>
+                     <p>Compete ao Conselho de Ensino, Pesquisa e Extensão, por exemplo, fixar normas complementares ao Regimento Geral, além de outras que se incluam no âmbito de sua competência; aprovar os planos de novos cursos de graduação e pós-graduação, após audiência do(s) Departamento(s) envolvido(s); aprovar o início, recesso e término do calendário universitário, no mês de setembro do ano antecedente à vigência, em cujos limites os Conselhos Departamentais deverão elaborar e aprovar os calendários dos Centros; decidir sobre propostas, indicações ou representações de interesse da Universidade em assunto de sua própria competência; propor normas e critérios para concessão de bolsas especiais de iniciação científica; aprovar projetos de pesquisa e extensão, ouvidos os respectivos Departamentos e as Câmaras competentes; entre outros. </p>
+                  </h4>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">3/7</div>
+                  <h2 id="titleModal">Unidade de Direção Superior - Reitoria</h2>
+                  <h4 id="textoModal">
+                     <p>A Reitoria é a Unidade de Direção Superior, que coordena e supervisiona todas as atividades universitárias.</p>
+                     <p>A Reitoria é composta pelo Reitor e pelo Vice-Reitor.</p>
+                     <p>O Reitor é substituído em suas faltas ou impedimentos pelo Vice-Reitor que o sucede em caso de vacância.</p>
+                     <p>Compete ao Reitor: representar a Universidade ou promover-lhe a representação, ativa e passivamente, em juízo ou fora dele; convocar e presidir as reuniões dos Conselhos de que fizer parte; coordenar e controlar a execução do plano anual da Universidade e avaliar os resultados; promover o intercâmbio da Universidade com a comunidade e com instituições congêneres; coordenar, fiscalizar e superintender todas as atividades da Universidade; promulgar resoluções dos Conselhos e baixar portarias, editais, ordens de serviços e atos inerentes à administração da Universidade; cumprir e fazer cumprir as decisões dos órgãos colegiados superiores, bem como executar os planos e orçamento aprovados; presidir todos os atos da Universidade a que estiver presente; assinar acordos, convênios e contratos, observado o disposto na legislação em vigor, no Estatuto e neste Regimento; designar, nomear e empossar os dirigentes Universitários; conferir graus e títulos acadêmicos; tomar decisões, <em>“ad referendum”</em> do Colegiado Superior competente, submetendo-as à apreciação do mesmo, no prazo de 15 (quinze) dias; pronunciar-se, privativamente, em nome da Universidade; desempenhar quaisquer outras atribuições inerentes à função de Reitor, previstas em Lei, no Estatuto e neste Regimento Geral.</p>
+                  </h4>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">4/7</div>
+                  <h2 id="titleModal">Unidades Administrativas de Assessoramento Superior</h2>
+                  <h4 id="textoModal">
+                     <p>São unidades administrativas de assessoramento superior da UNIMONTES: Auditoria, Gabinete, Assessoria Jurídica, Assessoria de Comunicação, Escritório de Representação da Unimontes em Belo Horizonte e Secretaria Geral.</p>
+                     <p>Os titulares das unidades de assessoramento superior da UNIMONTES são escolhidos, nomeados e demissíveis <em> “ad nutum” pelo Reitor.</em></p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Auditoria</h3>
+                  <h4 id="textoModal">
+                     <p>Supervisionar trabalhos de gabinete em primeiro nível da organização, tendo em vista a realização de atividades executivas, assistindo diretamente ao Reitor; programar e desempenhar atividades de coordenação político-administrativa e de representação social, relacionadas com a Reitoria e com o seu titular; planejar, organizar, coordenar e controlar as atividades e os trabalhos pertinentes ao setor.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete ao Gabinete</h3>
+                  <h4 id="textoModal">
+                     <p>Exercer atividade técnica, no campo da auditoria; realizar e orientar auditorias financeiras, patrimoniais, orçamentárias e administrativas nas áreas da UNIMONTES quanto à aplicação de recursos, à eficácia dos sistemas adotados, ao correto cumprimento das disposições legais pertinentes à normalidade e essencialidade de custos e despesas e à regularidade administrativa; efetuar inspeções setoriais e globais; emitir pareceres, laudos e elaborar relatórios na forma da lei, bem como torná-los públicos e acessíveis à comunidade.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Assessoria Jurídica</h3>
+                  <h4 id="textoModal">
+                     <p>Exercer atividade profissional no campo do Direito; representar a UNIMONTES, em juízo ou fora dele, mediante mandato, prestando quaisquer serviços de natureza jurídica; examinar e estudar questões jurídicas ou documentos relativos a direitos e obrigações de que a UNIMONTES seja titular ou interessada; emitir pareceres circunstanciados sobre assuntos jurídicos, submetidos pela Reitoria.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Assessoria de Comunicação</h3>
+                  <h4 id="textoModal">
+                     <p>Exercer atividade profissional no campo da comunicação social, interna e externamente; preparar e redigir artigos, editoriais, comentários e noticiário variado de interesse da UNIMONTES, a serem divulgados por veículos de comunicação de massa; realizar entrevistas e reportagens; redigir boletins, mensagens, relatórios e documentos oficiais; planejar e executar pesquisas e campanhas de relações públicas.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete ao Escritório de Representação da UNIMONTES em Belo Horizonte</h3>
+                  <h4 id="textoModal">
+                     <p>Executar trabalhos de assessoramento e de Representação; manter contatos com órgãos da Administração Direta e Indireta dos Governos Federal, Estadual e Municipal, com órgãos de ensino e pesquisa, órgãos universitários e congêneres; elaborar pareceres e relatórios de suas atividades.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Secretaria Geral</h3>
+                  <h4 id="textoModal">
+                     <p>Realizar trabalhos de atendimento, comunicação e redação, no campo de secretariado; secretariar reuniões dos Colegiados Superiores elaborando súmulas, atas e resumos; programar, orientar e controlar atividades de auxiliares; expedir certidões e históricos escolares, relacionados com a vida acadêmica; superintender todas as atividades relacionadas com o controle acadêmico.</p>
+                  </h4>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">5/7</div>
+                  <h2 id="titleModal">Unidades Administrativas de Planejamento, Coordenação e Execução</h2>
+                  <h4 id="textoModal">
+                     <p>São unidades administrativas de planejamento, coordenação e execução da UNIMONTES: Pró-Reitoria de Planejamento, Administração e Finanças, Pró-Reitoria de Ensino, Pró-Reitoria de Pesquisa e Pró-Reitoria de Extensão. </p>
+                     <p>Cumprem às Pró-Reitorias, de modo geral, as seguintes atribuições: Participar da definição da política administrativa de sua área de atuação, inclusive com proposição de normas e diretrizes; planejar, organizar, coordenar e controlar o desempenho das Coordenadorias e das Divisões que lhes são subordinadas; estudar e aprovar a adoção de novos métodos e processos operativos; decidir, determinar providências e estabelecer contatos sobre assuntos da respectiva área de atuação; baixar instruções gerais e zelar pelo cumprimento de diretrizes, normas e programas estabelecidos. </p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Planejamento, Administração e Finanças</h3>
+                  <h4 id="textoModal">
+                     <p>Coordenar, executar, avaliar e assessorar as atividades de formulação de política de gestão patrimonial, gestão financeira, gestão de suprimentos, administração de serviços e de pessoal; assegurar a plena execução das atividades necessárias a formulação de políticas, avaliação e gestão orçamentária, manutenção e desenvolvimento da infra-estrutura computacional, física e institucional, objetivando o aprimoramento das atividades de ensino, pesquisa e extensão da UNIMONTES. </p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Ensino</h3>
+                  <h4 id="textoModal">
+                     <p>Assegurar a plena execução das atividades necessárias ao desenvolvimento do ensino de graduação, pós-graduação, fundamental e médio; estabelecer diretrizes básicas e globais observada uma política de desenvolvimento do ensino, em todos os seus níveis, com o propósito de atender as demandas e potencialidades regionais e de promover o desenvolvimento científico, tecnológico, cultural e artístico na região de influência daUNIMONTES.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Pesquisa</h3>
+                  <h4 id="textoModal">
+                     <p>Coordenar o planejamento para avaliação, acompanhamento e execução de projetos de pesquisa técnico-científica; desenvolver ações tendo em vista a captação de recursos necessários à realização de pesquisa e intercâmbio técnico-científico; coordenar programas de divulgação da produção científica.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete, especificamente, à Pró-Reitoria de Extensão</h3>
+                  <h4 id="textoModal">
+                     <p>Planejar e coordenar o desenvolvimento e a realização de atividades de extensão junto à comunidade regional, entidades públicas e privadas; coordenar o planejamento da difusão cultural, esportiva e de lazer, valorizando os aspectos regionais.</p>
+                  </h4>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">6/7</div>
+                  <h2 id="titleModal">Unidades Acadêmicas de Deliberação e Execução - Os Centros</h2>
+                  <h4 id="textoModal">
+                     <p>Os Centros são unidades acadêmicas de deliberação e execução, aos quais incumbe coordenar, entre outras, as atividades ligadas à oferta de cursos pela Universidade.</p>
+                     <p>Compete aos Centros a atuação nos campos do conhecimento fundamental e aplicado, incumbindo-lhes, especificamente, a execução das atividades de ensino, pesquisa e extensão nas respectivas áreas de conhecimento.</p>
+                     <p>A Administração dos Centros é exercida pelo Conselho Departamental como órgão deliberativo e pela Diretoria, como órgão executivo.</p>
+                     <p>Cada Centro tem um Conselho Departamental, órgão máximo de deliberação do Centro, encarregado de estabelecer sua política geral em consonância com as disposições do Conselho de Ensino, Pesquisa e Extensão e do Conselho Universitário e funciona como instância recursal.</p>
+                     <p>A Diretoria, órgão executivo do Centro, é exercida pelo Diretor, escolhido por colégio eleitoral, em eleição direta, por escrutínio secreto, entre professores efetivos que integrem o Centro por mais de 05 (cinco) anos e é nomeado pelo Reitor, a partir de lista tríplice composta pelos nomes dos candidatos mais votados para o cargo;</p>
+                     <p>A Unimontes é composta pelos centros: Centro de Ciências Humanas - CCH, Centro de Ciências Sociais Aplicadas - CCSA, Centro de Ciências Biológicas e da Saúde - CCBS, Centro de Ciências Exatas e Tecnológicas - CCET, Centro de Educação Profissional e Tecnológica - CEPT e Centro de Educação à Distância - CEAD.</p>
+                  </h4>
+               </div>
+               <div class="item">
+                  <div id="numeroPagina">7/7</div>
+                  <h2 id="titleModal">Unidades Administrativas de Apoio</h2>
+                  <h4 id="textoModal">
+                     <p>As Unidades Administrativas de Apoio auxiliam as demais unidades da estrutura orgânica da Universidade na realização das atividades de ensino, pesquisa e extensão.</p>
+                     <p>São as seguintes as Unidades Administrativas de Apoio, cujos titulares são escolhidos, nomeados e demissíveis <em>“ad nutum”</em> pelo Reitor: Imprensa Universitária, Biblioteca Universitária, Diretoria de Documentação e Informações e Diretoria de Tecnologia da Informação</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Diretoria de Documentação e Informações</h3>
+                  <h4 id="textoModal">
+                     <p>Participar da definição da política administrativa nas áreas de Documentação e Informações, inclusive com proposição de normas e diretrizes; planejar, organizar, coordenar e controlar o desempenho da Biblioteca, do Museu Histórico Regional da Universidade e das Divisões e Serviços subordinados; estudar e aprovar a adoção de novos métodos e processos na área de documentação e informações; decidir, determinar providências e estabelecer contatos sobre assuntos da respectiva área de atuação; baixar instruções gerais e zelar pelo cumprimento de diretrizes, normas e programas estabelecidos.</p>
+                  </h4>
+                  <h3 id="subtitleModal">Compete à Imprensa Universitária</h3>
+                  <h4 id="textoModal">
+                     <p>Realizar trabalhos de impressão gráfica de textos, gravuras, audiovisuais e outras matérias de interesse da UNIMONTES; controlar a uniformidade das impressões gráficas dos trabalhos técnicos, científicos e didáticopedagógicos produzidos na UNIMONTES; incumbir-se da publicação da produção científica, bem como de trabalhos de pesquisas, monografias e teses, desde que aprovados pelos órgãos competentes; imprimir formulários utilizados nos trabalhos da UNIMONTES</p>
+                  </h4>
+               </div>
+               <a class="carousel-control left" href="#carouselAAUnimontes">&lsaquo;</a>
+               <a class="carousel-control right" href="#carouselAUnimontes">&rsaquo;</a>
             </div>
-        </div>
-
-    </div>
-    <div class="modal-footer" id="navegacaoModal">
-
-        <a href="#caroucelApresentacao" onclick="ItemModal(0);"> A Unimontes </a>|
-        <a href="#caroucelApresentacao" onclick="ItemModal(1);"> Conselhos </a>|
-        <a href="#caroucelApresentacao" onclick="ItemModal(2);"> Reitoria </a>|
-        <a href="#caroucelApresentacao" onclick="ItemModal(3);"> Assessoramento Superior </a>|
-        <a href="#caroucelApresentacao" onclick="ItemModal(4);"> Planejamento, Coordenação e Execução </a>|
-        <br>
-        <a href="#caroucelApresentacao" onclick="ItemModal(5);"> Os Centros </a>|       
-        <a href="#caroucelApresentacao" onclick="ItemModal(6);"> Unidades Administrativas de Apoio </a>|
-
-        <!--button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button-->
-    </div>
-</div>
+         </div>
+      </div>
+      <div class="modal-footer" id="navegacaoModal">
+         <a href="#caroucelApresentacao" onclick="ItemModal(0);"> A Unimontes </a>|
+         <a href="#caroucelApresentacao" onclick="ItemModal(1);"> Conselhos </a>|
+         <a href="#caroucelApresentacao" onclick="ItemModal(2);"> Reitoria </a>|
+         <a href="#caroucelApresentacao" onclick="ItemModal(3);"> Assessoramento Superior </a>|
+         <a href="#caroucelApresentacao" onclick="ItemModal(4);"> Planejamento, Coordenação e Execução </a>|
+         <br>
+         <a href="#caroucelApresentacao" onclick="ItemModal(5);"> Os Centros </a>|       
+         <a href="#caroucelApresentacao" onclick="ItemModal(6);"> Unidades Administrativas de Apoio </a>|
+         <!--button class="btn" data-dismiss="modal"  aria-hidden="true">Fechar</button-->
+      </div>
+   </div>

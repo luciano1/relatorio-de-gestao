@@ -1,3 +1,13 @@
+/*******************************************************************************************
+                RELATÓRIO DE ATIVIDADES 2015 - UNIMONTES 
+
+        Desenvolvido pela Diretoria de Tecnologia da Informação - DTI
+                     Dezembro de 2015 a maio de 2016
+     Repositório do Projeto: https://github.com/JessicaFFerreira/relatorio-de-gestao
+
+Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodrigo Oliveira 
+
+*******************************************************************************************/
 $(document).ready(function() {
     $('.carousel, #carouselInfraestrutura').carousel('pause');
     $('.right').click(function() {
@@ -7,10 +17,6 @@ $(document).ready(function() {
         $('.carousel').carousel('prev');
 
     })
-  
-
-
-
 
 })
 $(document).ready(function() {
@@ -369,13 +375,13 @@ function EfeitoMetade(efeito, img, margin, coricone, cortexto, imgbackground, co
                 backgroundSize: "cover"
             });
         });
-        //$("#foto6").attr("src", "img/" + retangulo + ".png");	
+        //$("#foto6").attr("src", "img/" + retangulo + ".png"); 
 
 
     });
 
 
-    // MUDA O BACKGRDOUND DA METADE DIREITA						
+    // MUDA O BACKGRDOUND DA METADE DIREITA                     
     $(".metade-direita").animate({
         opacity: 0.1
     }, 800, function() {
@@ -500,7 +506,6 @@ var efeitolista = {
 var titulo = "Título default";
 var paragrafo = "Texto default";
 var link = '';
-
 
 
 function handle(delta, ver) {
@@ -999,26 +1004,26 @@ function handle(delta, ver) {
 
         case 114:
 
-        /*paragrafo = "Novo parágrafo";
-            titulo = "Publicidade";
-            link = "#publicidade";
+            /*paragrafo = "Novo parágrafo";
+                titulo = "Publicidade";
+                link = "#publicidade";
 
-            handledot(19, titulo);
+                handledot(19, titulo);
 
-            $('.go-top').attr("onclick", "handle(handle, 108)");
-            $('.go-to').attr("onclick", "handle(handle, 120)");
-            $('.voltarTopo').css("visibility", "visible");
-            $('.time-line').css("visibility", "visible");
+                $('.go-top').attr("onclick", "handle(handle, 108)");
+                $('.go-to').attr("onclick", "handle(handle, 120)");
+                $('.voltarTopo').css("visibility", "visible");
+                $('.time-line').css("visibility", "visible");
 
-            //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
-            EfeitoMetade("size", "publicidade", "200", "rgba(245, 152, 15, 0.26)", "#000", "publicidade_d", "#F2D034");
-            //EfeitoLogo(efeito,img)
-            EfeitoLogo("size", "ic-4");
-            MudaConteudo(titulo, paragrafo, link);
+                //EfeitoMetade(efeito,img,margin,coricone,cortexto,imgbackground, corbody)
+                EfeitoMetade("size", "publicidade", "200", "rgba(245, 152, 15, 0.26)", "#000", "publicidade_d", "#F2D034");
+                //EfeitoLogo(efeito,img)
+                EfeitoLogo("size", "ic-4");
+                MudaConteudo(titulo, paragrafo, link);
 
-            break;
+                break;
 
-        case 120:*/
+            case 120:*/
 
             paragrafo = "Vinculada à Unimontes, a Rádio FM 101,1 promove as atividades de ensino, extensão, pesquisa e ações educacionais e culturais da Instituição. A Rádio Unimontes mantém convênios com as principais agências de notícias do país e com a Associação Mineira de Rádio e Televisão – AMIRT. A emissora universitária fundamenta sua programação na boa música popular brasileira e mantém amplo noticiário jornalístico.";
             titulo = "Rádio Unimontes";
@@ -1067,7 +1072,7 @@ function handle(delta, ver) {
 
         case 126:
 
-            paragrafo = "Novo parágrafo";
+            paragrafo = "";
             titulo = "Infraestrutura";
             link = "#infraestrutura";
 
@@ -1204,74 +1209,74 @@ function ItemModal(pagina) {
 
 var parametro = window.location.search.split("=");
 var topico = parametro[1];
-$(document).ready(function(){
-	switch(topico){
-	case "atividades":
-		handle(event , 12);
-		break;
-	case "ensino":
-		handle(event , 18);
-		break;
-	case "cead":
-		handle(event , 24);
-		break;
-	case "pos":
-		handle(event , 30);
-		break;
-	case "extensao":
-		handle(event , 36);
-		break;
-	case "pesquisa":
-		handle(event , 42);
-		break;
-	case "bibliotecas":
-		handle(event , 48);
-		break;	
-	case "processos_seletivos":
-		handle(event , 54);
-		break;
-	case "hu":
-		handle(event , 60);
-		break;
-	case "cepedor":
-		handle(event , 66);
-		break;
-	case "editora":
-		handle(event , 72);
-		break;
-	case "ipc":
-		handle(event , 78);
-		break;
-	case "saj":
-		handle(event , 84);
-		break;
-	case "intercambio":
-		handle(event , 90);
-		break;
-	case "museu":
-		handle(event , 96);
-		break;
-	case "ascom":
-		handle(event , 102);
-		break;
-	case "midias":
-		handle(event , 108);
-		break;
-	case "publicidade":
-		handle(event , 114);
-		break;
-	case "radio":
-		handle(event , 120);
-		break;
-	case "imprensa":
-		handle(event , 126);
-		break;
-	case "infraestrutura":
-		handle(event , 132);
-		break;
-	case "financas":
-		handle(event , 138);
-		break;
+$(document).ready(function() {
+    switch (topico) {
+        case "atividades":
+            handle(event, 12);
+            break;
+        case "ensino":
+            handle(event, 18);
+            break;
+        case "cead":
+            handle(event, 24);
+            break;
+        case "pos":
+            handle(event, 30);
+            break;
+        case "extensao":
+            handle(event, 36);
+            break;
+        case "pesquisa":
+            handle(event, 42);
+            break;
+        case "bibliotecas":
+            handle(event, 48);
+            break;
+        case "processos_seletivos":
+            handle(event, 54);
+            break;
+        case "hu":
+            handle(event, 60);
+            break;
+        case "cepedor":
+            handle(event, 66);
+            break;
+        case "editora":
+            handle(event, 72);
+            break;
+        case "ipc":
+            handle(event, 78);
+            break;
+        case "saj":
+            handle(event, 84);
+            break;
+        case "intercambio":
+            handle(event, 90);
+            break;
+        case "museu":
+            handle(event, 96);
+            break;
+        case "ascom":
+            handle(event, 102);
+            break;
+        case "midias":
+            handle(event, 108);
+            break;
+        case "publicidade":
+            handle(event, 114);
+            break;
+        case "radio":
+            handle(event, 120);
+            break;
+        case "imprensa":
+            handle(event, 126);
+            break;
+        case "infraestrutura":
+            handle(event, 132);
+            break;
+        case "financas":
+            handle(event, 138);
+            break;
 
-		}
-	});
+    }
+});
