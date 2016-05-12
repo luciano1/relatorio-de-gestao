@@ -17,10 +17,7 @@ $(document).ready(function() {
         $('.carousel').carousel('prev');
 
     })
-<<<<<<< HEAD
-=======
 
->>>>>>> d818e2c328d3359f66eadfa0182d5f42b5d7c14b
 })
 $(document).ready(function() {
     if (($(window).width()) < 980) {
