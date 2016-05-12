@@ -1,617 +1,650 @@
+/*************************************************************************************************
+                RELATÓRIO DE ATIVIDADES 2015 - UNIMONTES 
 
-@font-face {
+        Desenvolvido pela Diretoria de Tecnologia da Informação - DTI
+                     Dezembro de 2015 a maio de 2016
+     Repositório do Projeto: https://github.com/JessicaFFerreira/relatorio-de-gestao
+
+Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodrigo Oliveira 
+ 
+
+*************************************************************************************************/
+@font-face
+{
 	font-family: "Stilu-Regular";
 	src: url("../fonts/Stilu-Regular.otf");
 }
-
-body{
+body
+{
 	background: rgb(123, 212, 254);
 	font-family: "Stilu-Regular";
-	overflow:hidden; /*Tirar a barra de rolagem*/
 	height: 700px;
+	overflow: hidden;
 }
-
-.metade-esquerda{
-	width: 50%;
+.metade-esquerda
+{
 	background: url(../img/relatorio/capa.jpg);
-	background-size:cover;
-	height:667px;
-	position: fixed;
-	left: 1px;
-
-}
-
-.metade-direita{
-	width: 50%;
+	background-size: cover;
 	height: 667px;
-	background: url(../img/relatorio/capa2.jpg);/*-image: url(../img/fundo-2.png);*/
+	left: 1px;
 	position: fixed;
-	right:1px;
+	width: 50%;
+}
+.metade-direita
+{
+	background: url(../img/relatorio/capa2.jpg);
+	background-size: cover;
 	color: #BCBCBC;
-	background-size:cover;
-}
-
-.logo{
-	width: 90px;
-	height: auto;
-	position: absolute;
-	background: #fff;
-	left: 46.3%;
-	top: 45%;
-}
-
-.logo img{
-
-	width: 70px;
-	height: auto;
-	padding:15px;
-	background-color: #FFF;
+	height: 667px;
 	position: fixed;
+	right: 1px;
+	width: 50%;
+}
+.logo
+{
+	background: #fff;
+	height: auto;
+	left: 46.3%;
+	position: absolute;
+	top: 45%;
+	width: 90px;
+}
+.logo img
+{
+	background-color: #FFF;
+	height: auto;
+	padding: 15px;
+	position: fixed;
+	width: 70px;
 	z-index: 1000;
 }
-
-.go-to{
-	width: 50px;
-	height: 50px;
+.go-to
+{
 	border-radius: 30px;
-    cursor:pointer;
+	cursor: pointer;
+	height: 50px;
+	left: 48.15%;
+	padding-bottom: 0px;
 	position: fixed;
-	z-index: 1003;
-	left:48.15%;
-	top:90%;
 	text-align: center;
-	padding-bottom:0px;
+	top: 90%;
 	visibility: visible;
-}
-
-.go-to i{
-	color:#ccc;
-	margin-top: 10px;
-	font-size: 3em;
-}
-
-.go-to:hover i{
-	color:#999;
-	text-decoration: none;
-}
-
-.go-top{
 	width: 50px;
-	height: 50px;
-	border-radius: 30px;
-	cursor:pointer;
-	position: fixed;
 	z-index: 1003;
-	left:48.15%;
-	top:3%;
-	text-align: center;
-	padding-bottom:0px;
-	visibility: hidden;
 }
-.go-top i{
-	color:#ccc;
+.go-to i
+{
+	color: #ccc;
+	font-size: 3em;
 	margin-top: 10px;
 }
-
-.go-top:hover i{
-	color:#999;
+.go-to:hover i
+{
+	color: #999;
 	text-decoration: none;
 }
-
-#direcao {
+.go-top
+{
+	border-radius: 30px;
+	cursor: pointer;
+	height: 50px;
+	left: 48.15%;
+	padding-bottom: 0px;
+	position: fixed;
+	text-align: center;
+	top: 3%;
+	visibility: hidden;
+	width: 50px;
+	z-index: 1003;
+}
+.go-top i
+{
+	color: #ccc;
+	margin-top: 10px;
+}
+.go-top:hover i
+{
+	color: #999;
+	text-decoration: none;
+}
+#direcao
+{
 	position: fixed;
 	top: 0px;
 }
-
-.conteudo-esquerda{
+.conteudo-esquerda
+{
 	margin-top: 10px;
-	z-index: 1000;
 	position: fixed;
-
 	width: 40px;
-
+	z-index: 1000;
 }
-.conteudo-direita{
+.conteudo-direita
+{
 	text-align: center;
 }
-
-.conteudo-direita-capa{
-	margin-top: 150px;
-	z-index: 1005;
-	text-align: center;
-	width:50%;
-	position: relative;
+.conteudo-direita-capa
+{
 	display: inline-block;
+	margin-top: 150px;
+	position: relative;
+	text-align: center;
+	width: 50%;
+	z-index: 1005;
 }
-.conteudo-direita-capa a{
+.conteudo-direita-capa a
+{
 	color: #FFF;
 	text-decoration: none;
-	text-shadow: 0.1em 0.1em #333
+	text-shadow: 0.1em 0.1em #333;
 }
-
-.encapsulador-conteudo{	
-	width:70%;
+.encapsulador-conteudo
+{
+	color: #000;
 	margin: 0 auto;
 	margin-top: 200px;
-	z-index: 1002;
 	position: relative;
-	color: #000;
+	width: 70%;
+	z-index: 1002;
 }
-
-h1{
+h1
+{
 	font-size: 58px;
-	padding: 18px;
 	line-height: 58px;
+	padding: 18px;
 }
-
-p{
+p
+{
 	padding: 15px;
 }
-
-.time-line i{
-	z-index: 1000;
-	position:relative;
+.time-line i
+{
 	color: #fff;
-	margin-top: 0px;
-	margin-left: -6px;
 	margin-bottom: 6px;
+	margin-left: -6px;
+	margin-top: 0px;
+	position: relative;
+	z-index: 1000;
 }
-
-.time-line li:hover{
-	cursor:pointer;
+.time-line li:hover
+{
+	cursor: pointer;
 }
-
-.time-line{
+.time-line
+{
 	text-align: center;
 }
-
-.time-line {
+.time-line
+{
+	background: rgba(255,255,255);
+	border-radius: 10px;
+	content: "";
+	height: 600px;
 	margin: 65px 25px;
-    content: "";
-    position: fixed;
-   	height: 600px;
-  	border-radius: 10px;
-    background: rgba(255,255,255);
-    visibility: hidden;
+	position: fixed;
+	visibility: hidden;
 }
-
-table{
-		height: 100%;
+table
+{
+	height: 100%;
 }
-
-td{
+td
+{
 	padding: 0px 30px 90px;
 }
-
- ul {
+ul
+{
 	list-style: none;
 }
-
-li{
+li
+{
 	line-height: 13px;
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 }
-
-.background-icones{
-	position:absolute;
-	z-index: 1001;
+.background-icones
+{
 	height: 667px;
+	position: absolute;
+	z-index: 1001;
 }
-
-#fotob{
-	width: 20px;
+#fotob
+{
 	height: 20px;
-}
-
-#foto3{
 	width: 20px;
+}
+#foto3
+{
 	height: 9px;
 	opacity: 0.8;
+	width: 20px;
 }
-
-#foto6{
-	width: 33px;
+#foto6
+{
 	height: 15px;
 	opacity: 0.08;
+	width: 33px;
 }
-
-.botao{
-	padding: 5px 30px;
-	color:#333;
-	font-size:18px;
-	font-weight: bold;
-	text-decoration: none;
+.botao
+{
 	border: 3px solid #444;
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 30px;
+	text-decoration: none;
 	visibility: hidden;
 }
-.botao-responsivo{
-	padding: 5px 5px;
-	color:#fff;
-	font-size:15px;
-	font-weight: bold;
-	text-decoration: none;
-	border: 3px solid #fff;
+.botao-responsivo
+{
 	background: none;
-
-
-}.botao-responsivo:hover{
-	color: #ddd;
+	border: 3px solid #fff;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 5px;
+	text-decoration: none;
+}
+.botao-responsivo:hover
+{
 	border: 3px solid #ddd;
+	color: #ddd;
 	font-weight: bold;
 	text-decoration: none;
-	z-index:4000;
+	z-index: 4000;
 }
-.corpo-mobile h1, .corpo-mobile p, .corpo-mobile a{
+.corpo-mobile h1, .corpo-mobile p, .corpo-mobile a
+{
 	text-align: center;
 }
-.botao:hover{
-	padding: 5px 30px;
-	color:#333;
-	font-size:18px;
-	font-weight: bold;
-	text-decoration: none;
+.botao:hover
+{
 	border: 4px solid black;
-}
-
-.voltarInicio{
-	z-index: 1001;
-	float: right;
-	padding: 5px 25px;
-	color:#000;
-	font-size:18px;
+	color: #333;
+	font-size: 18px;
 	font-weight: bold;
-	text-decoration: none;
-	background-color: rgba(255, 255, 255, 0);
-}
-
-.voltarInicio:hover{
 	padding: 5px 30px;
-	color:#fff;
-	background-color: #000;
-	font-size:18px;
-	font-weight: bold;
 	text-decoration: none;
 }
-
-.voltarTopo{
-	z-index: 1001;
+.voltarInicio
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: #000;
 	float: right;
-	padding: 5px 25px;
-	color:#000;
-	font-size:18px;
+	font-size: 18px;
 	font-weight: bold;
+	padding: 5px 25px;
+	text-decoration: none;
+	z-index: 1001;
+}
+.voltarInicio:hover
+{
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 30px;
+	text-decoration: none;
+}
+.voltarTopo
+{
+	color: #000;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 25px;
 	text-decoration: none;
 	visibility: hidden;
+	z-index: 1001;
 }
-
-.voltarTopo:hover{
-	padding: 5px 30px;
-	color:#fff;
+.voltarTopo:hover
+{
 	background-color: #2D61AA;
-	font-size:18px;
+	color: #fff;
+	font-size: 18px;
 	font-weight: bold;
+	padding: 5px 30px;
 	text-decoration: none;
 }
-
-.lista-conteudos{
+.lista-conteudos
+{
+	margin-bottom: 20px;
 	text-align: center;
-	margin-bottom:20px; 
 }
-
-.lista-conteudos li{
+.lista-conteudos li
+{
 	padding: 20px;
 }
-
 .list_effect1,.list_effect2,.list_effect3,.list_effect4,.list_effect5,.list_effect6,
 .list_effect7,.list_effect8,.list_effect9,.list_effect10,.list_effect11,.list_effect12,
 .list_effect13,.list_effect14,.list_effect15,.list_effect16,.list_effect17,.list_effect18,
 .list_effect19,.list_effect20,.list_effect21,.list_effect22,.list_effect23,.list_effect24,
-.list_effect25,.list_effect26,.list_effect27,.list_effect28{
-	float:right;
-	font-size:14px;
-	padding-top: '';
-	font-weight:bold;
-	font-style:normal;
-	margin-left:15px;
-	text-align:left; 
-	width:200px;  
-	opacity: 0;
+.list_effect25,.list_effect26,.list_effect27,.list_effect28
+{
+	float: right;
 	font-family: Stilu-Regular;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	margin-left: 15px;
+	opacity: 0;
+	padding-top: '';
+	text-align: left;
+	width: 200px;
 }
-
-#tr-top td{
+#tr-top td
+{
 	padding-top: 20px;
 }
-
-#tr-bottom td{
+#tr-bottom td
+{
 	padding-bottom: 0px;
 }
-
-#menu{
-	padding-top: 30px;
+#menu
+{
 	padding-bottom: 60px;
+	padding-top: 30px;
 }
-
-#voltarTopo{
+#voltarTopo
+{
 	visibility: hidden;
 }
-
-.fa-circle{
+.fa-circle
+{
 	color: rgba(52, 120, 203, 0.13);
 }
-
-.h3{
-
+.h3
+{
 	font-family: "Stilu-Regular";
 }
-
-.icone1{
+.icone1
+{
 	color: rgba(187, 187, 187, 0.23);
 }
-
-
-/* ========== CONTEÚDOS RESPONSIVOS=========*/
-.content-responsivo-1{
+.content-responsivo-1
+{
 	background: url(../img/relatorio/capa.jpg);
 	background-repeat: no-repeat;
-	 background-size: 100% 100%;
+	background-size: 100% 100%;
 	height: 500px;
 }
-.content-responsivo-2{
-		background: url(../img/relatorio/expediente.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-2
+{
+	background: url(../img/relatorio/expediente.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-
 }
-.content-responsivo-3{
-		background: url(../img/relatorio/a_unimontes.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-3
+{
+	background: url(../img/relatorio/a_unimontes.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
-}.content-responsivo-3-1{
-		background: url(../img/relatorio/resultados.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+}
+.content-responsivo-3-1
+{
+	background: url(../img/relatorio/resultados.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-4{
-		background: url(../img/relatorio/Atividades.jpg);
-			background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-4
+{
+	background: url(../img/relatorio/Atividades.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-
 }
-.content-responsivo-5{background: url(../img/relatorio/Ensino.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-5
+{
+	background: url(../img/relatorio/Ensino.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-6{background: url(../img/relatorio/cead.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-6
+{
+	background: url(../img/relatorio/cead.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-7{background: url(../img/relatorio/pos.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-7
+{
+	background: url(../img/relatorio/pos.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-8{background: url(../img/relatorio/extensao.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-8
+{
+	background: url(../img/relatorio/extensao.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-9{background: url(../img/relatorio/pesquisa.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-9
+{
+	background: url(../img/relatorio/pesquisa.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-10{background: url(../img/relatorio/Biblioteca.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-10
+{
+	background: url(../img/relatorio/Biblioteca.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-11{background: url(../img/relatorio/pesquisa.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-11
+{
+	background: url(../img/relatorio/pesquisa.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-12{background: url(../img/relatorio/processos_seletivos.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-12
+{
+	background: url(../img/relatorio/processos_seletivos.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-13{background: url(../img/relatorio/hospital.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-13
+{
+	background: url(../img/relatorio/hospital.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-14{background: url(../img/relatorio/cepedor.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-14
+{
+	background: url(../img/relatorio/cepedor.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-15{background: url(../img/relatorio/Editora.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-15
+{
+	background: url(../img/relatorio/Editora.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-16{background: url(../img/relatorio/ipc.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-16
+{
+	background: url(../img/relatorio/ipc.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-17{	background: url(../img/relatorio/saj.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-17
+{
+	background: url(../img/relatorio/saj.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-
 }
-.content-responsivo-18{background: url(../img/relatorio/intercambio.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-18
+{
+	background: url(../img/relatorio/intercambio.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-19{background: url(../img/relatorio/museu.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-19
+{
+	background: url(../img/relatorio/museu.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-20{background: url(../img/relatorio/ascom.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-20
+{
+	background: url(../img/relatorio/ascom.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-21{background: url(../img/relatorio/midias_sociais.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-21
+{
+	background: url(../img/relatorio/midias_sociais.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-
-.content-responsivo-23{background: url(../img/relatorio/publicidade.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-23
+{
+	background: url(../img/relatorio/publicidade.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-24{background: url(../img/relatorio/Radio.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-24
+{
+	background: url(../img/relatorio/Radio.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-25{background: url(../img/relatorio/Imprensa.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-25
+{
+	background: url(../img/relatorio/Imprensa.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-26{background: url(../img/relatorio/infraestrutura.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-26
+{
+	background: url(../img/relatorio/infraestrutura.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-27{background: url(../img/relatorio/orcamento_financas.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-27
+{
+	background: url(../img/relatorio/orcamento_financas.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-28{background: url(../img/relatorio/hino.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-28
+{
+	background: url(../img/relatorio/hino.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.content-responsivo-22{background: url(../img/relatorio/unimontes_numeros.jpg);
-		background-repeat: no-repeat;
-	 background-size: 100% 100%;
+.content-responsivo-22
+{
+	background: url(../img/relatorio/unimontes_numeros.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 500px;
-	
 }
-.carousel-control.left, .carousel-control.right {
-    background-image: none
+.carousel-control.left, .carousel-control.right
+{
+	background-image: none;
 }
-
-.carousel-indicators{
+.carousel-indicators
+{
 	visibility: hidden;
 }
-
-.carousel-control{
+.carousel-control
+{
 	font-size: 40px;
 }
-
-#titleModal{
+#titleModal
+{
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: center;
-
 }
-
-#textoModal{
+#textoModal
+{
+	line-height: 1.5em;
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: justify;
-	line-height: 1.5em;
 }
-
-#subtitleModal{
+#subtitleModal
+{
+	font-weight: bold;
 	padding: 0cm 2cm 0cm 2cm;
 	text-align: center;
-	font-weight: bold;
 }
-
-#listaModal{
+#listaModal
+{
 	line-height: 25px;
 	list-style-type: disc;
 }
-
-#iconeModal{
+#iconeModal
+{
 	font-size: 13px;
 }
-
-.left,.right{
+.left,.right
+{
 	position: fixed;
-	top:50%;}
-
-#imagemModalMedio{
-	width: 400px;
+	top: 50%;
+}
+#imagemModalMedio
+{
 	height: 200px;
+	width: 400px;
 }
-#tituloTabela th{
-	text-align: center;
+#tituloTabela th
+{
 	font-weight: bolder;
-
+	text-align: center;
 }
-
-#numeroPagina{
-	text-align: right;
-	font-weight: bold;
+#numeroPagina
+{
 	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
 }
-
-#navegacaoModal{
-	text-align: center;
-	font-size: 13px;
+#navegacaoModal
+{
 	background-color: #fff;
-}
-
-.paginaInicial{
-	width: 100%;
-	height: 667px;
-	background: url(../img/relatorio/mosaico.jpg);/*-image: url(../img/fundo-2.png);*/
-	position: fixed;
-	color: #BCBCBC;
-	background-size:cover;
-}
-
-.videoResponsivo{
+	font-size: 13px;
 	text-align: center;
-	width: 90%; 
-	min-width: 320px; 
-	margin:0 auto;
 }
-
-video {	
-    //width: 100%;
-    height: auto;
+.paginaInicial
+{
+	background: url(../img/relatorio/mosaico.jpg);
+	background-size: cover;
+	color: #BCBCBC;
+	height: 667px;
+	position: fixed;
+	width: 100%;
 }
-
+.videoResponsivo
+{
+	margin: 0 auto;
+	min-width: 320px;
+	text-align: center;
+	width: 90%;
+}
+video
+{
+	width: 100%;
+}

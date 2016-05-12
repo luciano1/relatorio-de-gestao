@@ -1,268 +1,100 @@
 <!doctype html>
-
 <html>
-
-<head>
-    <title>Relatório de Atividades</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/dti.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.browser.js"></script>
-    <!--script src="js/jquery-ui.js" type="text/javascript"></script>
-	<script src="js/roda.js" type="text/javascript"></script-->
-    <script src="js/jquery-roda.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-
-
-    <script>    	 
-
-       $(document).ready(function() {
-
-       	
-
-            /* VALORES DO MONITOR PADRAO */
-            var largura_default = 1366;
-            var altura_default = 667;
-            /* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
-            var largura_dispositivo = $(window).width();
-            var altura_dispositivo = $(window).height();
-            /* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
-            var razao_largura = (largura_dispositivo / largura_default);
-            var razao_altura = (altura_dispositivo / altura_default);
-
-           $(".paginaInicial > img").css('height',$(window).height()); 
-            $(".paginaInicial > img").css('width',$(window).width());
-            /*
-            	A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
-            	das coordenadas originais pelo numero float da razao das alturas dos dispositivos
-
-
-            */
-        // id = id da area / x = largura / y = altura / r = raio   
-		function mapeamento(id,x1,y1,x2,y2){				
-			$(id).attr('coords',Math.trunc(x1*razao_largura) +','+ Math.trunc(y1*razao_altura) +','+ Math.trunc(x2*razao_largura) +','+ Math.trunc(y2*razao_altura));
-		}	
-		
-		//Redimensionamento das áreas mapeadas
-		mapeamento("#Apresentacao_map", 54,267,340,312);
-		mapeamento("#Aunimontes_map", 55,334,341,377);
-		mapeamento("#Hino_map", 932,267,1110,313);
-		//mapeamento("#Uni_em_num_map", 933,334,1334,379);
-		mapeamento("#Expediente_map", 936,399,1175,448);
-		mapeamento("#Resultados_map", 31,401,338,488);
-
-		 $('.carousel').carousel('pause');
-        
-        });
-
-    </script>
-
-
-</head>
-
-<body>
-    <div class="paginaInicial">
-
-        <img src="img/relatorio/mosaico.jpg" id="imgteste" width="1365" height="667" usemap="#map" />
-        <map name="map">
-
-						<!-- OBS* O HREF E OS ATRIBUTOS DO BOOTSTRAP PODEM FICAR DENTRO DA TAG AREA -->
-						<!--area shape="circle" id="Apresentacao_map" coords="992,333,31" role="button"  data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao"/>
-						<area shape="circle" id="Aunimontes_map" coords="1022,210,31" role="button"  data-toggle="modal"  href="#aunimontes"/>
-						<area shape="circle" id="Hino_map" coords="939,288,17" role="button"  data-toggle="modal"  href="#hino"/>
-						<area shape="circle" id="Uni_em_num_map" coords="833,452,16" role="button"  data-toggle="modal"  href="#numeros"/>
-						<area shape="circle" id="Expediente_map" coords="922,371,19" role="button"  data-toggle="modal"  href="#expediente"/>
-						<area shape="circle" id="Extensao_map" coords="406,216,31" href="index.html?abre=extensao"/>
-						<area shape="circle" id="Pro_sel_map" coords="993,436,32" href="index.html?abre=processos_seletivos"/>
-						<area shape="circle" id="Ati_inst_map" coords="974,509,32" href="index.html?abre=atividades"/>
-						<area shape="circle" id="Ensino_map" coords="757,460,31" href="index.html?abre=ensino"/>
-						<area shape="circle" id="Intercambio_map" coords="667,510,16" href="index.html?abre=intercambio"/>
-						<area shape="circle" id="Pos_map" coords="656,414,31" href="index.html?abre=pos"/>
-						<area shape="circle" id="Editora_map" coords="597,420,16" href="index.html?abre=editora"/>	
-						<area shape="circle" id="Cead_map" coords="466,460,31" href="index.html?abre=cead"/>	
-						<area shape="circle" id="Infraestrutura_map" coords="346,486,31" href="index.html?abre=infraestrutura"/>
-						<area shape="circle" id="Pesquisa_map" coords="310,337,31" href="index.html?abre=pesquisa"/>	
-						<area shape="circle" id="Bibliotecas_map" coords="389,280,16" href="index.html?abre=bibliotecas"/>	
-						<area shape="circle" id="Resultados_map" coords="433,160,16" href="index.html?abre=resultados"/>	
-						<area shape="circle" id="Museu_map" coords="513,202,16" href="index.html?abre=museu"/>	
-						<area shape="circle" id="Financas_map" coords="514,118,31" href="index.html?abre=financas"/>	
-						<area shape="circle" id="Midias_map" coords="593,156,16" href="index.html?abre=midias"/>	
-						<area shape="circle" id="Ascom_map" coords="669,168,31" href="index.html?abre=ascom"/>	
-						<area shape="circle" id="Hucf_map" coords="737,146,31" href="index.html?abre=hu"/>	
-						<area shape="circle" id="Ipc_map" coords="789,180,16" href="index.html?abre=ipc"/>	
-						<area shape="circle" id="Imprensa_map" coords="826,180,16" href="index.html?abre=imprensa"/>	
-						<area shape="circle" id="Saj_map" coords="840,226,16" href="index.html?abre=saj"/>	
-						<area shape="circle" id="cpdor_map" coords="881,235,16" href="index.html?abre=cepedor"/>	
-						<area shape="circle" id="Radio_map" coords="413,386,16" href="index.html?abre=radio"/-->
-
-						<!-- NOVO MAPEAMENTO DO NOVO MOSAICO-->
-						
-						<area shape="rect" id="Apresentacao_map" coords="54,267,340,312" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
-						
-						<area shape="rect" id="Aunimontes_map" coords="55,334,341,377" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
-						
-						<area shape="rect" id="Resultados_map" coords="31,401,338,448" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
-				
-						<area shape="rect"  href="#hino" id="Hino_map" coords="932,267,1110,313" data-toggle="modal" />
-		
-						<area shape="rect" id="Uni_em_num_map" coords="933,334,1334,379"  data-toggle="modal" onclick="handle(event,0,2);" href="#numeros" />
-						<area shape="rect" id="Expediente_map" coords="936,399,1175,448" data-toggle="modal" onclick="handle(event,0,2);" href="#expediente" />
- 
-
-
-
-					</map>
-
-    </div>
-</body>
-<!--body onload="disableScroll()"> 
-		<div class="corpo-desktop visible-desktop">	
-		<div class="row-fluid ">
-			<a target="_blank" href="http://unimontes.br" target="_blank"class="logo"><img src="img/ic-1.png"></a>
-		<div class="metade-esquerda" >
-			<div class="container-fluid">
-				<div class="row-fluid">
-		
-				</div>
-			</div>
-		</div>
-<div class="metade-direita">
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="span12 conteudo-direita" >
-							<div class="background-icones">
-								<table>
-									<tr id="tr-top">
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td > <i class="fa fa-circle fa-1x"></i></td>										
-										<td>  </td>
-										
-										<td> <i class="fa fa-circle fa-1x icone1"></i> </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td ><i class="fa fa-circle fa-1x icone1"></i></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-									</tr>
-									<tr>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  </td>
-										<td>  <i class="fa fa-circle fa-1x icone1"></i></td>										
-										<td>  </td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										
-									</tr>
-									<tr>
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-										<td>  </td>
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-									</tr>
-									<tr>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-										<td>  <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-										<td>  </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-									</tr>
-									<tr>
-										<td>  </td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  </td>
-										<td>  </td>
-										<td>  <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-									</tr>
-									<tr>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td>  </td>
-										<td>  </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>								
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-									</tr>
-										<tr>
-										
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  </td>
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td>  <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td ><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-									</tr>
-									<tr>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i></td>
-									</tr>
-									<tr id="tr-bottom">
-										<td><img class="foto"src="img/ic-6.png"  id="foto6" alt=""></td>
-										<td > <i class="fa fa-circle fa-1x icone1"></i></td>
-										<td><img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td> <i class="fa fa-circle fa-1x icone1"></i> </td>
-										<td> <img class="foto"src="img/ret-2.png"  id="foto6" alt=""></td>
-										<td ><i class="fa fa-circle fa-1x icone1"></i></td>
-										<td ><img class="foto"src="img/ic-6.png"  id="foto6" alt=""></td>
-									</tr>
-								</table>
-							</div>
-
-							<div class="span12 conteudo-direita-capa">
-
-								<h3><a onclick="handle(event,0,2); " href="#expediente" role="button"  data-toggle="modal">Expediente</a></h3>
-								<h3><a onclick="handle(event,0,2);" href="#apresentacao" role="button"  data-toggle="modal">Apresentação</a></h3>
-								<h3><a onclick="handle(event,0,2); " href="#aunimontes" role="button"  data-toggle="modal">A Unimontes</a></h3>
-								<h3><a onclick="handle(event,0,2);" href="./index.html" role="button" data-toggle="modal">Resultados 2015</a></h3>
-								<h3><a onclick="handle(event,0,2); " href="#hino" role="button"  data-toggle="modal">Hino</a></h3>
-								<h3><a onclick="handle(event,0,2); " href="#numeros" role="button"  data-toggle="modal">Unimontes em números</a></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div-->
-
-
-
-
-
-
-
-
-
-
-
-
+   <!--*******************************************************************************************
+     						 RELATÓRIO DE ATIVIDADES 2015 - UNIMONTES 
+      
+      				Desenvolvido pela Diretoria de Tecnologia da Informação - DTI
+          						 Dezembro de 2015 a maio de 2016
+      	Repositório do Projeto: https://github.com/JessicaFFerreira/relatorio-de-gestao
+      
+      Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodrigo Oliveira 
+      
+      *********************************************************************************************-->
+   <!-- ESTE ARQUIVO ERA A PÁGINA INICIAL ANTES DA ANIMAÇÃO EM FLASH. NÃO ESTÁ SENDO UTILIZADO ATUALMENTE.-->
+   <head>
+      <title>Relatório de Atividades</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap-responsive.css">
+      <link rel="stylesheet" href="css/dti.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/jquery.browser.js"></script>
+      <script src="js/jquery-roda.js" type="text/javascript"></script>
+      <script src="js/scripts.js" type="text/javascript"></script>
+      <script>    	 
+         $(document).ready(function() {
+         
+         	
+         
+              /* VALORES DO MONITOR PADRAO */
+              var largura_default = 1366;
+              var altura_default = 667;
+              /* VALORES DO MONITOR DO DISPOSITIVO UTILIZADO */
+              var largura_dispositivo = $(window).width();
+              var altura_dispositivo = $(window).height();
+              /* RELAÇÃO ENTRE O MONITOR PADRAO E O MONITOR DO DISPOSITIVO*/
+              var razao_largura = (largura_dispositivo / largura_default);
+              var razao_altura = (altura_dispositivo / altura_default);
+         
+             $(".paginaInicial > img").css('height',$(window).height()); 
+              $(".paginaInicial > img").css('width',$(window).width());
+              /*
+              	A função Match.trunc elimina os decimais advindos da multiplicação do valor inteiro 
+              	das coordenadas originais pelo numero float da razao das alturas dos dispositivos
+         
+         
+              */
+          // id = id da area / x = largura / y = altura / r = raio   
+         function mapeamento(id,x1,y1,x2,y2){				
+         $(id).attr('coords',Math.trunc(x1*razao_largura) +','+ Math.trunc(y1*razao_altura) +','+ Math.trunc(x2*razao_largura) +','+ Math.trunc(y2*razao_altura));
+         }	
+         
+         //Redimensionamento das áreas mapeadas
+         mapeamento("#Apresentacao_map", 54,267,340,312);
+         mapeamento("#Aunimontes_map", 55,334,341,377);
+         mapeamento("#Hino_map", 932,267,1110,313);
+         //mapeamento("#Uni_em_num_map", 933,334,1334,379);
+         mapeamento("#Expediente_map", 936,399,1175,448);
+         mapeamento("#Resultados_map", 31,401,338,488);
+         
+         $('.carousel').carousel('pause');
+          
+          });
+         
+      </script>
+   </head>
+   <body>
+      <div class="paginaInicial">
+         <img src="img/relatorio/mosaico.jpg" id="imgteste" width="1365" height="667" usemap="#map" />
+         <map name="map">
+            <!-- NOVO MAPEAMENTO DO NOVO MOSAICO-->
+            <area shape="rect" id="Apresentacao_map" coords="54,267,340,312" data-toggle="modal" onclick="handle(event,0,2);" href="#apresentacao" />
+            <area shape="rect" id="Aunimontes_map" coords="55,334,341,377" data-toggle="modal" onclick="handle(event,0,2);" href="#aunimontes" />
+            <area shape="rect" id="Resultados_map" coords="31,401,338,448" data-toggle="modal" onclick="handle(event,0,2);" href="./index.html" />
+            <area shape="rect"  href="#hino" id="Hino_map" coords="932,267,1110,313" data-toggle="modal" />
+            <area shape="rect" id="Uni_em_num_map" coords="933,334,1334,379"  data-toggle="modal" onclick="handle(event,0,2);" href="#numeros" />
+            <area shape="rect" id="Expediente_map" coords="936,399,1175,448" data-toggle="modal" onclick="handle(event,0,2);" href="#expediente" />
+         </map>
+      </div>
+   </body>
+  
