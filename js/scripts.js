@@ -9,7 +9,34 @@ Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodr
 
 *******************************************************************************************/
 $(document).ready(function() {
-    $('.carousel, #carouselInfraestrutura').carousel('pause');
+    //Pausar todos os carouséis
+    $('.carousel').carousel('pause');
+    $('#carouselAtividades').carousel('pause');
+    $('#carouselEnsino').carousel('pause');
+    $('#carouselcead').carousel('pause');
+    $('#carouselpos').carousel('pause');
+    $('#carouselExtensao').carousel('pause');
+    $('#carouselExtensao').carousel(0);
+    $('#carouselpesquisa').carousel('pause');
+    $('#carouselpesquisa').carousel(0);
+
+    $('#carouselBiblioteca').carousel('pause');
+    $('#carouselProcessosSeletivos').carousel('pause');
+    $('#carouselHU').carousel('pause');
+    $('#carouselCepedor').carousel('pause');
+    $('#carouselEditora').carousel('pause');
+    $('#carouselSaj').carousel('pause');
+    $('#carouselIntercambio').carousel('pause');
+    $('#carouselMuseu').carousel('pause');
+    $('#carouselAscom').carousel('pause');
+    //$('#carouselMidias').carousel('pause');
+    $('#carouselRadio').carousel('pause');
+    $('#carouselImprensa').carousel('pause');
+    $('#carouselInfraestrutura').carousel('pause');
+    $('#carouselOrcamentoefinancas').carousel('pause');
+
+
+
     $('.right').click(function() {
         $('.carousel').carousel('next');
     })
@@ -18,7 +45,7 @@ $(document).ready(function() {
 
     })
 
-})
+});
 $(document).ready(function() {
     if (($(window).width()) < 980) {
         location.href = "m.index.html";
