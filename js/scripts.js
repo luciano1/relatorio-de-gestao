@@ -7,11 +7,6 @@ $(document).ready(function() {
         $('.carousel').carousel('prev');
 
     })
-  
-
-
-
-
 })
 $(document).ready(function() {
     if (($(window).width()) < 980) {
