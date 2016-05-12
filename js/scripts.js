@@ -10,7 +10,7 @@ Jéssica Ferreira / Marcony Caldeira / Tarcisio Batista / Fellipe Botelho / Rodr
 *******************************************************************************************/
 $(document).ready(function() {
     //Pausar todos os carouséis
-    $('.carousel').carousel('pause');
+    /*$('.carousel').carousel('pause');
     $('#carouselAtividades').carousel('pause');
     $('#carouselEnsino').carousel('pause');
     $('#carouselcead').carousel('pause');
@@ -35,7 +35,7 @@ $(document).ready(function() {
     $('#carouselInfraestrutura').carousel('pause');
     $('#carouselOrcamentoefinancas').carousel('pause');
 
-
+    */
 
     $('.right').click(function() {
         $('.carousel').carousel('next');
