@@ -535,7 +535,9 @@
             <div class="item active">
                <h2 id="titleModal" style="text-align: center;">Apresentação</h2>
                <h4 id="textoModal">
-                  <p>A Pró-Reitoria de Ensino é responsável pelas propostas, acompanhamento e execução das diretrizes e das políticas específicas que visam ao desenvolvimento das atividades de ensino no âmbito da Universidade. Compete a esta Pró-Reitoria assegurar a execução das atividades necessárias ao desenvolvimento do Ensino Superior, Profissional e Tecnológico, bem como estabelecer as diretrizes básicas e globais, visando a atender às demandas e potencialidades regionais, além de coordenar as ações dos cursos de graduação, observadas as orientações do Plano de Desenvolvimento Institucional (PDI), do Projeto Político-Pedagógico Institucional (PPPI) e nos Projetos Político-Pedagógicos (PPP) de cada curso.<br></p>
+                  <p>A Unimontes avança e democratiza a oferta de cursos de graduação, profissional e Tecnológico, além dos cursos de pós-graduação e a distância. A proposta é oferecer cursos que estejam em sintonia com as demandas do setor produtivo e alinhados a agenda de desenvolvimento socioeconômico das regiões atendidas.</p>
+                  <p>Neste contexto, a Pró-Reitoria de Ensino é responsável pelas propostas, acompanhamento e execução das diretrizes e das políticas específicas que visam ao desenvolvimento das atividades de ensino no âmbito da Universidade. Compete a esta Pró-Reitoria assegurar a execução das atividades necessárias. ao desenvolvimento do Ensino Superior, Profissional e Tecnológico, bem como estabelecer as diretrizes básicas e globais, visando a atender às demandas e potencialidades regionais, além de coordenar as ações dos cursos de graduação, observadas as orientações do Plano de Desenvolvimento Institucional (PDI), do Projeto Político-Pedagógico Institucional (PPPI) e nos Projetos Político-Pedagógicos (PPP) de cada curso.</p>
+                  <p>Na oferta de cursos técnicos e profissionalizantes, a Unimontes tem como referência a Escola Técnica de Saúde, unidade vinculada ao Centro de Educação Profissional e Tecnológica (CEPT). A finalidade é atuar no planejamento e a organização de cursos do ensino profissional e tecnológico, atendendo as demandas locais e regionais.</p>
                   <p>O atendimento desta Pró-Reitoria envolveu em 2015:</p>
                   <ul>
                      <li id="listaModal">53 cursos de Graduação Regulares;</li>
@@ -7137,20 +7139,37 @@
 
 
     <!-- ===================================== MODAL IPC=========================================== -->
-
-    <div id="ipc" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">Modal header</h3>
+   <div id="ipc" class="modal hide fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" onclick="enableScroll(); ItemModal(0);" aria-hidden="true" >×</button>
+       <h3 id="myModalLabel">IPC</h3>
+     </div>
+   
+   
+        <div class="modal-body" style="background: url('img/relatorio/ipc_d.jpg'); background-size:cover;">
+        <div id="carouselipc" class="carousel">
+            <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" >
+                        <div class="item active">
+                            <h2 id="titleModal" style="text-align: center;">Índice de Preços ao Consumidor - IPC</h2>
+                            <h4 id="textoModal">
+                               <p>Desde 1982 o Indice de Preços ao Consumidor (IPC), vem sendo calculado. O serviço é ligado ao ligado ao Departamento de Economia do Centro de Ciências Sociais Aplicadas. O IPC mede a evolução dos preços de um conjunto de produtos, bens ou serviços no varejo montesclarense, ou seja, da forma como eles chegaram até o consumidor final. A metodologia de cálculo é a comparação dos preços médios do mês atual com os preços médios do mês imediatamente anterior. </p>
+                               <p>A estrutura de ponderação utilizada para o IPC baseia-se na Pesquisa de Orçamento Familiares (POF). A POF, permite conhecer quais são os bens e os serviços utilizados durante um ano pelas famílias residentes nas áreas pesquisadas, bem como, a representatividade de cada um desses bens e serviços na despesa global das mesmas.</p>
+                            </h4>
+                        </div>
+                    </div>
+                <a class="carousel-control left" href="#carouselipc">&lsaquo;</a> 
+                <a class="carousel-control right" href="#carouselipc" >&rsaquo;</a>
         </div>
-        <div class="modal-body">
-            <p>Um corpo fino …</p>
         </div>
         <div class="modal-footer">
-
+        <button class="btn" data-dismiss="modal"  aria-hidden="true" onclick="ItemModal(0)">Fechar</button>
         </div>
-    </div>
-
+   </div>
 
     <!-- ===================================== MODAL SAJ=========================================== -->
 
@@ -7590,11 +7609,13 @@
                         <h2 id="titleModal" style="text-align: center;">Apresentação</h2>
                         <h4 id="textoModal">
                                     <br/><br/>
-                                    <img src="img/conteudo/museu/museu1.png" style="width: 500px; hight:400px;" align="center">
+                                    <center><img src="img/conteudo/museu/museu1.png" style="width: 500px; hight:400px;" align="center"></center>
                                     <br/><br/>
                                     <p>O Museu Regional do Norte de Minas -MRNM tem como prioridade atividades voltadas para a pesquisa, a identificação,  a conservação e a  divulgação de registros da cultura material e imaterial do Norte de Minas Gerais. A educação patrimonial é, deste modo, uma de suas principais funções que, por meio de ações voltadas ao público, divulga seus acervos com vistas à ampliação e à qualificação do acesso à cultura e ao patrimônio da região. A democratização e o acesso aos bens culturais são pilares do museu que, através de suas exposições e ações, objetiva uma sociedade mais integrada ao reconhecimento de sua identidade e consciente do patrimônio cultural de sua localidade, tornando-se espaço para o diálogo, reflexão histórica e da inclusão social.</p>
                                     <p>A implantação do Museu Regional do Norte de Minas foi pautado no desejo de criar uma instituição que se destine a preservação  e difusão do patrimônio cultural de natureza material e imaterial.  O Museu Regional do Norte de Minas foi instalado no casarão da antiga Faculdade de Filosofia, Ciências e Letras (FAFIL), sendo inaugurado no dia 30 de setembro de 2014. O casarão foi totalmente restaurado no ano de 2009 pelo Governo do Estado, com o apoio da comunidade e recursos de empresas viabilizados por intermédio da Lei Federal de Incentivo à Cultura – Lei Rouanet.  A edificação teve sua construção iniciada em 1886, sendo finalizado apenas em 1889, pelo coronel José Antônio Versiane. Tombado pela Lei Municipal 1761, de 28 de setembro de 1999, o prédio tem uma grande importância para o setor educacional da cidade, pois foi sede do primeiro grupo escolar, do primeiro estabelecimento de ensino médio (antigo segundo grau) e dos primeiros cursos superiores da cidade, criados pela Faculdade de Filosofia, Ciências e Letras do Norte de Minas (FAFIL), incorporada à então Fundação Norte Mineira de Ensino Superior (FUNM) – atual Unimontes.</p>
-                                    <p>O museu apresenta o número expressivo de mais de 12.000 visitantes em um período de pouco mais de  12 meses de funcionamento, o que ressalta o interesse da população e a importância do espaço para a produção de informação, construção social da memória e oportunidade de lazer. A unidade oferece ao público o conhecimento da região norte-mineira, através de quatro eixos temáticos, distribuídos em quatro salas: “Meio Ambiente”, “Ocupação do Território”, “Evolução Urbana de Montes Claros”, e “Saberes, Fazeres e Celebrações”. Além de exposições temporárias, propostas de exposições itinerantes e Espaço Multimídia, no qual o público pode assistir vídeos educativos e obter informações sobre a história e cultura dos municípios norte-mineiros.</p> 
+                                    <p>O museu apresenta o número expressivo de mais de <strong>12.000 visitantes</strong> em um período de pouco mais de  12 meses de funcionamento, o que ressalta o interesse da população e a importância do espaço para a produção de informação, construção social da memória e oportunidade de lazer. A unidade oferece ao público o conhecimento da região norte-mineira, através de quatro eixos temáticos, distribuídos em quatro salas: “Meio Ambiente”, “Ocupação do Território”, “Evolução Urbana de Montes Claros”, e “Saberes, Fazeres e Celebrações”. Além de exposições temporárias, propostas de exposições itinerantes e Espaço Multimídia, no qual o público pode assistir vídeos educativos e obter informações sobre a história e cultura dos municípios norte-mineiros.</p> 
+                                    <p>O Museu Regional da Unimontes funciona no Centro histórico de Montes Claros no antigo casarão da Fafil. O espaço é dividido em quatro eixos temáticos: Meio Ambiente, Ocupação Territorial, Desenvolvimento Regional e Saberes, Fazeres e Celebrações.</p>
+                                    <p>Está localizado na Rua Coronel Celestino, 75, e é aberto para visitação de segunda a sexta-feira, das 8h às 12h e das 13h às 18h. A entrada é gratuita.</p>
                                 </h4>
                     </div>
                 </div>
@@ -7618,7 +7639,23 @@
             <div id="carouselAscom" class="carousel">
                 
                 <div class="carousel-inner" >
-                     <div class="item active">
+                   <div class="item active">
+                      <h2 id="titleModal">Comunicação</h2>
+                      <h4 id="textoModal">
+                         <p>A Universidade Estadual de Montes Claros atende a uma politica transparente, objetiva e clara de comunicação social. Atualmente, a Unimontes possui os seguintes serviços que envolvem a Comunicação Social:</p>
+                           <ul>
+                            <li id="listaModal"> Assessoria de Comunicação Social</li>
+                            <li id="listaModal"> Gestão de Mídias Sociais</li>
+                            <li id="listaModal"> Cerimonial</li>
+                            <li id="listaModal"> Assessoria de Imprensa do Hospital Universitário</li>
+                            <li id="listaModal"> Rádio Unimontes</li>
+                            <li id="listaModal"> Imprensa Universitária</li>
+                            <li id="listaModal"> Comunicação do Centro de Educação a Distância</li>
+                            <li id="listaModal"> Comunicação da Diretoria de Documentação e Informação</li>
+                         </ul> 
+                      </h4>                                    
+                   </div>
+                  <div class="item">
                         <h2 id="titleModal">Asssessoria de Comunicação Institucional</h2>
                         <h3 id="subtitleModal"><center>Apresentação</center></h3>
                         <h4 id="textoModal">
@@ -8036,7 +8073,7 @@
 
                         <h4 id="textoModal">
                            <p> 
-                              <storng>Fontes de consulta:</strong> <a>www.buzzmonitor.com.br</a>, <a>youtube.com</a>, <a>Scup Ideas</a>, <a>Unimontes.br</a>, <a>www.youtube.com/analytics</a>, <a>www.tracto.com.br</a>, <a>Cartilha de redação web</a>, <a>www.twitter.com</a>, <a>https://support.twitter.com/</a>, <a>https://analytics.twitter.com</a>
+                              <strong>Fontes de consulta:</strong> <a>www.buzzmonitor.com.br</a>, <a>youtube.com</a>, <a>Scup Ideas</a>, <a>Unimontes.br</a>, <a>www.youtube.com/analytics</a>, <a>www.tracto.com.br</a>, <a>Cartilha de redação web</a>, <a>www.twitter.com</a>, <a>https://support.twitter.com/</a>, <a>https://analytics.twitter.com</a>
                            </p>
                         </h4>
 
@@ -8341,6 +8378,10 @@
          </ol>
          <div class="carousel-inner" >
             <div class="item active">
+            <h2 id="titleModal">PRÓ-REITORIA DE PLANEJAMENTO ,  GESTÃO E FINANÇAS</h2>
+            <h4 id="textoModal">
+               <p>A Pró-Reitoria de Planejamento, Gestão e Finanças busca sintonizar as ações com as diferentes demandas acadêmicas. A finalidade é assegurar infraestrutura necessária às atividades de ensino,  pesquisa, extensão e de prestação de serviços. O objetivo é oferecer condições adequadas para a ampliação das atividades da instituição, atendendo as demandas de professores, servidores técnico-administrativos e alunos.</p>
+            </h4>
                <h2 id="titleModal" style="text-align: center;">Obras  - Em fase de conclusão em Dezembro de 2015
                   <br><br>
                </h2>
