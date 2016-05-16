@@ -39,6 +39,32 @@
       <link rel="stylesheet" href="css/font-awesome.css">
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
+
+
+      <script>
+         $(document).ready(function(){
+            $('.right').click(function() {
+                 $('.carousel').carousel('next');})
+             $('.left').click(function() {
+                 $('.carousel').carousel('prev');})
+         });
+
+         function ItemModal(pagina) {
+             $(document).ready(function() {
+                 $('.carousel').carousel(pagina);
+             })
+         }
+
+         function enableScroll() {
+             if (window.addEventListener) {
+
+                 window.addEventListener('DOMMouseScroll', wheel, false);
+                 window.onmousewheel = document.onmousewheel = wheel;
+             }
+         }
+
+
+      </script>
       <style>
          body{
          background: rgb(255, 255, 255);
